@@ -1,4 +1,5 @@
-﻿using System;
+﻿using singup;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,5 +17,13 @@ namespace TurfSyncTurfSchedulingSportsSystem
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+            SignupPage signupPage= new SignupPage();
+            signupPage.Show();
+        }
+
     }
 }
