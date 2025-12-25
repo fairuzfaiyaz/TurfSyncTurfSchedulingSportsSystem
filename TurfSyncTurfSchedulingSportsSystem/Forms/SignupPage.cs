@@ -7,8 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TurfSyncTurfSchedulingSportsSystem.Forms;
 
-namespace singup
+namespace TurfSyncTurfSchedulingSportsSystem.Forms
 {
     public partial class SignupPage : Form
     {
@@ -70,6 +71,13 @@ namespace singup
         private void SignupPage_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+            LoginPage loginPage = new LoginPage();
+            loginPage.Show();
         }
     }
 }

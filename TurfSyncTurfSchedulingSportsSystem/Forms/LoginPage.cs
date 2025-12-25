@@ -1,4 +1,4 @@
-﻿using singup;
+﻿//using singup;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -56,7 +56,7 @@ namespace TurfSyncTurfSchedulingSportsSystem
 
         private void label3_Click(object sender, EventArgs e)
         {
-            this.Dispose();
+            this.Hide();
             SignupPage signupPage = new SignupPage();
             //Application.Run(signupPage);
             signupPage.Show();

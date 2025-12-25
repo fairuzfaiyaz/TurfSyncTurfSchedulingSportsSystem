@@ -120,7 +120,7 @@
             this.button7.ForeColor = System.Drawing.Color.Lime;
             this.button7.Image = ((System.Drawing.Image)(resources.GetObject("button7.Image")));
             this.button7.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.button7.Location = new System.Drawing.Point(1040, 183);
+            this.button7.Location = new System.Drawing.Point(1040, 202);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(215, 56);
             this.button7.TabIndex = 24;
