@@ -102,5 +102,8 @@
   <ItemGroup>
     <None Include="Resources\LoginPage_UpperPicture.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LoginPage_textbox_bg.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

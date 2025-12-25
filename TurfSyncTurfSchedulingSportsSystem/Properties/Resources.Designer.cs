@@ -63,6 +63,16 @@ namespace TurfSyncTurfSchedulingSportsSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap LoginPage_textbox_bg {
+            get {
+                object obj = ResourceManager.GetObject("LoginPage_textbox_bg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap LoginPage_UpperPicture {
             get {
                 object obj = ResourceManager.GetObject("LoginPage_UpperPicture", resourceCulture);
