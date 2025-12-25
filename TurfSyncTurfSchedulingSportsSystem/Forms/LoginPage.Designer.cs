@@ -32,6 +32,7 @@
             this.username = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
@@ -39,6 +40,7 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -54,11 +56,12 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.label1.Location = new System.Drawing.Point(793, 202);
+            this.label1.Location = new System.Drawing.Point(799, 180);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(315, 30);
             this.label1.TabIndex = 2;
             this.label1.Text = "Get Started with Turf Sync";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // username
             // 
@@ -66,10 +69,10 @@
             this.username.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.username.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.username.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.username.Location = new System.Drawing.Point(853, 297);
+            this.username.Location = new System.Drawing.Point(832, 267);
             this.username.Multiline = true;
             this.username.Name = "username";
-            this.username.Size = new System.Drawing.Size(303, 58);
+            this.username.Size = new System.Drawing.Size(273, 40);
             this.username.TabIndex = 5;
             this.username.Text = "Enter E-mail or Username";
             // 
@@ -79,10 +82,10 @@
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.textBox1.Location = new System.Drawing.Point(853, 414);
+            this.textBox1.Location = new System.Drawing.Point(832, 379);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(303, 58);
+            this.textBox1.Size = new System.Drawing.Size(303, 39);
             this.textBox1.TabIndex = 6;
             this.textBox1.Text = "Enter Password";
             // 
@@ -96,13 +99,24 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Image = global::TurfSyncTurfSchedulingSportsSystem.Properties.Resources.LoginButton_bg1;
+            this.pictureBox9.Location = new System.Drawing.Point(804, 474);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(310, 89);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox9.TabIndex = 12;
+            this.pictureBox9.TabStop = false;
+            this.pictureBox9.Click += new System.EventHandler(this.pictureBox9_Click_1);
+            // 
             // pictureBox7
             // 
             this.pictureBox7.BackColor = System.Drawing.Color.LightGray;
             this.pictureBox7.Image = global::TurfSyncTurfSchedulingSportsSystem.Properties.Resources.eye;
-            this.pictureBox7.Location = new System.Drawing.Point(1108, 414);
+            this.pictureBox7.Location = new System.Drawing.Point(1111, 379);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(48, 58);
+            this.pictureBox7.Size = new System.Drawing.Size(33, 48);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox7.TabIndex = 10;
             this.pictureBox7.TabStop = false;
@@ -112,7 +126,7 @@
             // 
             this.pictureBox6.BackColor = System.Drawing.Color.LightGray;
             this.pictureBox6.Image = global::TurfSyncTurfSchedulingSportsSystem.Properties.Resources.padlock;
-            this.pictureBox6.Location = new System.Drawing.Point(789, 414);
+            this.pictureBox6.Location = new System.Drawing.Point(778, 366);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(48, 58);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -123,7 +137,7 @@
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.LightGray;
             this.pictureBox5.Image = global::TurfSyncTurfSchedulingSportsSystem.Properties.Resources.user__1_;
-            this.pictureBox5.Location = new System.Drawing.Point(789, 297);
+            this.pictureBox5.Location = new System.Drawing.Point(778, 249);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(48, 58);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -133,7 +147,7 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = global::TurfSyncTurfSchedulingSportsSystem.Properties.Resources.LoginPage_textbox_bg;
-            this.pictureBox4.Location = new System.Drawing.Point(766, 373);
+            this.pictureBox4.Location = new System.Drawing.Point(745, 329);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(420, 139);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -143,7 +157,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::TurfSyncTurfSchedulingSportsSystem.Properties.Resources.LoginPage_textbox_bg;
-            this.pictureBox3.Location = new System.Drawing.Point(766, 257);
+            this.pictureBox3.Location = new System.Drawing.Point(745, 213);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(420, 139);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -153,7 +167,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::TurfSyncTurfSchedulingSportsSystem.Properties.Resources.LoginPage_UpperPicture;
-            this.pictureBox2.Location = new System.Drawing.Point(754, -3);
+            this.pictureBox2.Location = new System.Drawing.Point(754, -13);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(402, 214);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -177,6 +191,7 @@
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(1214, 681);
             this.ControlBox = false;
+            this.Controls.Add(this.pictureBox9);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox5);
@@ -192,6 +207,7 @@
             this.Name = "LoginPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login Page";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
@@ -217,6 +233,7 @@
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.PictureBox pictureBox9;
     }
 }
 

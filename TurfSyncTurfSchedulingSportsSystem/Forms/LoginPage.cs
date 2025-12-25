@@ -27,7 +27,28 @@ namespace TurfSyncTurfSchedulingSportsSystem
 
         private void pictureBox7_Click(object sender, EventArgs e)
         {
-            
+
+            //if (pictureBox7.Click)
+            //{
+            //    this.pictureBox7.Image = global::TurfSyncTurfSchedulingSportsSystem.Properties.Resources.hidden;
+            //    textBox2.UseSystemPasswordChar = true;
+            //}
+
+        }
+
+        private void pictureBox9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox9_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
