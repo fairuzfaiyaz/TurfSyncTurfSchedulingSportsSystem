@@ -41,6 +41,7 @@
             this.button11 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
             this.button13 = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -102,9 +103,9 @@
             // 
             this.button8.BackColor = System.Drawing.Color.LightGray;
             this.button8.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.Location = new System.Drawing.Point(513, 163);
+            this.button8.Location = new System.Drawing.Point(469, 316);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(183, 72);
+            this.button8.Size = new System.Drawing.Size(209, 89);
             this.button8.TabIndex = 11;
             this.button8.Text = "Book turf time slots";
             this.button8.UseVisualStyleBackColor = false;
@@ -134,9 +135,9 @@
             // 
             this.button7.BackColor = System.Drawing.Color.LightGray;
             this.button7.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(775, 163);
+            this.button7.Location = new System.Drawing.Point(731, 316);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(183, 72);
+            this.button7.Size = new System.Drawing.Size(209, 89);
             this.button7.TabIndex = 10;
             this.button7.Text = "Cancel Booking";
             this.button7.UseVisualStyleBackColor = false;
@@ -145,45 +146,56 @@
             // 
             this.button10.BackColor = System.Drawing.Color.LightGray;
             this.button10.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button10.Location = new System.Drawing.Point(1033, 291);
+            this.button10.Location = new System.Drawing.Point(989, 444);
             this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(183, 72);
+            this.button10.Size = new System.Drawing.Size(209, 89);
             this.button10.TabIndex = 14;
-            this.button10.Text = "Cancel Booking";
+            this.button10.Text = "Rate the turf service";
             this.button10.UseVisualStyleBackColor = false;
             // 
             // button11
             // 
             this.button11.BackColor = System.Drawing.Color.LightGray;
             this.button11.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button11.Location = new System.Drawing.Point(775, 291);
+            this.button11.Location = new System.Drawing.Point(731, 444);
             this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(183, 72);
+            this.button11.Size = new System.Drawing.Size(209, 89);
             this.button11.TabIndex = 15;
-            this.button11.Text = "Cancel Booking";
+            this.button11.Text = " View booking history";
             this.button11.UseVisualStyleBackColor = false;
             // 
             // button12
             // 
             this.button12.BackColor = System.Drawing.Color.LightGray;
             this.button12.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button12.Location = new System.Drawing.Point(513, 277);
+            this.button12.Location = new System.Drawing.Point(469, 444);
             this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(183, 72);
+            this.button12.Size = new System.Drawing.Size(209, 89);
             this.button12.TabIndex = 16;
-            this.button12.Text = "Cancel Booking";
+            this.button12.Text = "Track Status";
             this.button12.UseVisualStyleBackColor = false;
             // 
             // button13
             // 
             this.button13.BackColor = System.Drawing.Color.LightGray;
             this.button13.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button13.Location = new System.Drawing.Point(1033, 163);
+            this.button13.Location = new System.Drawing.Point(989, 316);
             this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(183, 72);
+            this.button13.Size = new System.Drawing.Size(209, 89);
             this.button13.TabIndex = 17;
-            this.button13.Text = "Cancel Booking";
+            this.button13.Text = "Reschedule Bookings";
             this.button13.UseVisualStyleBackColor = false;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(503, 109);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(102, 36);
+            this.label3.TabIndex = 18;
+            this.label3.Text = "label3";
             // 
             // PlayerDashboard
             // 
@@ -191,6 +203,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1346, 655);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.button13);
             this.Controls.Add(this.button12);
             this.Controls.Add(this.button11);
@@ -229,5 +242,6 @@
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.Label label3;
     }
 }
