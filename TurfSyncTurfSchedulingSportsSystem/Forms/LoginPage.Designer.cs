@@ -212,6 +212,7 @@
             this.label3.Size = new System.Drawing.Size(83, 23);
             this.label3.TabIndex = 15;
             this.label3.Text = "Register";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 
