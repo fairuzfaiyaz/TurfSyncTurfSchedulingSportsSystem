@@ -27,5 +27,17 @@ namespace TurfSyncTurfSchedulingSportsSystem.Forms
         {
             this.Dispose();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+            loginPage loginPage = new loginPage();
+            loginPage.Show();
+        }
+
+        private void pictureBox8_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
     }
 }
