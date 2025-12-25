@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace TurfSyncTurfSchedulingSportsSystem.Forms
 {
-    public partial class PlayerDashboard : Form
+    public partial class BookTurfSchedule : Form
     {
-        public PlayerDashboard()
+        public BookTurfSchedule()
         {
             InitializeComponent();
-        }
-
-        private void button8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            this.Dispose()
         }
     }
 }
