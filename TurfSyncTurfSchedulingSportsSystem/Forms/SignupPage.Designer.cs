@@ -1,6 +1,6 @@
 ﻿namespace singup
 {
-    partial class Form1
+    partial class SignupPage
     {
         /// <summary>
         /// Required designer variable.
