@@ -135,7 +135,7 @@
             this.button5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.Lime;
             this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.Location = new System.Drawing.Point(712, 326);
+            this.button5.Location = new System.Drawing.Point(712, 341);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(215, 56);
             this.button5.TabIndex = 23;
@@ -150,7 +150,7 @@
             this.button2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.Lime;
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.Location = new System.Drawing.Point(1040, 326);
+            this.button2.Location = new System.Drawing.Point(1040, 341);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(215, 56);
             this.button2.TabIndex = 21;

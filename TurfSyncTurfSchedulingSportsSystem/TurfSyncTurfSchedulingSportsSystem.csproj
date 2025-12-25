@@ -64,6 +64,12 @@
     <Compile Include="Forms\CancelBooking.Designer.cs">
       <DependentUpon>CancelBooking.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\customeArrive.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\customeArrive.Designer.cs">
+      <DependentUpon>customeArrive.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\ManagerDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,6 +116,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\CancelBooking.resx">
       <DependentUpon>CancelBooking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\customeArrive.resx">
+      <DependentUpon>customeArrive.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ManagerDashboard.resx">
       <DependentUpon>ManagerDashboard.cs</DependentUpon>
@@ -221,6 +230,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Screenshot 2025-12-26 031149.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4355f71e1bccb611f14b0e92fb7b7edf.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d1347ede87cc8afff75350dd963c2b00.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4355f71e1bccb611f14b0e92fb7b7edf1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bb537897cae8a7bdeb1e7e310ad69710.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
