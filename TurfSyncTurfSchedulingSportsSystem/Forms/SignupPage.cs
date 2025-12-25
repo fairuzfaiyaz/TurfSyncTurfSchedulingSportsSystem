@@ -46,5 +46,25 @@ namespace singup
         {
 
         }
+
+        private void eMail_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void signUp_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void passWord_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void repeatPass_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
