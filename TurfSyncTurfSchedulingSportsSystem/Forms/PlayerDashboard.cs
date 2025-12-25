@@ -19,12 +19,13 @@ namespace TurfSyncTurfSchedulingSportsSystem.Forms
 
         private void button8_Click(object sender, EventArgs e)
         {
-
+            BookTurfSchedule bookTurfSchedule = new BookTurfSchedule();
+            bookTurfSchedule.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            this.Dispose()
+            this.Dispose();
         }
     }
 }
