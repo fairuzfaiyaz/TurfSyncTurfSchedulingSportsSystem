@@ -44,9 +44,9 @@ namespace TurfSyncTurfSchedulingSportsSystem
 
         private void pictureBox9_Click_1(object sender, EventArgs e)
         {
+            PlayerDashboard playerDashboard = new PlayerDashboard();
+            playerDashboard.Show();
             this.Dispose(true);
-            UserDashboard userDashboard = new UserDashboard();
-            userDashboard.Show();
         }
 
         private void label1_Click(object sender, EventArgs e)
