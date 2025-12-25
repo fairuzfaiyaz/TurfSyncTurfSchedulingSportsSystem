@@ -38,9 +38,9 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::TurfSyncTurfSchedulingSportsSystem.Properties.Resources.LoginPage_UpperPicture;
-            this.pictureBox2.Location = new System.Drawing.Point(918, -3);
+            this.pictureBox2.Location = new System.Drawing.Point(869, -3);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(365, 214);
+            this.pictureBox2.Size = new System.Drawing.Size(459, 258);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
@@ -61,7 +61,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.label1.Location = new System.Drawing.Point(944, 199);
+            this.label1.Location = new System.Drawing.Point(938, 235);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(315, 30);
             this.label1.TabIndex = 2;
