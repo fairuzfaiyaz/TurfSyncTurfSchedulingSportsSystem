@@ -10,24 +10,19 @@ using System.Windows.Forms;
 
 namespace TurfSyncTurfSchedulingSportsSystem.Forms
 {
-    public partial class BookTurfSchedule : Form
+    public partial class CancelBooking : Form
     {
-        public BookTurfSchedule()
+        public CancelBooking()
         {
             InitializeComponent();
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void label13_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void label12_Click(object sender, EventArgs e)
         {
 
         }

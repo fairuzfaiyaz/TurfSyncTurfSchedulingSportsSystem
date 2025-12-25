@@ -58,6 +58,12 @@
     <Compile Include="Forms\BookTurfSchedule.Designer.cs">
       <DependentUpon>BookTurfSchedule.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\CancelBooking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CancelBooking.Designer.cs">
+      <DependentUpon>CancelBooking.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\ManagerDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,6 +101,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\BookTurfSchedule.resx">
       <DependentUpon>BookTurfSchedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CancelBooking.resx">
+      <DependentUpon>CancelBooking.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ManagerDashboard.resx">
       <DependentUpon>ManagerDashboard.cs</DependentUpon>
