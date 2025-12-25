@@ -98,7 +98,7 @@
             this.pictureBox9.Image = global::TurfSyncTurfSchedulingSportsSystem.Properties.Resources.LoginButton_bg1;
             this.pictureBox9.Location = new System.Drawing.Point(817, 499);
             this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(297, 89);
+            this.pictureBox9.Size = new System.Drawing.Size(297, 106);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox9.TabIndex = 12;
             this.pictureBox9.TabStop = false;
