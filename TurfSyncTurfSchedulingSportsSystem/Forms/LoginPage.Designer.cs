@@ -33,7 +33,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.username = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -57,7 +57,7 @@
             this.pictureBox3.Image = global::TurfSyncTurfSchedulingSportsSystem.Properties.Resources.LoginPage_textbox_bg;
             this.pictureBox3.Location = new System.Drawing.Point(766, 257);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(375, 139);
+            this.pictureBox3.Size = new System.Drawing.Size(420, 139);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 3;
             this.pictureBox3.TabStop = false;
@@ -87,18 +87,22 @@
             this.pictureBox4.Image = global::TurfSyncTurfSchedulingSportsSystem.Properties.Resources.LoginPage_textbox_bg;
             this.pictureBox4.Location = new System.Drawing.Point(766, 373);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(375, 139);
+            this.pictureBox4.Size = new System.Drawing.Size(420, 139);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 4;
             this.pictureBox4.TabStop = false;
             // 
-            // textBox1
+            // username
             // 
-            this.textBox1.Location = new System.Drawing.Point(838, 297);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(270, 58);
-            this.textBox1.TabIndex = 5;
+            this.username.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.username.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.username.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.username.Location = new System.Drawing.Point(838, 297);
+            this.username.Multiline = true;
+            this.username.Name = "username";
+            this.username.Size = new System.Drawing.Size(303, 58);
+            this.username.TabIndex = 5;
+            this.username.Text = "Enter E-mail or Username";
             // 
             // LoginPage
             // 
@@ -107,7 +111,7 @@
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(1214, 681);
             this.ControlBox = false;
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.username);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.label1);
@@ -133,7 +137,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox username;
     }
 }
 
