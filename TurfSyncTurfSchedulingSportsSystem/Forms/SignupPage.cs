@@ -66,5 +66,10 @@ namespace singup
         {
 
         }
+
+        private void SignupPage_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

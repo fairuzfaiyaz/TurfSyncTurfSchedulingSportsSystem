@@ -173,6 +173,16 @@ namespace TurfSyncTurfSchedulingSportsSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ronaldo {
+            get {
+                object obj = ResourceManager.GetObject("ronaldo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Soccer_Scores_Web_UI_Design {
             get {
                 object obj = ResourceManager.GetObject("Soccer-Scores-Web-UI-Design", resourceCulture);
