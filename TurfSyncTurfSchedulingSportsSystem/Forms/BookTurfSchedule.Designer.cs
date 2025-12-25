@@ -50,6 +50,7 @@
             this.radioButton4 = new System.Windows.Forms.RadioButton();
             this.label8 = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -57,9 +58,9 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(322, 372);
+            this.dataGridView1.Location = new System.Drawing.Point(322, 306);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(968, 294);
+            this.dataGridView1.Size = new System.Drawing.Size(968, 360);
             this.dataGridView1.TabIndex = 0;
             // 
             // button1
@@ -289,12 +290,23 @@
             // 
             this.button5.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button5.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(322, 304);
+            this.button5.Location = new System.Drawing.Point(905, 205);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(153, 45);
+            this.button5.Size = new System.Drawing.Size(163, 80);
             this.button5.TabIndex = 26;
             this.button5.Text = "Search";
             this.button5.UseVisualStyleBackColor = false;
+            // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.button6.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.Location = new System.Drawing.Point(1074, 205);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(158, 80);
+            this.button6.TabIndex = 27;
+            this.button6.Text = "Book";
+            this.button6.UseVisualStyleBackColor = false;
             // 
             // BookTurfSchedule
             // 
@@ -302,6 +314,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(1325, 695);
+            this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.radioButton3);
             this.Controls.Add(this.radioButton4);
@@ -358,5 +371,6 @@
         private System.Windows.Forms.RadioButton radioButton4;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button6;
     }
 }
