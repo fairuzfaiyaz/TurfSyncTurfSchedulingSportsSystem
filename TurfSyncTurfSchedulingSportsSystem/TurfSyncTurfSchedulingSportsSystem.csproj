@@ -105,5 +105,11 @@
   <ItemGroup>
     <None Include="Resources\LoginPage_textbox_bg.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\artificial-turf-of-soccer-football-field-photo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\johannes-plenio-6XUA5KQ9-1k-unsplash.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
