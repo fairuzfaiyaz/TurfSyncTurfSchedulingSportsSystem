@@ -60,6 +60,7 @@
             this.button1.TabIndex = 0;
             this.button1.Text = "My Profile";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
@@ -91,6 +92,7 @@
             this.button3.TabIndex = 5;
             this.button3.Text = "Change Profile";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -102,6 +104,7 @@
             this.button4.TabIndex = 6;
             this.button4.Text = "Log out";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button8
             // 
@@ -159,6 +162,7 @@
             this.button12.TabIndex = 16;
             this.button12.Text = "Track Status";
             this.button12.UseVisualStyleBackColor = false;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
             // button13
             // 

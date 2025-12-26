@@ -48,5 +48,33 @@ namespace TurfSyncTurfSchedulingSportsSystem.Forms
             CancelBooking cancelBooking = new CancelBooking();
             cancelBooking.Show();
         }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+            TrackStatus trackStatus = new TrackStatus();
+            trackStatus.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+            LoginPage loginPage = new LoginPage();
+            loginPage.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+            ChangeProfile changeProfile = new ChangeProfile();
+            changeProfile.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+            MyProfile myProfile = new MyProfile();
+            myProfile.Show();
+        }
     }
 }

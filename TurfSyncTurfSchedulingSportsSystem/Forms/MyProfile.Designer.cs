@@ -54,6 +54,7 @@
             this.button5.TabIndex = 50;
             this.button5.Text = "Back";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // label2
             // 
@@ -156,6 +157,7 @@
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox8.TabIndex = 57;
             this.pictureBox8.TabStop = false;
+            this.pictureBox8.Click += new System.EventHandler(this.pictureBox8_Click);
             // 
             // button3
             // 
@@ -167,6 +169,7 @@
             this.button3.TabIndex = 58;
             this.button3.Text = "Change Profile";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // MyProfile
             // 

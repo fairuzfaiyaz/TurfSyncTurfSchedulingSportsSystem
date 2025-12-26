@@ -31,5 +31,24 @@ namespace TurfSyncTurfSchedulingSportsSystem.Forms
         {
 
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+            PlayerDashboard playerDashboard = new PlayerDashboard();
+            playerDashboard.Show();
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Password Updated Successfully!");
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Profile Updated Successfully!");
+
+        }
     }
 }

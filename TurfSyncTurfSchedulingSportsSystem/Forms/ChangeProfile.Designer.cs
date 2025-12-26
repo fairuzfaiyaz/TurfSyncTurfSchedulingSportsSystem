@@ -74,6 +74,7 @@
             this.button5.TabIndex = 50;
             this.button5.Text = "Back";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // label2
             // 
@@ -339,6 +340,7 @@
             this.button1.TabIndex = 72;
             this.button1.Text = "Confirm Password";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label14
             // 
@@ -410,6 +412,7 @@
             this.button2.TabIndex = 79;
             this.button2.Text = "Save Changes";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // ChangeProfile
             // 
