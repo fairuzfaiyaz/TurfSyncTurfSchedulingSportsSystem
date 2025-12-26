@@ -149,6 +149,12 @@
     <Compile Include="Forms\PlayerDashboard.Designer.cs">
       <DependentUpon>PlayerDashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\PostMatchCleanUpConfirmation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PostMatchCleanUpConfirmation.Designer.cs">
+      <DependentUpon>PostMatchCleanUpConfirmation.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\RescheduleBooking.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -238,6 +244,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\PlayerDashboard.resx">
       <DependentUpon>PlayerDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PostMatchCleanUpConfirmation.resx">
+      <DependentUpon>PostMatchCleanUpConfirmation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\RescheduleBooking.resx">
       <DependentUpon>RescheduleBooking.cs</DependentUpon>
