@@ -26,5 +26,41 @@ namespace TurfSyncTurfSchedulingSportsSystem.Forms
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Dashboard_Users dashboard_Users = new Dashboard_Users();
+            dashboard_Users.Show();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            CustomerArrivalCheck check = new CustomerArrivalCheck();
+            check.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            StartandEndMatchTimer timer = new StartandEndMatchTimer();
+            timer.Show();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            GroundPrepare groundPrepare
+                = new GroundPrepare();
+            groundPrepare.Show();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            EquipmentHandling equipmentHandling = new EquipmentHandling();
+            equipmentHandling.Show();
+        }
     }
 }

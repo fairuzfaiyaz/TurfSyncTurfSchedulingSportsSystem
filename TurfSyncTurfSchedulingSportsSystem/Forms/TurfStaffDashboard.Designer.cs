@@ -73,6 +73,7 @@
             this.button8.TabIndex = 28;
             this.button8.Text = "Customer Arrival";
             this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // button4
             // 
@@ -87,6 +88,7 @@
             this.button4.Text = "Start and End Match Timer";
             this.button4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
@@ -100,6 +102,7 @@
             this.button5.TabIndex = 32;
             this.button5.Text = "Ground Preparation Status";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button7
             // 
@@ -113,6 +116,7 @@
             this.button7.TabIndex = 34;
             this.button7.Text = "Equipment Handling";
             this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button2
             // 
@@ -152,6 +156,7 @@
             this.button1.TabIndex = 41;
             this.button1.Text = "Back";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // pictureBox11
             // 
