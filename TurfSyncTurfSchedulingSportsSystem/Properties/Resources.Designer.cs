@@ -113,6 +113,26 @@ namespace TurfSyncTurfSchedulingSportsSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _97ced3cc1e6e9d90d01510eebdb0a6c7 {
+            get {
+                object obj = ResourceManager.GetObject("97ced3cc1e6e9d90d01510eebdb0a6c7", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _9e2c265a21a2a7cf8741956a729d0d07 {
+            get {
+                object obj = ResourceManager.GetObject("9e2c265a21a2a7cf8741956a729d0d07", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap a688e687e66e183d9af91d260c17118b {
             get {
                 object obj = ResourceManager.GetObject("a688e687e66e183d9af91d260c17118b", resourceCulture);
@@ -153,6 +173,16 @@ namespace TurfSyncTurfSchedulingSportsSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bcb9ce6856c1358ab3fa012afbffba591 {
+            get {
+                object obj = ResourceManager.GetObject("bcb9ce6856c1358ab3fa012afbffba591", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap bcd34658d2db4b6b6d2bc08dc4d822ac {
             get {
                 object obj = ResourceManager.GetObject("bcd34658d2db4b6b6d2bc08dc4d822ac", resourceCulture);
@@ -163,9 +193,29 @@ namespace TurfSyncTurfSchedulingSportsSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bfc17b5d3210558d2c5a793357449ae6 {
+            get {
+                object obj = ResourceManager.GetObject("bfc17b5d3210558d2c5a793357449ae6", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap c4bd31be3249f31084aa6ae4564e79e8 {
             get {
                 object obj = ResourceManager.GetObject("c4bd31be3249f31084aa6ae4564e79e8", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cac88339581b5d37f6980e3c12530f38 {
+            get {
+                object obj = ResourceManager.GetObject("cac88339581b5d37f6980e3c12530f38", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

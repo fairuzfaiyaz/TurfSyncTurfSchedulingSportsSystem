@@ -80,11 +80,12 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.Lime;
-            this.button4.Location = new System.Drawing.Point(1043, 219);
+            this.button4.Location = new System.Drawing.Point(1043, 225);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(212, 39);
+            this.button4.Size = new System.Drawing.Size(212, 32);
             this.button4.TabIndex = 30;
-            this.button4.Text = "Start & End Match Timer";
+            this.button4.Text = "Start and End Match Timer";
+            this.button4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button4.UseVisualStyleBackColor = false;
             // 
             // button5
