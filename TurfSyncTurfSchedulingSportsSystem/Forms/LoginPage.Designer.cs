@@ -157,6 +157,7 @@
             // 
             // pictureBox9
             // 
+            this.pictureBox9.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox9.Image = global::TurfSyncTurfSchedulingSportsSystem.Properties.Resources.LoginButton_bg1;
             this.pictureBox9.Location = new System.Drawing.Point(817, 499);
             this.pictureBox9.Name = "pictureBox9";

@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -100,6 +101,12 @@
     <Compile Include="Forms\LoginPage.Designer.cs">
       <DependentUpon>LoginPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\TrackStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TrackStatus.Designer.cs">
+      <DependentUpon>TrackStatus.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\TurfStaffDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -134,6 +141,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\LoginPage.resx">
       <DependentUpon>LoginPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TrackStatus.resx">
+      <DependentUpon>TrackStatus.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\TurfStaffDashboard.resx">
       <DependentUpon>TurfStaffDashboard.cs</DependentUpon>
