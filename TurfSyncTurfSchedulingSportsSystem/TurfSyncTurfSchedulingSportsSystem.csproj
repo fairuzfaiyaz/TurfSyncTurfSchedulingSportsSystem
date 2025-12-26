@@ -113,6 +113,12 @@
     <Compile Include="Forms\CustomerArrivalCheck.Designer.cs">
       <DependentUpon>CustomerArrivalCheck.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\EquipmentHandling.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EquipmentHandling.Designer.cs">
+      <DependentUpon>EquipmentHandling.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\GroundPrepare.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -208,6 +214,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\CustomerArrivalCheck.resx">
       <DependentUpon>CustomerArrivalCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EquipmentHandling.resx">
+      <DependentUpon>EquipmentHandling.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\GroundPrepare.resx">
       <DependentUpon>GroundPrepare.cs</DependentUpon>
@@ -381,6 +390,36 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\97ced3cc1e6e9d90d01510eebdb0a6c7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\48105ac17de59b922e79e2ae1cb7f39a.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2025-12-27 003443.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beff96ce4f7a265ead09bd17436e4766.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\14006449681875fca77441c892f2c5b2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beff96ce4f7a265ead09bd17436e47661.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ff644756023be2c8e624322160f4a965.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6c7876e66edffe9c2281ac2bdd23a895.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5c968dfa87979e60edb4309e56495415.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c4bd31be3249f31084aa6ae4564e79e81.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3205bc83145fc5826fb3741abeb6edf7.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
