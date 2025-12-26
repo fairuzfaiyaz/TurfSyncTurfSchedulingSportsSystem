@@ -343,6 +343,36 @@ namespace TurfSyncTurfSchedulingSportsSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2025_12_26_173406 {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot 2025-12-26 173406", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2025_12_26_174354 {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot 2025-12-26 174354", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2025_12_26_174515 {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot 2025-12-26 174515", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Soccer_Scores_Web_UI_Design {
             get {
                 object obj = ResourceManager.GetObject("Soccer-Scores-Web-UI-Design", resourceCulture);
