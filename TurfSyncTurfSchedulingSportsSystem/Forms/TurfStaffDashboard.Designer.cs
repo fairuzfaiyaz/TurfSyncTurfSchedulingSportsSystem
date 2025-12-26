@@ -35,6 +35,8 @@
             this.button7 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
@@ -46,8 +48,7 @@
             this.signUp = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -58,7 +59,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             this.SuspendLayout();
             // 
             // button8
@@ -139,6 +139,29 @@
             this.button3.TabIndex = 38;
             this.button3.Text = "Clean-Up Confirmation";
             this.button3.UseVisualStyleBackColor = false;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Black;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.Lime;
+            this.button1.Location = new System.Drawing.Point(12, 12);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(80, 27);
+            this.button1.TabIndex = 41;
+            this.button1.Text = "Back";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.Image = global::TurfSyncTurfSchedulingSportsSystem.Properties.Resources.c4bd31be3249f31084aa6ae4564e79e8;
+            this.pictureBox11.Location = new System.Drawing.Point(0, 4);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(105, 45);
+            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox11.TabIndex = 40;
+            this.pictureBox11.TabStop = false;
             // 
             // pictureBox10
             // 
@@ -230,7 +253,7 @@
             this.signUp.Font = new System.Drawing.Font("Century Gothic", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.signUp.ForeColor = System.Drawing.Color.Lime;
             this.signUp.Image = global::TurfSyncTurfSchedulingSportsSystem.Properties.Resources._2c02cdf777e6c239ae53c5e49b8b9f86;
-            this.signUp.Location = new System.Drawing.Point(822, 85);
+            this.signUp.Location = new System.Drawing.Point(823, 94);
             this.signUp.Name = "signUp";
             this.signUp.Size = new System.Drawing.Size(314, 35);
             this.signUp.TabIndex = 14;
@@ -259,34 +282,12 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Black;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Lime;
-            this.button1.Location = new System.Drawing.Point(12, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(80, 27);
-            this.button1.TabIndex = 41;
-            this.button1.Text = "Back";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox11
-            // 
-            this.pictureBox11.Image = global::TurfSyncTurfSchedulingSportsSystem.Properties.Resources.c4bd31be3249f31084aa6ae4564e79e8;
-            this.pictureBox11.Location = new System.Drawing.Point(0, 4);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(105, 45);
-            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox11.TabIndex = 40;
-            this.pictureBox11.TabStop = false;
-            // 
             // TurfStaffDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1314, 772);
+            this.Controls.Add(this.signUp);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox11);
             this.Controls.Add(this.pictureBox10);
@@ -303,11 +304,11 @@
             this.Controls.Add(this.button8);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.signUp);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Name = "TurfStaffDashboard";
             this.Text = "TrufStuffDashboard";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
@@ -318,7 +319,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
