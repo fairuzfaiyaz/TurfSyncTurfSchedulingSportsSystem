@@ -149,6 +149,7 @@
             // 
             // pictureBox7
             // 
+            this.pictureBox7.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.pictureBox7.Image = global::TurfSyncTurfSchedulingSportsSystem.Properties.Resources.bcb9ce6856c1358ab3fa012afbffba591;
             this.pictureBox7.Location = new System.Drawing.Point(83, 146);
             this.pictureBox7.Name = "pictureBox7";
@@ -193,6 +194,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.groupBox1.ForeColor = System.Drawing.Color.Lime;
             this.groupBox1.Location = new System.Drawing.Point(140, 232);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(1073, 333);

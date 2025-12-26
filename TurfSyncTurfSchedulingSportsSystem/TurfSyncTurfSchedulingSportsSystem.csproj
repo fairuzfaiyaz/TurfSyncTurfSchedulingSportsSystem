@@ -442,5 +442,17 @@
   <ItemGroup>
     <None Include="Resources\3205bc83145fc5826fb3741abeb6edf71.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eb39974a44bc8a55f30f5bb4caf79630.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3205bc83145fc5826fb3741abeb6edf72.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\89ec4cb10a283a83f87dbc2a08946cf3%3b%3b%3b%3b.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dg.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
