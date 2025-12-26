@@ -33,5 +33,10 @@ namespace TurfSyncTurfSchedulingSportsSystem.Forms
             PlayerDashboard playerDashboard = new PlayerDashboard();
             playerDashboard.Show(); 
         }
+
+        private void pictureBox8_Click(object sender, EventArgs e)
+        {
+            this.Dispose(true);
+        }
     }
 }

@@ -44,8 +44,10 @@
             this.BookingID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.AmountPaid = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BookingType = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.SuspendLayout();
             // 
             // button5
@@ -58,6 +60,7 @@
             this.button5.TabIndex = 46;
             this.button5.Text = "Back";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button4
             // 
@@ -111,6 +114,7 @@
             this.button1.TabIndex = 40;
             this.button1.Text = "My Profile";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // pictureBox1
             // 
@@ -186,12 +190,24 @@
             this.BookingType.HeaderText = "Booking Type (Hourly / Tournament)";
             this.BookingType.Name = "BookingType";
             // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Image = global::TurfSyncTurfSchedulingSportsSystem.Properties.Resources.close;
+            this.pictureBox8.Location = new System.Drawing.Point(1321, 12);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(80, 61);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox8.TabIndex = 52;
+            this.pictureBox8.TabStop = false;
+            this.pictureBox8.Click += new System.EventHandler(this.pictureBox8_Click);
+            // 
             // BookingHistoryPlayer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(1413, 752);
+            this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.button5);
@@ -206,6 +222,7 @@
             this.Text = "BookingHistoryPlayer";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -229,5 +246,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn BookingID;
         private System.Windows.Forms.DataGridViewTextBoxColumn AmountPaid;
         private System.Windows.Forms.DataGridViewTextBoxColumn BookingType;
+        private System.Windows.Forms.PictureBox pictureBox8;
     }
 }

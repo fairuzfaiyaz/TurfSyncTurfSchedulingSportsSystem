@@ -16,5 +16,23 @@ namespace TurfSyncTurfSchedulingSportsSystem.Forms
         {
             InitializeComponent();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+            PlayerDashboard playerDashboard = new PlayerDashboard();
+            playerDashboard.Show();
+        }
+
+        private void pictureBox8_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
