@@ -65,6 +65,12 @@
     <Compile Include="Forms\CancelBooking.Designer.cs">
       <DependentUpon>CancelBooking.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\ChangeProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ChangeProfile.Designer.cs">
+      <DependentUpon>ChangeProfile.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\CustomerArrivalCheck.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,6 +82,12 @@
     </Compile>
     <Compile Include="Forms\ManagerDashboard.Designer.cs">
       <DependentUpon>ManagerDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MyProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MyProfile.Designer.cs">
+      <DependentUpon>MyProfile.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\PlayerDashboard.cs">
       <SubType>Form</SubType>
@@ -124,11 +136,17 @@
     <EmbeddedResource Include="Forms\CancelBooking.resx">
       <DependentUpon>CancelBooking.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ChangeProfile.resx">
+      <DependentUpon>ChangeProfile.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\CustomerArrivalCheck.resx">
       <DependentUpon>CustomerArrivalCheck.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ManagerDashboard.resx">
       <DependentUpon>ManagerDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MyProfile.resx">
+      <DependentUpon>MyProfile.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\PlayerDashboard.resx">
       <DependentUpon>PlayerDashboard.cs</DependentUpon>
