@@ -53,6 +53,36 @@
     <Compile Include="Forms\AdminDashboard.Designer.cs">
       <DependentUpon>AdminDashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\AdminGlobalSettingsBtn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AdminGlobalSettingsBtn.Designer.cs">
+      <DependentUpon>AdminGlobalSettingsBtn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AdminManagerBtn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AdminManagerBtn.Designer.cs">
+      <DependentUpon>AdminManagerBtn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AdminPricingBtn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AdminPricingBtn.Designer.cs">
+      <DependentUpon>AdminPricingBtn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AdminTurfBookingBtn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AdminTurfBookingBtn.Designer.cs">
+      <DependentUpon>AdminTurfBookingBtn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AdminTurfLocationBtn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AdminTurfLocationBtn.Designer.cs">
+      <DependentUpon>AdminTurfLocationBtn.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\BookingHistoryPlayer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -148,6 +178,21 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\AdminDashboard.resx">
       <DependentUpon>AdminDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AdminGlobalSettingsBtn.resx">
+      <DependentUpon>AdminGlobalSettingsBtn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AdminManagerBtn.resx">
+      <DependentUpon>AdminManagerBtn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AdminPricingBtn.resx">
+      <DependentUpon>AdminPricingBtn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AdminTurfBookingBtn.resx">
+      <DependentUpon>AdminTurfBookingBtn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AdminTurfLocationBtn.resx">
+      <DependentUpon>AdminTurfLocationBtn.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\BookingHistoryPlayer.resx">
       <DependentUpon>BookingHistoryPlayer.cs</DependentUpon>
