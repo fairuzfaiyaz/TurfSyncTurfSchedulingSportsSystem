@@ -219,7 +219,7 @@
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox1);
             this.Name = "StartandEndMatchTimer";
-            this.Text = " i";
+            this.Text = " StartAndEndMatchTimer";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
