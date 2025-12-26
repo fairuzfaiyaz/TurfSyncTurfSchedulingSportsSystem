@@ -118,6 +118,9 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="bcb9ce6856c1358ab3fa012afbffba591" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bcb9ce6856c1358ab3fa012afbffba591.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="a688e687e66e183d9af91d260c17118b" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\a688e687e66e183d9af91d260c17118b.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -160,14 +163,8 @@
   <data name="LoginButton_bg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LoginButton_bg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="bcb9ce6856c1358ab3fa012afbffba59" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bcb9ce6856c1358ab3fa012afbffba59.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="johannes-plenio-6XUA5KQ9-1k-unsplash" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\johannes-plenio-6XUA5KQ9-1k-unsplash.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cac88339581b5d37f6980e3c12530f38" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cac88339581b5d37f6980e3c12530f38.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="4355f71e1bccb611f14b0e92fb7b7edf1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\4355f71e1bccb611f14b0e92fb7b7edf1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -190,8 +187,8 @@
   <data name="LoginPage_UpperPicture" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LoginPage_UpperPicture.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="LoginPage_textbox_bg" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LoginPage_textbox_bg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="cac88339581b5d37f6980e3c12530f38" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cac88339581b5d37f6980e3c12530f38.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="4355f71e1bccb611f14b0e92fb7b7edf" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\4355f71e1bccb611f14b0e92fb7b7edf.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -202,14 +199,20 @@
   <data name="57de839cfc4841e59f8376a9af016e16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\57de839cfc4841e59f8376a9af016e16.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="eye" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\eye.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="LoginPage_textbox_bg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LoginPage_textbox_bg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bcb9ce6856c1358ab3fa012afbffba59" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bcb9ce6856c1358ab3fa012afbffba59.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="c4bd31be3249f31084aa6ae4564e79e8" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\c4bd31be3249f31084aa6ae4564e79e8.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="LoginButton_bg1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LoginButton_bg1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eye" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eye.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="2c02cdf777e6c239ae53c5e49b8b9f86" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\2c02cdf777e6c239ae53c5e49b8b9f86.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -226,7 +229,7 @@
   <data name="Screenshot 2025-12-26 174515" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Screenshot 2025-12-26 174515.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="bcb9ce6856c1358ab3fa012afbffba591" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bcb9ce6856c1358ab3fa012afbffba591.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="97ced3cc1e6e9d90d01510eebdb0a6c7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\97ced3cc1e6e9d90d01510eebdb0a6c7.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

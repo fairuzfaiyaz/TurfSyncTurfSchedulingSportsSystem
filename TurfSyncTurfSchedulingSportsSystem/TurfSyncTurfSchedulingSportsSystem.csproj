@@ -77,6 +77,12 @@
     <Compile Include="Forms\CustomerArrivalCheck.Designer.cs">
       <DependentUpon>CustomerArrivalCheck.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\GroundPrepare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GroundPrepare.Designer.cs">
+      <DependentUpon>GroundPrepare.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\ManagerDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -147,6 +153,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\CustomerArrivalCheck.resx">
       <DependentUpon>CustomerArrivalCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GroundPrepare.resx">
+      <DependentUpon>GroundPrepare.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ManagerDashboard.resx">
       <DependentUpon>ManagerDashboard.cs</DependentUpon>
@@ -315,6 +324,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\bcb9ce6856c1358ab3fa012afbffba591.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\97ced3cc1e6e9d90d01510eebdb0a6c7.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
