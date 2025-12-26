@@ -53,6 +53,12 @@
     <Compile Include="Forms\AdminDashboard.Designer.cs">
       <DependentUpon>AdminDashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\BookingHistoryPlayer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BookingHistoryPlayer.Designer.cs">
+      <DependentUpon>BookingHistoryPlayer.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\BookTurfSchedule.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -142,6 +148,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\AdminDashboard.resx">
       <DependentUpon>AdminDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BookingHistoryPlayer.resx">
+      <DependentUpon>BookingHistoryPlayer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\BookTurfSchedule.resx">
       <DependentUpon>BookTurfSchedule.cs</DependentUpon>
