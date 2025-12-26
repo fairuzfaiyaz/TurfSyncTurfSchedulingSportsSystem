@@ -8,5 +8,6 @@ namespace TurfSyncTurfSchedulingSportsSystem.Interfaces
 {
     internal interface IAuthenticator
     {
+
     }
 }
