@@ -40,6 +40,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -85,7 +86,7 @@
             this.label1.ForeColor = System.Drawing.Color.Lime;
             this.label1.Image = global::TurfSyncTurfSchedulingSportsSystem.Properties.Resources.c4bd31be3249f31084aa6ae4564e79e8;
             this.label1.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.label1.Location = new System.Drawing.Point(976, 215);
+            this.label1.Location = new System.Drawing.Point(971, 170);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(225, 33);
             this.label1.TabIndex = 43;
@@ -94,7 +95,7 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = global::TurfSyncTurfSchedulingSportsSystem.Properties.Resources.Screenshot_2025_12_26_173406;
-            this.pictureBox4.Location = new System.Drawing.Point(959, 243);
+            this.pictureBox4.Location = new System.Drawing.Point(954, 198);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(269, 30);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -119,7 +120,7 @@
             this.label3.ForeColor = System.Drawing.Color.Lime;
             this.label3.Image = global::TurfSyncTurfSchedulingSportsSystem.Properties.Resources.c4bd31be3249f31084aa6ae4564e79e8;
             this.label3.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.label3.Location = new System.Drawing.Point(172, 215);
+            this.label3.Location = new System.Drawing.Point(167, 170);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(235, 33);
             this.label3.TabIndex = 37;
@@ -129,7 +130,7 @@
             // pictureBox6
             // 
             this.pictureBox6.Image = global::TurfSyncTurfSchedulingSportsSystem.Properties.Resources.Screenshot_2025_12_26_173406;
-            this.pictureBox6.Location = new System.Drawing.Point(155, 243);
+            this.pictureBox6.Location = new System.Drawing.Point(150, 198);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(269, 30);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -149,9 +150,9 @@
             // pictureBox7
             // 
             this.pictureBox7.Image = global::TurfSyncTurfSchedulingSportsSystem.Properties.Resources.bcb9ce6856c1358ab3fa012afbffba591;
-            this.pictureBox7.Location = new System.Drawing.Point(98, 200);
+            this.pictureBox7.Location = new System.Drawing.Point(98, 148);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(1173, 491);
+            this.pictureBox7.Size = new System.Drawing.Size(1173, 543);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox7.TabIndex = 42;
             this.pictureBox7.TabStop = false;
@@ -164,7 +165,7 @@
             this.label2.ForeColor = System.Drawing.Color.Lime;
             this.label2.Image = global::TurfSyncTurfSchedulingSportsSystem.Properties.Resources.c4bd31be3249f31084aa6ae4564e79e8;
             this.label2.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.label2.Location = new System.Drawing.Point(503, 86);
+            this.label2.Location = new System.Drawing.Point(503, 37);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(332, 39);
             this.label2.TabIndex = 12;
@@ -173,7 +174,7 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = global::TurfSyncTurfSchedulingSportsSystem.Properties.Resources.Screenshot_2025_12_26_171719;
-            this.pictureBox5.Location = new System.Drawing.Point(429, 109);
+            this.pictureBox5.Location = new System.Drawing.Point(429, 60);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(495, 70);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -190,11 +191,21 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Location = new System.Drawing.Point(155, 234);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(1073, 333);
+            this.groupBox1.TabIndex = 45;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "groupBox1";
+            // 
             // StartandEndMatchTimer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1333, 788);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.button1);
@@ -208,7 +219,7 @@
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox1);
             this.Name = "StartandEndMatchTimer";
-            this.Text = "StartandEndMatchTimer";
+            this.Text = " i";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
@@ -235,5 +246,6 @@
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }
