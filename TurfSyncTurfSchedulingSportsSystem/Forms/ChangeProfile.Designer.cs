@@ -120,7 +120,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(353, 243);
+            this.label4.Location = new System.Drawing.Point(353, 249);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(87, 22);
             this.label4.TabIndex = 52;
@@ -225,7 +225,7 @@
             // 
             this.radioButton2.AutoSize = true;
             this.radioButton2.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.Location = new System.Drawing.Point(553, 242);
+            this.radioButton2.Location = new System.Drawing.Point(553, 248);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(80, 28);
             this.radioButton2.TabIndex = 62;
@@ -238,7 +238,7 @@
             // 
             this.radioButton1.AutoSize = true;
             this.radioButton1.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.Location = new System.Drawing.Point(671, 243);
+            this.radioButton1.Location = new System.Drawing.Point(671, 249);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(106, 28);
             this.radioButton1.TabIndex = 63;
