@@ -130,6 +130,7 @@
             this.button2.TabIndex = 36;
             this.button2.Text = "Report Field Problems";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -143,6 +144,7 @@
             this.button3.TabIndex = 38;
             this.button3.Text = "Clean-Up Confirmation";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button1
             // 

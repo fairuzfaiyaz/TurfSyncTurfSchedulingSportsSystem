@@ -62,5 +62,19 @@ namespace TurfSyncTurfSchedulingSportsSystem.Forms
             EquipmentHandling equipmentHandling = new EquipmentHandling();
             equipmentHandling.Show();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Post_Match_Clean_Up_Confirmation post_Match_Clean_Up_Confirmation = new Post_Match_Clean_Up_Confirmation();
+            post_Match_Clean_Up_Confirmation.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            
+
+        }
     }
 }
