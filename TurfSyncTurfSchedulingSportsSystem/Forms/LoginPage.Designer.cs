@@ -81,6 +81,7 @@
             this.username.Size = new System.Drawing.Size(273, 40);
             this.username.TabIndex = 5;
             this.username.Text = "Enter E-mail or Username";
+            this.username.TextChanged += new System.EventHandler(this.username_TextChanged);
             // 
             // textBox1
             // 
@@ -101,7 +102,7 @@
             this.checkBox1.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.checkBox1.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox1.ForeColor = System.Drawing.Color.Teal;
-            this.checkBox1.Location = new System.Drawing.Point(975, 453);
+            this.checkBox1.Location = new System.Drawing.Point(969, 455);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(196, 29);
             this.checkBox1.TabIndex = 13;

@@ -66,5 +66,12 @@ namespace TurfSyncTurfSchedulingSportsSystem
         {
             this.Dispose();
         }
+
+        private void username_TextChanged(object sender, EventArgs e)
+        {
+            //if (username.Click() )
+            //{   
+            //    username.Clear();
+        }
     }
 }
