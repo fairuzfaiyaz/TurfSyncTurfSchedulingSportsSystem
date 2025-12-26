@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace TurfSyncTurfSchedulingSportsSystem.Forms
 {
-    public partial class customeArrive : Form
+    public partial class CustomerArrivalCheck : Form
     {
-        public customeArrive()
+        public CustomerArrivalCheck()
         {
             InitializeComponent();
         }

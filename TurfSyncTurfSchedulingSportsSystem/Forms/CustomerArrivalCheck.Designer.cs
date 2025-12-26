@@ -1,6 +1,6 @@
 ﻿namespace TurfSyncTurfSchedulingSportsSystem.Forms
 {
-    partial class customeArrive
+    partial class CustomerArrivalCheck
     {
         /// <summary>
         /// Required designer variable.

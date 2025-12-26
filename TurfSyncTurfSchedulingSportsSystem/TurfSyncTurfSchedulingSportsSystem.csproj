@@ -64,11 +64,11 @@
     <Compile Include="Forms\CancelBooking.Designer.cs">
       <DependentUpon>CancelBooking.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\customeArrive.cs">
+    <Compile Include="Forms\CustomerArrivalCheck.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\customeArrive.Designer.cs">
-      <DependentUpon>customeArrive.cs</DependentUpon>
+    <Compile Include="Forms\CustomerArrivalCheck.Designer.cs">
+      <DependentUpon>CustomerArrivalCheck.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\ManagerDashboard.cs">
       <SubType>Form</SubType>
@@ -117,8 +117,8 @@
     <EmbeddedResource Include="Forms\CancelBooking.resx">
       <DependentUpon>CancelBooking.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\customeArrive.resx">
-      <DependentUpon>customeArrive.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\CustomerArrivalCheck.resx">
+      <DependentUpon>CustomerArrivalCheck.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ManagerDashboard.resx">
       <DependentUpon>ManagerDashboard.cs</DependentUpon>
