@@ -76,5 +76,19 @@ namespace TurfSyncTurfSchedulingSportsSystem.Forms
             MyProfile myProfile = new MyProfile();
             myProfile.Show();
         }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+            RescheduleBooking rescheduleBooking = new RescheduleBooking();
+            rescheduleBooking.Show();
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+            BookingHistoryPlayer x = new BookingHistoryPlayer();
+            x.Show();
+        }
     }
 }
