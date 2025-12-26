@@ -113,6 +113,12 @@
     <Compile Include="Forms\LoginPage.Designer.cs">
       <DependentUpon>LoginPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\StartandEndMatchTimer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\StartandEndMatchTimer.Designer.cs">
+      <DependentUpon>StartandEndMatchTimer.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\TrackStatus.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -159,6 +165,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\LoginPage.resx">
       <DependentUpon>LoginPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\StartandEndMatchTimer.resx">
+      <DependentUpon>StartandEndMatchTimer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\TrackStatus.resx">
       <DependentUpon>TrackStatus.cs</DependentUpon>
@@ -294,6 +303,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Screenshot 2025-12-26 174515.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bfc17b5d3210558d2c5a793357449ae6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9e2c265a21a2a7cf8741956a729d0d07.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cac88339581b5d37f6980e3c12530f38.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bcb9ce6856c1358ab3fa012afbffba591.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
