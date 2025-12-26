@@ -56,7 +56,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button2.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.Lime;
-            this.button2.Location = new System.Drawing.Point(255, 598);
+            this.button2.Location = new System.Drawing.Point(240, 596);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(152, 32);
             this.button2.TabIndex = 35;
@@ -70,7 +70,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Lime;
-            this.button1.Location = new System.Drawing.Point(982, 598);
+            this.button1.Location = new System.Drawing.Point(967, 596);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(152, 32);
             this.button1.TabIndex = 41;
@@ -86,7 +86,7 @@
             this.label1.ForeColor = System.Drawing.Color.Lime;
             this.label1.Image = global::TurfSyncTurfSchedulingSportsSystem.Properties.Resources.c4bd31be3249f31084aa6ae4564e79e8;
             this.label1.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.label1.Location = new System.Drawing.Point(971, 170);
+            this.label1.Location = new System.Drawing.Point(956, 168);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(225, 33);
             this.label1.TabIndex = 43;
@@ -95,7 +95,7 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = global::TurfSyncTurfSchedulingSportsSystem.Properties.Resources.Screenshot_2025_12_26_173406;
-            this.pictureBox4.Location = new System.Drawing.Point(954, 198);
+            this.pictureBox4.Location = new System.Drawing.Point(939, 196);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(269, 30);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -105,7 +105,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::TurfSyncTurfSchedulingSportsSystem.Properties.Resources.c4bd31be3249f31084aa6ae4564e79e8;
-            this.pictureBox3.Location = new System.Drawing.Point(954, 573);
+            this.pictureBox3.Location = new System.Drawing.Point(939, 571);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(208, 79);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -120,7 +120,7 @@
             this.label3.ForeColor = System.Drawing.Color.Lime;
             this.label3.Image = global::TurfSyncTurfSchedulingSportsSystem.Properties.Resources.c4bd31be3249f31084aa6ae4564e79e8;
             this.label3.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.label3.Location = new System.Drawing.Point(167, 170);
+            this.label3.Location = new System.Drawing.Point(152, 168);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(235, 33);
             this.label3.TabIndex = 37;
@@ -130,7 +130,7 @@
             // pictureBox6
             // 
             this.pictureBox6.Image = global::TurfSyncTurfSchedulingSportsSystem.Properties.Resources.Screenshot_2025_12_26_173406;
-            this.pictureBox6.Location = new System.Drawing.Point(150, 198);
+            this.pictureBox6.Location = new System.Drawing.Point(135, 196);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(269, 30);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -140,7 +140,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::TurfSyncTurfSchedulingSportsSystem.Properties.Resources.c4bd31be3249f31084aa6ae4564e79e8;
-            this.pictureBox2.Location = new System.Drawing.Point(227, 573);
+            this.pictureBox2.Location = new System.Drawing.Point(212, 571);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(208, 79);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -150,7 +150,7 @@
             // pictureBox7
             // 
             this.pictureBox7.Image = global::TurfSyncTurfSchedulingSportsSystem.Properties.Resources.bcb9ce6856c1358ab3fa012afbffba591;
-            this.pictureBox7.Location = new System.Drawing.Point(98, 148);
+            this.pictureBox7.Location = new System.Drawing.Point(83, 146);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(1173, 543);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -184,16 +184,16 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::TurfSyncTurfSchedulingSportsSystem.Properties.Resources._9e2c265a21a2a7cf8741956a729d0d07;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 1);
+            this.pictureBox1.Location = new System.Drawing.Point(-1, 1);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1336, 788);
+            this.pictureBox1.Size = new System.Drawing.Size(1349, 788);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
             // groupBox1
             // 
-            this.groupBox1.Location = new System.Drawing.Point(155, 234);
+            this.groupBox1.Location = new System.Drawing.Point(140, 232);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(1073, 333);
             this.groupBox1.TabIndex = 45;
