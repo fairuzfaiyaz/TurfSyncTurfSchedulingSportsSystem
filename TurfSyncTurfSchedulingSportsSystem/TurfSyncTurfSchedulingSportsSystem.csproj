@@ -294,6 +294,9 @@
     <EmbeddedResource Include="Forms\TrackStatus.resx">
       <DependentUpon>TrackStatus.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TurfManagerDashboard.resx">
+      <DependentUpon>TurfManagerDashboard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\TurfStaffDashboard.resx">
       <DependentUpon>TurfStaffDashboard.cs</DependentUpon>
     </EmbeddedResource>

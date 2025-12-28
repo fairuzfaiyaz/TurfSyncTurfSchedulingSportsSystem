@@ -25,5 +25,26 @@ namespace TurfSyncTurfSchedulingSportsSystem.Forms
         {
 
         }
+
+        private void textBox8_TextChanged(object sender, EventArgs e)
+        {
+            this.Dispose();
+            MaintainTurfManager maintainTurfManager = new MaintainTurfManager();
+            maintainTurfManager.ShowDialog();
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+            this.Close();
+            AddingMenuTurfManager   adding = new AddingMenuTurfManager();
+            adding.ShowDialog();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+            LoginPage loginPage = new LoginPage();
+            loginPage.ShowDialog();
+        }
     }
 }

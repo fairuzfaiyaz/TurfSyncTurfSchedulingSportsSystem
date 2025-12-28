@@ -28,7 +28,7 @@ namespace TurfSyncTurfSchedulingSportsSystem.Forms
         private void button2_Click(object sender, EventArgs e)
         {
             this.Dispose();
-            ManagerDashboard managerDashboard = new ManagerDashboard();
+            TurfManagerDashboard managerDashboard = new TurfManagerDashboard();
             managerDashboard.Show();
         }
 
