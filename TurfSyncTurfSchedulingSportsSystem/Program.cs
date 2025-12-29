@@ -20,7 +20,6 @@ namespace TurfSyncTurfSchedulingSportsSystem
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new LoginPage());
             
-
         }
     }
 }
