@@ -48,88 +48,90 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Forms\AddingMenuTurfManager.cs">
+    <Compile Include="DataDLL\DatabaseHelper.cs" />
+    <Compile Include="DataDLL\UserRepository.cs" />
+    <Compile Include="Forms\TurfManagerDashboardForms\AddingMenuTurfManager.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\AddingMenuTurfManager.Designer.cs">
+    <Compile Include="Forms\TurfManagerDashboardForms\AddingMenuTurfManager.Designer.cs">
       <DependentUpon>AddingMenuTurfManager.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\AdminDashboard.cs">
+    <Compile Include="Forms\AdminDashboardForms\AdminDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\AdminDashboard.Designer.cs">
+    <Compile Include="Forms\AdminDashboardForms\AdminDashboard.Designer.cs">
       <DependentUpon>AdminDashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\AdminGlobalSettingsBtn.cs">
+    <Compile Include="Forms\AdminDashboardForms\AdminGlobalSettingsBtn.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\AdminGlobalSettingsBtn.Designer.cs">
+    <Compile Include="Forms\AdminDashboardForms\AdminGlobalSettingsBtn.Designer.cs">
       <DependentUpon>AdminGlobalSettingsBtn.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\AdminManagerBtn.cs">
+    <Compile Include="Forms\AdminDashboardForms\AdminManagerBtn.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\AdminManagerBtn.Designer.cs">
+    <Compile Include="Forms\AdminDashboardForms\AdminManagerBtn.Designer.cs">
       <DependentUpon>AdminManagerBtn.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\AdminPricingBtn.cs">
+    <Compile Include="Forms\AdminDashboardForms\AdminPricingBtn.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\AdminPricingBtn.Designer.cs">
+    <Compile Include="Forms\AdminDashboardForms\AdminPricingBtn.Designer.cs">
       <DependentUpon>AdminPricingBtn.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\AdminRevenueBtn.cs">
+    <Compile Include="Forms\AdminDashboardForms\AdminRevenueBtn.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\AdminRevenueBtn.Designer.cs">
+    <Compile Include="Forms\AdminDashboardForms\AdminRevenueBtn.Designer.cs">
       <DependentUpon>AdminRevenueBtn.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\AdminSystemReportBtn.cs">
+    <Compile Include="Forms\AdminDashboardForms\AdminSystemReportBtn.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\AdminSystemReportBtn.Designer.cs">
+    <Compile Include="Forms\AdminDashboardForms\AdminSystemReportBtn.Designer.cs">
       <DependentUpon>AdminSystemReportBtn.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\AdminTurfBookingBtn.cs">
+    <Compile Include="Forms\AdminDashboardForms\AdminTurfBookingBtn.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\AdminTurfBookingBtn.Designer.cs">
+    <Compile Include="Forms\AdminDashboardForms\AdminTurfBookingBtn.Designer.cs">
       <DependentUpon>AdminTurfBookingBtn.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\AdminTurfLocationBtn.cs">
+    <Compile Include="Forms\AdminDashboardForms\AdminTurfLocationBtn.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\AdminTurfLocationBtn.Designer.cs">
+    <Compile Include="Forms\AdminDashboardForms\AdminTurfLocationBtn.Designer.cs">
       <DependentUpon>AdminTurfLocationBtn.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\BookingHistoryPlayer.cs">
+    <Compile Include="Forms\PlayerDashboardForms\BookingHistoryPlayer.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\BookingHistoryPlayer.Designer.cs">
+    <Compile Include="Forms\PlayerDashboardForms\BookingHistoryPlayer.Designer.cs">
       <DependentUpon>BookingHistoryPlayer.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\BookTurfSchedule.cs">
+    <Compile Include="Forms\PlayerDashboardForms\BookTurfSchedule.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\BookTurfSchedule.Designer.cs">
+    <Compile Include="Forms\PlayerDashboardForms\BookTurfSchedule.Designer.cs">
       <DependentUpon>BookTurfSchedule.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\CancelBooking.cs">
+    <Compile Include="Forms\PlayerDashboardForms\CancelBooking.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\CancelBooking.Designer.cs">
+    <Compile Include="Forms\PlayerDashboardForms\CancelBooking.Designer.cs">
       <DependentUpon>CancelBooking.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\ChangeProfile.cs">
+    <Compile Include="Forms\PlayerDashboardForms\ChangeProfile.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\ChangeProfile.Designer.cs">
+    <Compile Include="Forms\PlayerDashboardForms\ChangeProfile.Designer.cs">
       <DependentUpon>ChangeProfile.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\CustomerArrivalCheck.cs">
+    <Compile Include="Forms\PlayerDashboardForms\CustomerArrivalCheck.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\CustomerArrivalCheck.Designer.cs">
+    <Compile Include="Forms\PlayerDashboardForms\CustomerArrivalCheck.Designer.cs">
       <DependentUpon>CustomerArrivalCheck.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Dashboard%24Users.cs">
@@ -138,166 +140,169 @@
     <Compile Include="Forms\Dashboard%24Users.Designer.cs">
       <DependentUpon>Dashboard%24Users.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\EquipmentHandling.cs">
+    <Compile Include="Forms\TurfStaffDashboardForms\EquipmentHandling.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\EquipmentHandling.Designer.cs">
+    <Compile Include="Forms\TurfStaffDashboardForms\EquipmentHandling.Designer.cs">
       <DependentUpon>EquipmentHandling.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\GroundPrepare.cs">
+    <Compile Include="Forms\TurfStaffDashboardForms\GroundPrepare.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\GroundPrepare.Designer.cs">
+    <Compile Include="Forms\TurfStaffDashboardForms\GroundPrepare.Designer.cs">
       <DependentUpon>GroundPrepare.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\MaintainTurfManager.cs">
+    <Compile Include="Forms\TurfManagerDashboardForms\MaintainTurfManager.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\MaintainTurfManager.Designer.cs">
+    <Compile Include="Forms\TurfManagerDashboardForms\MaintainTurfManager.Designer.cs">
       <DependentUpon>MaintainTurfManager.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\ManagerDashboard.cs">
+    <Compile Include="Forms\TurfManagerDashboardForms\ManagerDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\ManagerDashboard.Designer.cs">
+    <Compile Include="Forms\TurfManagerDashboardForms\ManagerDashboard.Designer.cs">
       <DependentUpon>ManagerDashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\MyProfile.cs">
+    <Compile Include="Forms\PlayerDashboardForms\MyProfile.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\MyProfile.Designer.cs">
+    <Compile Include="Forms\PlayerDashboardForms\MyProfile.Designer.cs">
       <DependentUpon>MyProfile.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\PlayerDashboard.cs">
+    <Compile Include="Forms\PlayerDashboardForms\PlayerDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\PlayerDashboard.Designer.cs">
+    <Compile Include="Forms\PlayerDashboardForms\PlayerDashboard.Designer.cs">
       <DependentUpon>PlayerDashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\PostMatchCleanUpConfirmation.cs">
+    <Compile Include="Forms\TurfStaffDashboardForms\PostMatchCleanUpConfirmation.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\PostMatchCleanUpConfirmation.Designer.cs">
+    <Compile Include="Forms\TurfStaffDashboardForms\PostMatchCleanUpConfirmation.Designer.cs">
       <DependentUpon>PostMatchCleanUpConfirmation.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\RescheduleBooking.cs">
+    <Compile Include="Forms\PlayerDashboardForms\RescheduleBooking.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\RescheduleBooking.Designer.cs">
+    <Compile Include="Forms\PlayerDashboardForms\RescheduleBooking.Designer.cs">
       <DependentUpon>RescheduleBooking.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\SignupPage.cs">
+    <Compile Include="Forms\AuthenticationForms\SignupPage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\SignupPage.Designer.cs">
+    <Compile Include="Forms\AuthenticationForms\SignupPage.Designer.cs">
       <DependentUpon>SignupPage.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\LoginPage.cs">
+    <Compile Include="Forms\AuthenticationForms\LoginPage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\LoginPage.Designer.cs">
+    <Compile Include="Forms\AuthenticationForms\LoginPage.Designer.cs">
       <DependentUpon>LoginPage.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\StartandEndMatchTimer.cs">
+    <Compile Include="Forms\TurfStaffDashboardForms\StartandEndMatchTimer.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\StartandEndMatchTimer.Designer.cs">
+    <Compile Include="Forms\TurfStaffDashboardForms\StartandEndMatchTimer.Designer.cs">
       <DependentUpon>StartandEndMatchTimer.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\TrackStatus.cs">
+    <Compile Include="Forms\PlayerDashboardForms\TrackStatus.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\TrackStatus.Designer.cs">
+    <Compile Include="Forms\PlayerDashboardForms\TrackStatus.Designer.cs">
       <DependentUpon>TrackStatus.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\TurfManagerDashboard.cs">
+    <Compile Include="Forms\TurfManagerDashboardForms\TurfManagerDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\TurfManagerDashboard.Designer.cs">
+    <Compile Include="Forms\TurfManagerDashboardForms\TurfManagerDashboard.Designer.cs">
       <DependentUpon>TurfManagerDashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\TurfStaffDashboard.cs">
+    <Compile Include="Forms\TurfStaffDashboardForms\TurfStaffDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\TurfStaffDashboard.Designer.cs">
+    <Compile Include="Forms\TurfStaffDashboardForms\TurfStaffDashboard.Designer.cs">
       <DependentUpon>TurfStaffDashboard.cs</DependentUpon>
     </Compile>
     <Compile Include="Interfaces\IAuthenticator.cs" />
+    <Compile Include="Interfaces\IUserRepository.cs" />
+    <Compile Include="Models\User.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Forms\AdminDashboard.resx">
+    <Compile Include="ServicesBLL\Authenticator.cs" />
+    <EmbeddedResource Include="Forms\AdminDashboardForms\AdminDashboard.resx">
       <DependentUpon>AdminDashboard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\AdminGlobalSettingsBtn.resx">
+    <EmbeddedResource Include="Forms\AdminDashboardForms\AdminGlobalSettingsBtn.resx">
       <DependentUpon>AdminGlobalSettingsBtn.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\AdminManagerBtn.resx">
+    <EmbeddedResource Include="Forms\AdminDashboardForms\AdminManagerBtn.resx">
       <DependentUpon>AdminManagerBtn.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\AdminPricingBtn.resx">
+    <EmbeddedResource Include="Forms\AdminDashboardForms\AdminPricingBtn.resx">
       <DependentUpon>AdminPricingBtn.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\AdminTurfBookingBtn.resx">
+    <EmbeddedResource Include="Forms\AdminDashboardForms\AdminTurfBookingBtn.resx">
       <DependentUpon>AdminTurfBookingBtn.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\AdminTurfLocationBtn.resx">
+    <EmbeddedResource Include="Forms\AdminDashboardForms\AdminTurfLocationBtn.resx">
       <DependentUpon>AdminTurfLocationBtn.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\BookingHistoryPlayer.resx">
+    <EmbeddedResource Include="Forms\PlayerDashboardForms\BookingHistoryPlayer.resx">
       <DependentUpon>BookingHistoryPlayer.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\BookTurfSchedule.resx">
+    <EmbeddedResource Include="Forms\PlayerDashboardForms\BookTurfSchedule.resx">
       <DependentUpon>BookTurfSchedule.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\CancelBooking.resx">
+    <EmbeddedResource Include="Forms\PlayerDashboardForms\CancelBooking.resx">
       <DependentUpon>CancelBooking.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\ChangeProfile.resx">
+    <EmbeddedResource Include="Forms\PlayerDashboardForms\ChangeProfile.resx">
       <DependentUpon>ChangeProfile.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\CustomerArrivalCheck.resx">
+    <EmbeddedResource Include="Forms\PlayerDashboardForms\CustomerArrivalCheck.resx">
       <DependentUpon>CustomerArrivalCheck.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Dashboard%24Users.resx">
       <DependentUpon>Dashboard%24Users.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\EquipmentHandling.resx">
+    <EmbeddedResource Include="Forms\TurfStaffDashboardForms\EquipmentHandling.resx">
       <DependentUpon>EquipmentHandling.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\GroundPrepare.resx">
+    <EmbeddedResource Include="Forms\TurfStaffDashboardForms\GroundPrepare.resx">
       <DependentUpon>GroundPrepare.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\ManagerDashboard.resx">
+    <EmbeddedResource Include="Forms\TurfManagerDashboardForms\ManagerDashboard.resx">
       <DependentUpon>ManagerDashboard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\MyProfile.resx">
+    <EmbeddedResource Include="Forms\PlayerDashboardForms\MyProfile.resx">
       <DependentUpon>MyProfile.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\PlayerDashboard.resx">
+    <EmbeddedResource Include="Forms\PlayerDashboardForms\PlayerDashboard.resx">
       <DependentUpon>PlayerDashboard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\PostMatchCleanUpConfirmation.resx">
+    <EmbeddedResource Include="Forms\TurfStaffDashboardForms\PostMatchCleanUpConfirmation.resx">
       <DependentUpon>PostMatchCleanUpConfirmation.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\RescheduleBooking.resx">
+    <EmbeddedResource Include="Forms\PlayerDashboardForms\RescheduleBooking.resx">
       <DependentUpon>RescheduleBooking.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\SignupPage.resx">
+    <EmbeddedResource Include="Forms\AuthenticationForms\SignupPage.resx">
       <DependentUpon>SignupPage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\LoginPage.resx">
+    <EmbeddedResource Include="Forms\AuthenticationForms\LoginPage.resx">
       <DependentUpon>LoginPage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\StartandEndMatchTimer.resx">
+    <EmbeddedResource Include="Forms\TurfStaffDashboardForms\StartandEndMatchTimer.resx">
       <DependentUpon>StartandEndMatchTimer.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\TrackStatus.resx">
+    <EmbeddedResource Include="Forms\PlayerDashboardForms\TrackStatus.resx">
       <DependentUpon>TrackStatus.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\TurfManagerDashboard.resx">
+    <EmbeddedResource Include="Forms\TurfManagerDashboardForms\TurfManagerDashboard.resx">
       <DependentUpon>TurfManagerDashboard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\TurfStaffDashboard.resx">
+    <EmbeddedResource Include="Forms\TurfStaffDashboardForms\TurfStaffDashboard.resx">
       <DependentUpon>TurfStaffDashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -324,9 +329,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Data\" />
-    <Folder Include="Models\" />
-    <Folder Include="Services\" />
     <Folder Include="Utils\" />
   </ItemGroup>
   <ItemGroup>
@@ -487,6 +489,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\dg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SQL Query\LoginQuery.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -44,11 +44,49 @@ namespace TurfSyncTurfSchedulingSportsSystem
 
         private void pictureBox9_Click_1(object sender, EventArgs e)
         {
-            //Dashboard_Users playerDashboard = new Dashboard_Users();
-            //playerDashboard.Show();
-            //this.Hide();
+            Dashboard_Users playerDashboard = new Dashboard_Users();
+            playerDashboard.Show();
+            this.Hide();
+            /*
+             
+            AuthService auth = new AuthService();
 
-            
+            if (auth.Login(txtUsername.Text, txtPassword.Text, out User user))
+            {
+                this.Hide();
+
+                switch (user.Role)
+                {
+                    case "Admin":
+                        new AdminDashboard(user).Show();
+                        break;
+
+                    case "Manager":
+                        new ManagerDashboard(user).Show();
+                        break;
+
+                    case "Staff":
+                        new StaffDashboard(user).Show();
+                        break;
+
+                    case "Player":
+                        new PlayerDashboard(user).Show();
+                        break;
+
+                    default:
+                        MessageBox.Show("Invalid role");
+                        Application.Exit();
+                        break;
+                }
+            }
+            else
+            {
+                MessageBox.Show("Invalid username or password");
+            }
+        }
+             
+             */
+
 
 
         }
