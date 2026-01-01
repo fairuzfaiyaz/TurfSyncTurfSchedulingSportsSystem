@@ -1,0 +1,15 @@
+﻿?table open
+
+CREATE TABLE Users
+(
+    UserId INT IDENTITY(1,1) PRIMARY KEY,     -- Auto-incrementing user ID
+    FullName NVARCHAR(100) NOT NULL,          -- User's full name
+    Username NVARCHAR(50) NOT NULL UNIQUE,    -- Unique username
+    Email NVARCHAR(100) NOT NULL,             -- User email
+    PasswordHash NVARCHAR(256) NOT NULL,      -- Hashed password
+    Role NVARCHAR(50) NOT NULL,               -- User role (Admin, User, etc.)
+    IsActive BIT NOT NULL DEFAULT 1,          -- Active flag for soft delete
+    CreatedAt DATETIME NOT NULL DEFAULT GETDATE()  -- Signup timestamp
+);
+
+

@@ -84,7 +84,7 @@ namespace TurfSyncTurfSchedulingSportsSystem.Forms
 
         private void signUpp_Click(object sender, EventArgs e)
         {
-            IAuthenticator auth = new Authenticator();
+            //IAuthenticator auth = new Authenticator();
             //auth.Signup(txtUsername.Text, txtEmail.Text, txtPassword.Text);
 
             MessageBox.Show("Account created successfully");

@@ -10,7 +10,7 @@ namespace TurfSyncTurfSchedulingSportsSystem.Interfaces
     internal interface IAuthenticator
     {
         bool Login(string username, string password, out User user);
-        void Signup(string username, string email, string password);
-       
+
+        bool Signup(string fullName, string username, string email, string password, string repeatPassword);
     }
 }
