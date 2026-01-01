@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using TurfSyncTurfSchedulingSportsSystem.Forms;
+using TurfSyncTurfSchedulingSportsSystem.Interfaces;
+using TurfSyncTurfSchedulingSportsSystem.ServicesBLL;
 
 namespace TurfSyncTurfSchedulingSportsSystem.Forms
 {
@@ -78,6 +80,16 @@ namespace TurfSyncTurfSchedulingSportsSystem.Forms
             this.Dispose();
             LoginPage loginPage = new LoginPage();
             loginPage.Show();
+        }
+
+        private void signUpp_Click(object sender, EventArgs e)
+        {
+            IAuthenticator auth = new Authenticator();
+            //auth.Signup(txtUsername.Text, txtEmail.Text, txtPassword.Text);
+
+            MessageBox.Show("Account created successfully");
+            new LoginPage().Show();
+            this.Hide();
         }
     }
 }

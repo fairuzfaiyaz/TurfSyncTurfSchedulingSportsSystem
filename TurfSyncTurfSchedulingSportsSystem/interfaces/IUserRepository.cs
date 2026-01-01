@@ -7,10 +7,9 @@ using TurfSyncTurfSchedulingSportsSystem.Models;
 
 namespace TurfSyncTurfSchedulingSportsSystem.Interfaces
 {
-    internal interface IAuthenticator
+    internal interface IUserRepository
     {
-        bool Login(string username, string password, out User user);
-        void Signup(string username, string email, string password);
-       
+        User GetUserByUsername(string username);
+        void CreateUser(User user);
     }
 }
