@@ -44,11 +44,11 @@ namespace TurfSyncTurfSchedulingSportsSystem
 
         private void pictureBox9_Click_1(object sender, EventArgs e)
         {
-            //Dashboard_Users playerDashboard = new Dashboard_Users();
-            //playerDashboard.Show();
-            //this.Hide();
+            Dashboard_Users playerDashboard = new Dashboard_Users();
+            playerDashboard.Show();
+            this.Hide();
 
-            
+
 
 
         }
