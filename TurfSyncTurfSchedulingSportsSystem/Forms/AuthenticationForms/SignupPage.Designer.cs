@@ -175,6 +175,7 @@
             this.signUpp.TabIndex = 14;
             this.signUpp.Text = "SIGN UP";
             this.signUpp.UseVisualStyleBackColor = false;
+            this.signUpp.Click += new System.EventHandler(this.signUpp_Click);
             // 
             // repeatPass
             // 
