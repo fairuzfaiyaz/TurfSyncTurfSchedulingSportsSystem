@@ -1,60 +1,80 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using TurfSyncTurfSchedulingSportsSystem.Models;
 using TurfSyncTurfSchedulingSportsSystem.Interfaces;
 
 namespace TurfSyncTurfSchedulingSportsSystem.DataDLL
 {
-    internal class UserRepository:IUserRepository
+    internal class UserRepository : IUserRepository
     {
         public User GetUserByUsername(string username)
         {
             using (SqlConnection con = DatabaseHelper.GetConnection())
             {
                 con.Open();
-                string query = @"SELECT * FROM Users WHERE Username=@username AND IsActive=1";
 
-                SqlCommand cmd = new SqlCommand(query, con);
-                cmd.Parameters.AddWithValue("@username", username);
+                string query = @"SELECT * FROM Users WHERE Username = @Username AND IsActive = 1";
 
-                SqlDataReader reader = cmd.ExecuteReader();
-                if (reader.Read())
+                using (SqlCommand cmd = new SqlCommand(query, con))
                 {
-                    return new User
+                    cmd.Parameters.AddWithValue("@Username", username);
+
+                    using (SqlDataReader reader = cmd.ExecuteReader())
                     {
-                        UserId = (int)reader["UserId"],
-                        Username = reader["Username"].ToString(),
-                        Email = reader["Email"].ToString(),
-                        PasswordHash = reader["PasswordHash"].ToString(),
-                        Role = reader["Role"].ToString(),
-                        IsActive = (bool)reader["IsActive"],
-                        CreatedAt = (System.DateTime)reader["CreatedAt"]
-                    };
+                        if (!reader.Read())
+                            return null;
+
+                        return new User
+                        {
+                            UserId = Convert.ToInt32(reader["UserId"]),
+                            FullName = reader["FullName"].ToString(),
+                            Username = reader["Username"].ToString(),
+                            Email = reader["Email"].ToString(),
+                            PasswordHash = reader["PasswordHash"].ToString(),
+                            Role = reader["Role"].ToString(),
+                            IsActive = Convert.ToBoolean(reader["IsActive"]),
+                            CreatedAt = Convert.ToDateTime(reader["CreatedAt"])
+                        };
+                    }
                 }
             }
-            return null;
         }
 
-        public void CreateUser(User user)
+        public bool CreateUser(User user)
         {
             using (SqlConnection con = DatabaseHelper.GetConnection())
             {
                 con.Open();
-                string query = @"INSERT INTO Users (Username, Email, PasswordHash, Role) VALUES (@u, @e, @p, @r)";
 
-                SqlCommand cmd = new SqlCommand(query, con);
-                cmd.Parameters.AddWithValue("@u", user.Username);
-                cmd.Parameters.AddWithValue("@e", user.Email);
-                cmd.Parameters.AddWithValue("@p", user.PasswordHash);
-                cmd.Parameters.AddWithValue("@r", user.Role);
+                //Check if username already exists
+                string checkQuery = "SELECT COUNT(*) FROM Users WHERE Username = @Username";
+                using (SqlCommand checkCmd = new SqlCommand(checkQuery, con))
+                {
+                    checkCmd.Parameters.AddWithValue("@Username", user.Username);
+                    int count = (int)checkCmd.ExecuteScalar();
 
-                cmd.ExecuteNonQuery();
+                    if (count > 0)
+                    {
+                        // Username already exists, cannot create user
+                        return false;
+                    }
+                }
+
+                //Insert new user
+                string query = @"INSERT INTO Users (FullName, Username, Email, PasswordHash, Role) VALUES (@FullName, @Username, @Email, @PasswordHash, @Role)";
+
+                using (SqlCommand cmd = new SqlCommand(query, con))
+                {
+                    cmd.Parameters.AddWithValue("@FullName", user.FullName);
+                    cmd.Parameters.AddWithValue("@Username", user.Username);
+                    cmd.Parameters.AddWithValue("@Email", user.Email);
+                    cmd.Parameters.AddWithValue("@PasswordHash", user.PasswordHash);
+                    cmd.Parameters.AddWithValue("@Role", user.Role);
+
+                    return cmd.ExecuteNonQuery() > 0;
+                }
             }
         }
-    
+
     }
 }

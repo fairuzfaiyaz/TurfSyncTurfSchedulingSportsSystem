@@ -50,10 +50,10 @@
   <ItemGroup>
     <Compile Include="DataDLL\DatabaseHelper.cs" />
     <Compile Include="DataDLL\UserRepository.cs" />
-    <Compile Include="Forms\AdminDashboardForms\AddingMenuTurfManager.cs">
+    <Compile Include="Forms\TurfManagerDashboardForms\AddingMenuTurfManager.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\AdminDashboardForms\AddingMenuTurfManager.Designer.cs">
+    <Compile Include="Forms\TurfManagerDashboardForms\AddingMenuTurfManager.Designer.cs">
       <DependentUpon>AddingMenuTurfManager.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\AdminDashboardForms\AdminDashboard.cs">
@@ -489,6 +489,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\dg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SQL Query\LoginQuery.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
