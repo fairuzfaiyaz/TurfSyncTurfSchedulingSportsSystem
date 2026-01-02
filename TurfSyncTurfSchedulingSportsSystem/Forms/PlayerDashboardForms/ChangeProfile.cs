@@ -9,18 +9,23 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using TurfSyncTurfSchedulingSportsSystem.DataDLL;
 using TurfSyncTurfSchedulingSportsSystem.Models;
+using TurfSyncTurfSchedulingSportsSystem.ServicesBLL;
 
 namespace TurfSyncTurfSchedulingSportsSystem.Forms
 {
+
     public partial class ChangeProfile : Form
     {
-        User currentUser;
-        UserRepository userRepository; 
+        private readonly Authenticator authenticator;
+        private User currentUser;
+        private UserRepository userRepository; 
         public ChangeProfile(User user)
         {
             InitializeComponent();
             currentUser = user;
             userRepository = new UserRepository();
+            authenticator = new Authenticator(userRepository);
+
 
             email.Text = user.Email;
             fullName.Text = user.FullName;
@@ -70,7 +75,53 @@ namespace TurfSyncTurfSchedulingSportsSystem.Forms
         
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Password Updated Successfully!");
+            //string currentPassword = currentPasswordTextBox.Text.Trim();
+            //string newPassword = newPasswordTextBox.Text.Trim();
+            //string repeatPassword = repeatPasswordTextBox.Text.Trim();
+
+            //// Validation
+            //if (string.IsNullOrEmpty(currentPassword) ||
+            //    string.IsNullOrEmpty(newPassword) ||
+            //    string.IsNullOrEmpty(repeatPassword))
+            //{
+            //    MessageBox.Show("Please fill all password fields.");
+            //    return;
+            //}
+
+            //// 1️⃣ Verify current password using Authenticator
+            //if (!authenticator.Login(currentUser.Username, currentPassword, out _))
+            //{
+            //    MessageBox.Show("Current password is incorrect.");
+            //    return;
+            //}
+
+            //// 2️⃣ Check new password match
+            //if (newPassword != repeatPassword)
+            //{
+            //    MessageBox.Show("New passwords do not match.");
+            //    return;
+            //}
+
+            //// 3️⃣ Hash new password (reuse Authenticator logic indirectly)
+            //string newHash = authenticator.HashPassword(newPassword);
+
+            //// 4️⃣ Update database
+            //bool success = userRepository.UpdatePassword(currentUser.UserId, newHash);
+
+            //if (success)
+            //{
+            //    currentUser.PasswordHash = newHash;
+
+            //    MessageBox.Show("Password Updated Successfully!");
+
+            //    currentPasswordTextBox.Clear();
+            //    newPasswordTextBox.Clear();
+            //    repeatPasswordTextBox.Clear();
+            //}
+            //else
+            //{
+            //    MessageBox.Show("Failed to update password.");
+            //}
         }
 
         //profile update button

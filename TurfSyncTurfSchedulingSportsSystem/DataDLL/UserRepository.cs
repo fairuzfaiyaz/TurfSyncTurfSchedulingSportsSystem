@@ -105,6 +105,24 @@ namespace TurfSyncTurfSchedulingSportsSystem.DataDLL
             }
         }
 
+        public bool UpdatePassword(int userId, string newPasswordHash)
+        {
+            using (SqlConnection con = DatabaseHelper.GetConnection())
+            {
+                con.Open();
+
+                string query = "UPDATE Users SET PasswordHash = @PasswordHash WHERE UserId = @UserId";
+
+                using (SqlCommand cmd = new SqlCommand(query, con))
+                {
+                    cmd.Parameters.AddWithValue("@PasswordHash", newPasswordHash);
+                    cmd.Parameters.AddWithValue("@UserId", userId);
+
+                    return cmd.ExecuteNonQuery() > 0;
+                }
+            }
+        }
+
 
     }
 }
