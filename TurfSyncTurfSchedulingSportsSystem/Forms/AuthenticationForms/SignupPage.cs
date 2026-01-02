@@ -10,14 +10,21 @@ using System.Windows.Forms;
 using TurfSyncTurfSchedulingSportsSystem.Forms;
 using TurfSyncTurfSchedulingSportsSystem.Interfaces;
 using TurfSyncTurfSchedulingSportsSystem.ServicesBLL;
+using TurfSyncTurfSchedulingSportsSystem.DataDLL;
+using TurfSyncTurfSchedulingSportsSystem.Models;
+
+
 
 namespace TurfSyncTurfSchedulingSportsSystem.Forms
 {
     public partial class SignupPage : Form
     {
+        private readonly Authenticator authenticator;
+
         public SignupPage()
         {
             InitializeComponent();
+            authenticator = new Authenticator(new UserRepository());
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -87,9 +94,43 @@ namespace TurfSyncTurfSchedulingSportsSystem.Forms
             //IAuthenticator auth = new Authenticator();
             //auth.Signup(txtUsername.Text, txtEmail.Text, txtPassword.Text);
 
-            MessageBox.Show("Account created successfully");
-            new LoginPage().Show();
-            this.Hide();
+            string fullName = textBox5.Text.Trim();
+            string username = textBox3.Text.Trim();
+            string email = textBox1.Text.Trim();
+            string password = textBox2.Text;
+            string repeatPassword = textBox4.Text;
+
+            if (string.IsNullOrEmpty(fullName) || string.IsNullOrEmpty(username) ||
+                string.IsNullOrEmpty(email) || string.IsNullOrEmpty(password) || string.IsNullOrEmpty(repeatPassword))
+            {
+                MessageBox.Show("Please fill all fields.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (!checkBox1.Checked)
+            {
+                MessageBox.Show("You must agree to the terms and conditions to sign up.", "Agreement Required", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            try
+            {
+                bool created = authenticator.Signup(fullName, username, email, password, repeatPassword);
+                if (created)
+                {
+                    MessageBox.Show("Account created successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.Close(); // Close signup form
+                    new LoginPage().Show();
+                }
+                else
+                {
+                    MessageBox.Show("Username already exists. Choose another one.", "Signup Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error: {ex.Message}", "Signup Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }            
         }
     }
 }

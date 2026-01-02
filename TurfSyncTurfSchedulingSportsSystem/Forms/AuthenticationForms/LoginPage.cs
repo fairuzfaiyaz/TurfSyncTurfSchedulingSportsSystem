@@ -8,15 +8,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TurfSyncTurfSchedulingSportsSystem.DataDLL;
 using TurfSyncTurfSchedulingSportsSystem.Forms;
+using TurfSyncTurfSchedulingSportsSystem.Interfaces;
+using TurfSyncTurfSchedulingSportsSystem.Models;
+using TurfSyncTurfSchedulingSportsSystem.ServicesBLL;
+
 
 namespace TurfSyncTurfSchedulingSportsSystem
 {
     public partial class LoginPage : Form
     {
+        private readonly Authenticator authenticator;
+
         public LoginPage()
         {
             InitializeComponent();
+            authenticator = new Authenticator(new UserRepository());
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -44,53 +52,65 @@ namespace TurfSyncTurfSchedulingSportsSystem
 
         private void pictureBox9_Click_1(object sender, EventArgs e)
         {
-            Dashboard_Users playerDashboard = new Dashboard_Users();
-            playerDashboard.Show();
-            this.Hide();
-            /*
-             
-            AuthService auth = new AuthService();
+            //Dashboard_Users playerDashboard = new Dashboard_Users();
+            //playerDashboard.Show();
+            //this.Hide();
 
-            if (auth.Login(txtUsername.Text, txtPassword.Text, out User user))
+            string usernameInput = username.Text.Trim();
+            string passwordInput = textBox1.Text.Trim();
+
+
+            if (string.IsNullOrEmpty(usernameInput) || string.IsNullOrEmpty(passwordInput))
             {
-                this.Hide();
+                MessageBox.Show("Please enter both username and password.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
 
-                switch (user.Role)
+            if (authenticator.Login(usernameInput, passwordInput, out var user))
+            {
+                MessageBox.Show($"Welcome, {user.FullName}! Role: {user.Role}", "Login Successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+
+                Form dashboard = null;
+
+                // Open dashboard based on user role
+                switch (user.Role.ToLower())
                 {
-                    case "Admin":
-                        new AdminDashboard(user).Show();
+                    case "player":
+                        dashboard = new PlayerDashboard(user);
                         break;
-
-                    case "Manager":
-                        new ManagerDashboard(user).Show();
+                    case "admin":
+                        dashboard = new AdminDashboard(user);
                         break;
-
-                    case "Staff":
-                        new StaffDashboard(user).Show();
+                    case "manager":
+                        dashboard = new TurfManagerDashboard(user);
                         break;
-
-                    case "Player":
-                        new PlayerDashboard(user).Show();
+                    case "staff":
+                        dashboard = new TurfStaffDashboard(user);
                         break;
-
                     default:
-                        MessageBox.Show("Invalid role");
-                        Application.Exit();
-                        break;
+                        MessageBox.Show("Unknown role. Cannot open dashboard.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
                 }
+
+                dashboard.Show();
+                this.Hide(); // Hide the login form
+
+                // Open main dashboard or next form
+                // Example:
+                // var dashboard = new DashboardForm(user);
+                // dashboard.Show();
+                // this.Hide();
             }
             else
             {
-                MessageBox.Show("Invalid username or password");
+                MessageBox.Show("Invalid username or password.", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            
+            // Optional: clear password textbox
+                //textBox1.Clear();
+                //textBox1.Focus();
             }
         }
-             
-             */
-
-
-
-        }
-
         private void label1_Click(object sender, EventArgs e)
         {
 
