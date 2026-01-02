@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.myProfile = new System.Windows.Forms.Button();
             this.playerName = new System.Windows.Forms.Label();
             this.playerUsername = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.changeProfile = new System.Windows.Forms.Button();
+            this.logout = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
@@ -50,17 +50,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // myProfile
             // 
-            this.button1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(53, 333);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(183, 72);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "My Profile";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.myProfile.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.myProfile.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.myProfile.Location = new System.Drawing.Point(53, 333);
+            this.myProfile.Name = "myProfile";
+            this.myProfile.Size = new System.Drawing.Size(183, 72);
+            this.myProfile.TabIndex = 0;
+            this.myProfile.Text = "My Profile";
+            this.myProfile.UseVisualStyleBackColor = false;
+            this.myProfile.Click += new System.EventHandler(this.button1_Click);
             // 
             // playerName
             // 
@@ -82,29 +82,29 @@
             this.playerUsername.TabIndex = 4;
             this.playerUsername.Text = "Customer username";
             // 
-            // button3
+            // changeProfile
             // 
-            this.button3.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.button3.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(53, 423);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(183, 74);
-            this.button3.TabIndex = 5;
-            this.button3.Text = "Change Profile";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.changeProfile.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.changeProfile.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.changeProfile.Location = new System.Drawing.Point(53, 423);
+            this.changeProfile.Name = "changeProfile";
+            this.changeProfile.Size = new System.Drawing.Size(183, 74);
+            this.changeProfile.TabIndex = 5;
+            this.changeProfile.Text = "Change Profile";
+            this.changeProfile.UseVisualStyleBackColor = false;
+            this.changeProfile.Click += new System.EventHandler(this.button3_Click);
             // 
-            // button4
+            // logout
             // 
-            this.button4.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.button4.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(53, 516);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(183, 74);
-            this.button4.TabIndex = 6;
-            this.button4.Text = "Log out";
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.logout.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.logout.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.logout.Location = new System.Drawing.Point(53, 516);
+            this.logout.Name = "logout";
+            this.logout.Size = new System.Drawing.Size(183, 74);
+            this.logout.TabIndex = 6;
+            this.logout.Text = "Log out";
+            this.logout.UseVisualStyleBackColor = false;
+            this.logout.Click += new System.EventHandler(this.button4_Click);
             // 
             // button8
             // 
@@ -259,12 +259,12 @@
             this.Controls.Add(this.button10);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.button7);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.logout);
+            this.Controls.Add(this.changeProfile);
             this.Controls.Add(this.playerUsername);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.playerName);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.myProfile);
             this.Controls.Add(this.pictureBox2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "PlayerDashboard";
@@ -279,12 +279,12 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button myProfile;
         private System.Windows.Forms.Label playerName;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label playerUsername;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button changeProfile;
+        private System.Windows.Forms.Button logout;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button button7;

@@ -44,6 +44,23 @@ namespace TurfSyncTurfSchedulingSportsSystem.ServicesBLL
 
             return turfSyncUser.CreateUser(user);
         }
+        public bool adminSignup(string fullName, string username, string email, string password, string repeatPassword, string role)
+        {
+            if (password != repeatPassword)
+                throw new Exception("Passwords do not match");
+
+            User user = new User
+            {
+                FullName = fullName,
+                Username = username,
+                Email = email,
+                PasswordHash = HashPassword(password),
+                Role = role, // default role
+                IsActive = true
+            };
+
+            return turfSyncUser.CreateUser(user);
+        }
 
         private string HashPassword(string password)
         {
