@@ -7,12 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TurfSyncTurfSchedulingSportsSystem.Models;
 
 namespace TurfSyncTurfSchedulingSportsSystem.Forms
 {
     public partial class AdminDashboard : Form
     {
-        public AdminDashboard()
+        public AdminDashboard(User user)
         {
             InitializeComponent();
         }

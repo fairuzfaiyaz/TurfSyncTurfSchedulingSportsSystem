@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.button1 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.playerName = new System.Windows.Forms.Label();
+            this.playerUsername = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
@@ -62,25 +62,25 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // label1
+            // playerName
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(36, 221);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(227, 32);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Customer Name";
+            this.playerName.AutoSize = true;
+            this.playerName.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.playerName.Location = new System.Drawing.Point(36, 221);
+            this.playerName.Name = "playerName";
+            this.playerName.Size = new System.Drawing.Size(227, 32);
+            this.playerName.TabIndex = 2;
+            this.playerName.Text = "Customer Name";
             // 
-            // label2
+            // playerUsername
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(49, 266);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(194, 22);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Customer username";
+            this.playerUsername.AutoSize = true;
+            this.playerUsername.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.playerUsername.Location = new System.Drawing.Point(49, 266);
+            this.playerUsername.Name = "playerUsername";
+            this.playerUsername.Size = new System.Drawing.Size(194, 22);
+            this.playerUsername.TabIndex = 4;
+            this.playerUsername.Text = "Customer username";
             // 
             // button3
             // 
@@ -261,9 +261,9 @@
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.playerUsername);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.playerName);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -280,9 +280,9 @@
         #endregion
 
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label playerName;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label playerUsername;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button8;

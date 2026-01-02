@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TurfSyncTurfSchedulingSportsSystem.Models;
+
 
 namespace TurfSyncTurfSchedulingSportsSystem.Forms
 {
@@ -20,30 +22,30 @@ namespace TurfSyncTurfSchedulingSportsSystem.Forms
         private void button1_Click(object sender, EventArgs e)
         {
             this.Dispose();
-            AdminDashboard  adminDashboard = new AdminDashboard();
-            adminDashboard.Show();
+            //AdminDashboard  adminDashboard = new AdminDashboard();
+            //adminDashboard.Show();
 
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             this.Dispose();
-            TurfManagerDashboard managerDashboard = new TurfManagerDashboard();
-            managerDashboard.Show();
+            //TurfManagerDashboard managerDashboard = new TurfManagerDashboard();
+            //managerDashboard.Show();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             this.Dispose();
-            TurfStaffDashboard turfStaffDashboard = new TurfStaffDashboard();
-            turfStaffDashboard.Show();
+            //TurfStaffDashboard turfStaffDashboard = new TurfStaffDashboard();
+            //turfStaffDashboard.Show();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
             this.Dispose();
-            PlayerDashboard playerDashboard = new PlayerDashboard();
-            playerDashboard.Show();
+            //PlayerDashboard playerDashboard = new PlayerDashboard();
+            //playerDashboard.Show();
         }
 
         private void button5_Click(object sender, EventArgs e)

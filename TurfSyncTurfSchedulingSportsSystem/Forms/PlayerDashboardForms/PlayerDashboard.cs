@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using TurfSyncTurfSchedulingSportsSystem.Forms;
+using TurfSyncTurfSchedulingSportsSystem.Models;
 
 namespace TurfSyncTurfSchedulingSportsSystem.Forms
 {
@@ -16,6 +17,12 @@ namespace TurfSyncTurfSchedulingSportsSystem.Forms
         public PlayerDashboard()
         {
             InitializeComponent();
+        }
+        public PlayerDashboard(User user)
+        {
+            InitializeComponent();
+            playerName.Text = user.FullName;
+            playerUsername.Text= user.Username;
         }
 
         private void button8_Click(object sender, EventArgs e)
