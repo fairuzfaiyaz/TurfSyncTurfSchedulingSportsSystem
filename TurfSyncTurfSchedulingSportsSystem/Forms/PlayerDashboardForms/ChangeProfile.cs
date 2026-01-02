@@ -14,12 +14,18 @@ namespace TurfSyncTurfSchedulingSportsSystem.Forms
     public partial class ChangeProfile : Form
     {
         User currentUser;
+        UserProfile currentUserProfile;
         public ChangeProfile(User user)
         {
             InitializeComponent();
             currentUser = user;
-            emailTextBox.Text = user.Email;
-            nameTextBox.Text = user.FullName;
+            email.Text = user.Email;
+            fullName.Text = user.FullName;
+            username.Text = user.Username;
+            role.Text = user.Role;
+            
+
+
         }
 
 

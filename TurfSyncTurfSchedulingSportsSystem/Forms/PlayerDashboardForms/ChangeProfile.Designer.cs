@@ -63,6 +63,8 @@
             this.savePersonalInfo = new System.Windows.Forms.Button();
             this.Gender = new System.Windows.Forms.Label();
             this.DateOfBirth = new System.Windows.Forms.Label();
+            this.role = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -70,7 +72,7 @@
             // 
             this.button5.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button5.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(100, 462);
+            this.button5.Location = new System.Drawing.Point(12, 12);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(95, 47);
             this.button5.TabIndex = 50;
@@ -436,12 +438,34 @@
             this.DateOfBirth.TabIndex = 81;
             this.DateOfBirth.Text = "xxx";
             // 
+            // role
+            // 
+            this.role.AutoSize = true;
+            this.role.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.role.Location = new System.Drawing.Point(122, 446);
+            this.role.Name = "role";
+            this.role.Size = new System.Drawing.Size(37, 22);
+            this.role.TabIndex = 83;
+            this.role.Text = "xxx";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(62, 446);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(54, 22);
+            this.label2.TabIndex = 82;
+            this.label2.Text = "Role:";
+            // 
             // ChangeProfile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(1087, 600);
+            this.Controls.Add(this.role);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.DateOfBirth);
             this.Controls.Add(this.Gender);
             this.Controls.Add(this.savePersonalInfo);
@@ -523,5 +547,7 @@
         private System.Windows.Forms.Button savePersonalInfo;
         private System.Windows.Forms.Label Gender;
         private System.Windows.Forms.Label DateOfBirth;
+        private System.Windows.Forms.Label role;
+        private System.Windows.Forms.Label label2;
     }
 }
