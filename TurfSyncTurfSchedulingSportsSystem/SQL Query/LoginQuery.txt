@@ -13,3 +13,9 @@ CREATE TABLE Users
 );
 
 
+?table alter for userProfile view
+
+ALTER TABLE Users
+ADD PhoneNumber NVARCHAR(20) NULL,
+    Gender NVARCHAR(10) NULL,
+    DateOfBirth DATE NULL;

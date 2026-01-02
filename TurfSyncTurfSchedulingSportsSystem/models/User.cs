@@ -12,5 +12,10 @@ namespace TurfSyncTurfSchedulingSportsSystem.Models
         public string Role { get; set; }
         public bool IsActive { get; set; }
         public DateTime CreatedAt { get; set; }
+
+
+        public string PhoneNumber { get; set; }
+        public string Gender { get; set; }
+        public DateTime? DateOfBirth { get; set; }
     }
 }

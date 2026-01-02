@@ -6,5 +6,7 @@ namespace TurfSyncTurfSchedulingSportsSystem.Interfaces
     {
         User GetUserByUsername(string username);
         bool CreateUser(User user);
+        bool UpdateUserProfile(User user);
+
     }
 }
