@@ -7,15 +7,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TurfSyncTurfSchedulingSportsSystem.Models;
 
 namespace TurfSyncTurfSchedulingSportsSystem.Forms
 {
     public partial class ChangeProfile : Form
     {
-        public ChangeProfile()
+        User currentUser;
+        public ChangeProfile(User user)
         {
             InitializeComponent();
+            currentUser = user;
+            emailTextBox.Text = user.Email;
+            nameTextBox.Text = user.FullName;
         }
+
 
         private void label6_Click(object sender, EventArgs e)
         {

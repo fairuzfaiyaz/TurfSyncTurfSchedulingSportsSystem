@@ -12,9 +12,20 @@ namespace TurfSyncTurfSchedulingSportsSystem.Forms
 {
     public partial class MyProfile : Form
     {
+        Models.User currentUser;
         public MyProfile()
         {
             InitializeComponent();
+        }
+        public MyProfile(Models.User user)
+        {
+            InitializeComponent();
+            currentUser = user;
+            Email.Text = user.Email;
+            playerName.Text = user.FullName;
+            playerUsername.Text = user.Username;
+            //label8.Text = user.Email;
+            accCreatDate.Text = user.CreatedAt.ToString("dd MMMM yyyy");
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -25,14 +36,14 @@ namespace TurfSyncTurfSchedulingSportsSystem.Forms
         private void button5_Click(object sender, EventArgs e)
         {
             this.Dispose();
-            PlayerDashboard playerDashboard = new PlayerDashboard();
+            PlayerDashboard playerDashboard = new PlayerDashboard(currentUser);
             playerDashboard.Show();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             this.Dispose();
-            ChangeProfile changeProfile = new ChangeProfile();
+            ChangeProfile changeProfile = new ChangeProfile(currentUser);
             changeProfile.Show();
         }
 

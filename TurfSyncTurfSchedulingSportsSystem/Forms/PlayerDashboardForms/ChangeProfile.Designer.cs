@@ -29,38 +29,40 @@
         private void InitializeComponent()
         {
             this.button5 = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.username = new System.Windows.Forms.Label();
+            this.fullName = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.searchtextbox = new System.Windows.Forms.TextBox();
+            this.fullNameTextBox = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.usernameTextBox = new System.Windows.Forms.TextBox();
+            this.PhoneNumberTextBox = new System.Windows.Forms.TextBox();
+            this.EmailTextBox = new System.Windows.Forms.TextBox();
+            this.MaleRadioBtn = new System.Windows.Forms.RadioButton();
+            this.femaleRadioBtn = new System.Windows.Forms.RadioButton();
+            this.dateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.currentPassword = new System.Windows.Forms.TextBox();
+            this.newPassword = new System.Windows.Forms.TextBox();
+            this.RptNewPassword = new System.Windows.Forms.TextBox();
+            this.changePasswordbtn = new System.Windows.Forms.Button();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
+            this.phonenumber = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
+            this.email = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+            this.savePersonalInfo = new System.Windows.Forms.Button();
+            this.Gender = new System.Windows.Forms.Label();
+            this.DateOfBirth = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -76,25 +78,25 @@
             this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
-            // label2
+            // username
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(62, 278);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(194, 22);
-            this.label2.TabIndex = 49;
-            this.label2.Text = "Customer username";
+            this.username.AutoSize = true;
+            this.username.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.username.Location = new System.Drawing.Point(62, 278);
+            this.username.Name = "username";
+            this.username.Size = new System.Drawing.Size(194, 22);
+            this.username.TabIndex = 49;
+            this.username.Text = "Customer username";
             // 
-            // label1
+            // fullName
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(49, 233);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(227, 32);
-            this.label1.TabIndex = 47;
-            this.label1.Text = "Customer Name";
+            this.fullName.AutoSize = true;
+            this.fullName.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fullName.Location = new System.Drawing.Point(49, 233);
+            this.fullName.Name = "fullName";
+            this.fullName.Size = new System.Drawing.Size(227, 32);
+            this.fullName.TabIndex = 47;
+            this.fullName.Text = "Customer Name";
             // 
             // pictureBox1
             // 
@@ -158,16 +160,16 @@
             this.label7.TabIndex = 55;
             this.label7.Text = "Username:";
             // 
-            // searchtextbox
+            // fullNameTextBox
             // 
-            this.searchtextbox.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.searchtextbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.searchtextbox.Cursor = System.Windows.Forms.Cursors.AppStarting;
-            this.searchtextbox.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.searchtextbox.Location = new System.Drawing.Point(553, 93);
-            this.searchtextbox.Name = "searchtextbox";
-            this.searchtextbox.Size = new System.Drawing.Size(366, 24);
-            this.searchtextbox.TabIndex = 56;
+            this.fullNameTextBox.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.fullNameTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.fullNameTextBox.Cursor = System.Windows.Forms.Cursors.AppStarting;
+            this.fullNameTextBox.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fullNameTextBox.Location = new System.Drawing.Point(553, 93);
+            this.fullNameTextBox.Name = "fullNameTextBox";
+            this.fullNameTextBox.Size = new System.Drawing.Size(366, 24);
+            this.fullNameTextBox.TabIndex = 56;
             // 
             // label8
             // 
@@ -189,72 +191,72 @@
             this.label9.TabIndex = 58;
             this.label9.Text = "Date of Birth: ";
             // 
-            // textBox1
+            // usernameTextBox
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Cursor = System.Windows.Forms.Cursors.AppStarting;
-            this.textBox1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(553, 135);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(366, 24);
-            this.textBox1.TabIndex = 59;
+            this.usernameTextBox.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.usernameTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.usernameTextBox.Cursor = System.Windows.Forms.Cursors.AppStarting;
+            this.usernameTextBox.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.usernameTextBox.Location = new System.Drawing.Point(553, 135);
+            this.usernameTextBox.Name = "usernameTextBox";
+            this.usernameTextBox.Size = new System.Drawing.Size(366, 24);
+            this.usernameTextBox.TabIndex = 59;
             // 
-            // textBox2
+            // PhoneNumberTextBox
             // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Cursor = System.Windows.Forms.Cursors.AppStarting;
-            this.textBox2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(553, 174);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(366, 24);
-            this.textBox2.TabIndex = 60;
+            this.PhoneNumberTextBox.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.PhoneNumberTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.PhoneNumberTextBox.Cursor = System.Windows.Forms.Cursors.AppStarting;
+            this.PhoneNumberTextBox.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PhoneNumberTextBox.Location = new System.Drawing.Point(553, 174);
+            this.PhoneNumberTextBox.Name = "PhoneNumberTextBox";
+            this.PhoneNumberTextBox.Size = new System.Drawing.Size(366, 24);
+            this.PhoneNumberTextBox.TabIndex = 60;
             // 
-            // textBox3
+            // EmailTextBox
             // 
-            this.textBox3.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Cursor = System.Windows.Forms.Cursors.AppStarting;
-            this.textBox3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(553, 212);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(366, 24);
-            this.textBox3.TabIndex = 61;
+            this.EmailTextBox.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.EmailTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.EmailTextBox.Cursor = System.Windows.Forms.Cursors.AppStarting;
+            this.EmailTextBox.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EmailTextBox.Location = new System.Drawing.Point(553, 212);
+            this.EmailTextBox.Name = "EmailTextBox";
+            this.EmailTextBox.Size = new System.Drawing.Size(366, 24);
+            this.EmailTextBox.TabIndex = 61;
             // 
-            // radioButton2
+            // MaleRadioBtn
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.Location = new System.Drawing.Point(553, 248);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(80, 28);
-            this.radioButton2.TabIndex = 62;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Male";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
+            this.MaleRadioBtn.AutoSize = true;
+            this.MaleRadioBtn.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MaleRadioBtn.Location = new System.Drawing.Point(553, 248);
+            this.MaleRadioBtn.Name = "MaleRadioBtn";
+            this.MaleRadioBtn.Size = new System.Drawing.Size(80, 28);
+            this.MaleRadioBtn.TabIndex = 62;
+            this.MaleRadioBtn.TabStop = true;
+            this.MaleRadioBtn.Text = "Male";
+            this.MaleRadioBtn.UseVisualStyleBackColor = true;
+            this.MaleRadioBtn.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             // 
-            // radioButton1
+            // femaleRadioBtn
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.Location = new System.Drawing.Point(671, 249);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(106, 28);
-            this.radioButton1.TabIndex = 63;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Female";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.femaleRadioBtn.AutoSize = true;
+            this.femaleRadioBtn.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.femaleRadioBtn.Location = new System.Drawing.Point(671, 249);
+            this.femaleRadioBtn.Name = "femaleRadioBtn";
+            this.femaleRadioBtn.Size = new System.Drawing.Size(106, 28);
+            this.femaleRadioBtn.TabIndex = 63;
+            this.femaleRadioBtn.TabStop = true;
+            this.femaleRadioBtn.Text = "Female";
+            this.femaleRadioBtn.UseVisualStyleBackColor = true;
             // 
-            // dateTimePicker1
+            // dateTimePicker
             // 
-            this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(553, 282);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(366, 31);
-            this.dateTimePicker1.TabIndex = 64;
+            this.dateTimePicker.CalendarFont = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker.Location = new System.Drawing.Point(553, 282);
+            this.dateTimePicker.Name = "dateTimePicker";
+            this.dateTimePicker.Size = new System.Drawing.Size(366, 31);
+            this.dateTimePicker.TabIndex = 64;
             // 
             // label10
             // 
@@ -297,50 +299,50 @@
             this.label13.TabIndex = 68;
             this.label13.Text = "Repeat New Password:";
             // 
-            // textBox4
+            // currentPassword
             // 
-            this.textBox4.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox4.Cursor = System.Windows.Forms.Cursors.AppStarting;
-            this.textBox4.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(580, 426);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(366, 24);
-            this.textBox4.TabIndex = 69;
+            this.currentPassword.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.currentPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.currentPassword.Cursor = System.Windows.Forms.Cursors.AppStarting;
+            this.currentPassword.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.currentPassword.Location = new System.Drawing.Point(580, 426);
+            this.currentPassword.Name = "currentPassword";
+            this.currentPassword.Size = new System.Drawing.Size(366, 24);
+            this.currentPassword.TabIndex = 69;
             // 
-            // textBox5
+            // newPassword
             // 
-            this.textBox5.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox5.Cursor = System.Windows.Forms.Cursors.AppStarting;
-            this.textBox5.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(580, 456);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(366, 24);
-            this.textBox5.TabIndex = 70;
+            this.newPassword.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.newPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.newPassword.Cursor = System.Windows.Forms.Cursors.AppStarting;
+            this.newPassword.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.newPassword.Location = new System.Drawing.Point(580, 456);
+            this.newPassword.Name = "newPassword";
+            this.newPassword.Size = new System.Drawing.Size(366, 24);
+            this.newPassword.TabIndex = 70;
             // 
-            // textBox6
+            // RptNewPassword
             // 
-            this.textBox6.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox6.Cursor = System.Windows.Forms.Cursors.AppStarting;
-            this.textBox6.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(580, 486);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(366, 24);
-            this.textBox6.TabIndex = 71;
+            this.RptNewPassword.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.RptNewPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.RptNewPassword.Cursor = System.Windows.Forms.Cursors.AppStarting;
+            this.RptNewPassword.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RptNewPassword.Location = new System.Drawing.Point(580, 486);
+            this.RptNewPassword.Name = "RptNewPassword";
+            this.RptNewPassword.Size = new System.Drawing.Size(366, 24);
+            this.RptNewPassword.TabIndex = 71;
             // 
-            // button1
+            // changePasswordbtn
             // 
-            this.button1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(743, 516);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(203, 47);
-            this.button1.TabIndex = 72;
-            this.button1.Text = "Confirm Password";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.changePasswordbtn.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.changePasswordbtn.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.changePasswordbtn.Location = new System.Drawing.Point(743, 516);
+            this.changePasswordbtn.Name = "changePasswordbtn";
+            this.changePasswordbtn.Size = new System.Drawing.Size(203, 47);
+            this.changePasswordbtn.TabIndex = 72;
+            this.changePasswordbtn.Text = "Confirm Password";
+            this.changePasswordbtn.UseVisualStyleBackColor = false;
+            this.changePasswordbtn.Click += new System.EventHandler(this.button1_Click);
             // 
             // label14
             // 
@@ -362,15 +364,15 @@
             this.label15.TabIndex = 77;
             this.label15.Text = "Gender:";
             // 
-            // label16
+            // phonenumber
             // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(221, 349);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(37, 22);
-            this.label16.TabIndex = 76;
-            this.label16.Text = "xxx";
+            this.phonenumber.AutoSize = true;
+            this.phonenumber.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.phonenumber.Location = new System.Drawing.Point(221, 349);
+            this.phonenumber.Name = "phonenumber";
+            this.phonenumber.Size = new System.Drawing.Size(37, 22);
+            this.phonenumber.TabIndex = 76;
+            this.phonenumber.Text = "xxx";
             // 
             // label17
             // 
@@ -382,15 +384,15 @@
             this.label17.TabIndex = 75;
             this.label17.Text = "Phone Number:";
             // 
-            // label18
+            // email
             // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(135, 314);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(37, 22);
-            this.label18.TabIndex = 74;
-            this.label18.Text = "xxx";
+            this.email.AutoSize = true;
+            this.email.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.email.Location = new System.Drawing.Point(135, 314);
+            this.email.Name = "email";
+            this.email.Size = new System.Drawing.Size(37, 22);
+            this.email.TabIndex = 74;
+            this.email.Text = "xxx";
             // 
             // label19
             // 
@@ -402,17 +404,37 @@
             this.label19.TabIndex = 73;
             this.label19.Text = "E-mail:";
             // 
-            // button2
+            // savePersonalInfo
             // 
-            this.button2.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(716, 324);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(203, 47);
-            this.button2.TabIndex = 79;
-            this.button2.Text = "Save Changes";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.savePersonalInfo.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.savePersonalInfo.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.savePersonalInfo.Location = new System.Drawing.Point(716, 324);
+            this.savePersonalInfo.Name = "savePersonalInfo";
+            this.savePersonalInfo.Size = new System.Drawing.Size(203, 47);
+            this.savePersonalInfo.TabIndex = 79;
+            this.savePersonalInfo.Text = "Save Changes";
+            this.savePersonalInfo.UseVisualStyleBackColor = false;
+            this.savePersonalInfo.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // Gender
+            // 
+            this.Gender.AutoSize = true;
+            this.Gender.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Gender.Location = new System.Drawing.Point(155, 383);
+            this.Gender.Name = "Gender";
+            this.Gender.Size = new System.Drawing.Size(37, 22);
+            this.Gender.TabIndex = 80;
+            this.Gender.Text = "xxx";
+            // 
+            // DateOfBirth
+            // 
+            this.DateOfBirth.AutoSize = true;
+            this.DateOfBirth.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DateOfBirth.Location = new System.Drawing.Point(190, 415);
+            this.DateOfBirth.Name = "DateOfBirth";
+            this.DateOfBirth.Size = new System.Drawing.Size(37, 22);
+            this.DateOfBirth.TabIndex = 81;
+            this.DateOfBirth.Text = "xxx";
             // 
             // ChangeProfile
             // 
@@ -420,39 +442,41 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(1087, 600);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.DateOfBirth);
+            this.Controls.Add(this.Gender);
+            this.Controls.Add(this.savePersonalInfo);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label15);
-            this.Controls.Add(this.label16);
+            this.Controls.Add(this.phonenumber);
             this.Controls.Add(this.label17);
-            this.Controls.Add(this.label18);
+            this.Controls.Add(this.email);
             this.Controls.Add(this.label19);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.changePasswordbtn);
+            this.Controls.Add(this.RptNewPassword);
+            this.Controls.Add(this.newPassword);
+            this.Controls.Add(this.currentPassword);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.radioButton1);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.dateTimePicker);
+            this.Controls.Add(this.femaleRadioBtn);
+            this.Controls.Add(this.MaleRadioBtn);
+            this.Controls.Add(this.EmailTextBox);
+            this.Controls.Add(this.PhoneNumberTextBox);
+            this.Controls.Add(this.usernameTextBox);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.searchtextbox);
+            this.Controls.Add(this.fullNameTextBox);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.button5);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.username);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.fullName);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ChangeProfile";
             this.Text = "ChangeProfile";
@@ -465,37 +489,39 @@
         #endregion
 
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label username;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label fullName;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox searchtextbox;
+        private System.Windows.Forms.TextBox fullNameTextBox;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.TextBox usernameTextBox;
+        private System.Windows.Forms.TextBox PhoneNumberTextBox;
+        private System.Windows.Forms.TextBox EmailTextBox;
+        private System.Windows.Forms.RadioButton MaleRadioBtn;
+        private System.Windows.Forms.RadioButton femaleRadioBtn;
+        private System.Windows.Forms.DateTimePicker dateTimePicker;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox currentPassword;
+        private System.Windows.Forms.TextBox newPassword;
+        private System.Windows.Forms.TextBox RptNewPassword;
+        private System.Windows.Forms.Button changePasswordbtn;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label phonenumber;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label email;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button savePersonalInfo;
+        private System.Windows.Forms.Label Gender;
+        private System.Windows.Forms.Label DateOfBirth;
     }
 }
