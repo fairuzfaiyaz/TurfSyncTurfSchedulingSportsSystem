@@ -25,7 +25,7 @@ namespace TurfSyncTurfSchedulingSportsSystem.ServicesBLL
             string hash = HashPassword(password);
             return hash == user.PasswordHash;
         }
-
+        //player
         public bool Signup(string fullName, string username, string email,
                            string password, string repeatPassword)
         {
@@ -44,6 +44,7 @@ namespace TurfSyncTurfSchedulingSportsSystem.ServicesBLL
 
             return turfSyncUser.CreateUser(user);
         }
+        //admin
         public bool adminSignup(string fullName, string username, string email, string password, string repeatPassword, string role)
         {
             if (password != repeatPassword)
