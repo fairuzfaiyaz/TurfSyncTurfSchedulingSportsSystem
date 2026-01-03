@@ -28,14 +28,14 @@ namespace TurfSyncTurfSchedulingSportsSystem.Forms
 
         private void panel7_Paint(object sender, PaintEventArgs e)
         {
-
+            //this.Dispose();
+            //MaintainTurfManager maintainTurfManager = new MaintainTurfManager();
+            //maintainTurfManager.ShowDialog();
         }
 
         private void textBox8_TextChanged(object sender, EventArgs e)
         {
-            this.Dispose();
-            MaintainTurfManager maintainTurfManager = new MaintainTurfManager();
-            maintainTurfManager.ShowDialog();
+            
         }
 
         private void textBox3_TextChanged(object sender, EventArgs e)
@@ -50,6 +50,18 @@ namespace TurfSyncTurfSchedulingSportsSystem.Forms
             this.Dispose();
             LoginPage loginPage = new LoginPage();
             loginPage.ShowDialog();
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new MaintainTurfManager().Show();
+
         }
     }
 }
