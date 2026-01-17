@@ -13,6 +13,7 @@ namespace TurfSyncTurfSchedulingSportsSystem.Forms
 {
     public partial class TurfStaffDashboard : Form
     {
+        User currentstaff;
         public TurfStaffDashboard()
         {
             InitializeComponent();
@@ -20,6 +21,7 @@ namespace TurfSyncTurfSchedulingSportsSystem.Forms
         public TurfStaffDashboard(User user)
         {
             InitializeComponent();
+            this.currentstaff = user;
         }
 
         private void pictureBox7_Click(object sender, EventArgs e)
@@ -42,7 +44,7 @@ namespace TurfSyncTurfSchedulingSportsSystem.Forms
         private void button8_Click(object sender, EventArgs e)
         {
             this.Close();
-            CustomerArrivalCheck check = new CustomerArrivalCheck();
+            CustomerArrivalCheck check = new CustomerArrivalCheck(currentstaff);
             check.Show();
         }
 
@@ -80,6 +82,13 @@ namespace TurfSyncTurfSchedulingSportsSystem.Forms
             this.Close();
             
 
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            MyProfile profile = new MyProfile(currentstaff);
+            profile.Show();
         }
     }
 }

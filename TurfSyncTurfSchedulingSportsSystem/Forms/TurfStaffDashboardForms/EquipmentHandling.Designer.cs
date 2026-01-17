@@ -65,6 +65,8 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox23 = new System.Windows.Forms.PictureBox();
+            this.button6 = new System.Windows.Forms.Button();
+            this.pictureBox24 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
@@ -88,6 +90,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -512,12 +515,37 @@
             this.pictureBox23.TabIndex = 65;
             this.pictureBox23.TabStop = false;
             // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.Black;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button6.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.ForeColor = System.Drawing.Color.Lime;
+            this.button6.Location = new System.Drawing.Point(119, 72);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(189, 39);
+            this.button6.TabIndex = 68;
+            this.button6.Text = "My Profile";
+            this.button6.UseVisualStyleBackColor = false;
+            // 
+            // pictureBox24
+            // 
+            this.pictureBox24.Image = global::TurfSyncTurfSchedulingSportsSystem.Properties.Resources.c4bd31be3249f31084aa6ae4564e79e8;
+            this.pictureBox24.Location = new System.Drawing.Point(107, 64);
+            this.pictureBox24.Name = "pictureBox24";
+            this.pictureBox24.Size = new System.Drawing.Size(214, 57);
+            this.pictureBox24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox24.TabIndex = 67;
+            this.pictureBox24.TabStop = false;
+            // 
             // EquipmentHandling
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(1337, 796);
+            this.Controls.Add(this.button6);
+            this.Controls.Add(this.pictureBox24);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox23);
             this.Controls.Add(this.radioButton8);
@@ -580,6 +608,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -624,5 +653,7 @@
         private System.Windows.Forms.PictureBox pictureBox22;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pictureBox23;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.PictureBox pictureBox24;
     }
 }
