@@ -36,9 +36,9 @@ namespace TurfSyncTurfSchedulingSportsSystem.Forms
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Close();
-            Dashboard_Users dashboard_Users = new Dashboard_Users();
-            dashboard_Users.Show();
+            this.Dispose();
+            LoginPage loginPage = new LoginPage();
+            loginPage.Show();
         }
 
         private void button8_Click(object sender, EventArgs e)

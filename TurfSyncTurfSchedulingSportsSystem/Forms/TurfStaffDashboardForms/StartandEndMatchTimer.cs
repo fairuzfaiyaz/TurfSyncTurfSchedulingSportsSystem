@@ -7,16 +7,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TurfSyncTurfSchedulingSportsSystem.Models;
 
 namespace TurfSyncTurfSchedulingSportsSystem.Forms
 {
     public partial class StartandEndMatchTimer : Form
     {
+        User currentstaff;
         public StartandEndMatchTimer()
         {
             InitializeComponent();
         }
-
+        public StartandEndMatchTimer(User user)
+        {
+            InitializeComponent();
+            this.currentstaff = user;
+        }
         private void label4_Click(object sender, EventArgs e)
         {
 
@@ -36,7 +42,9 @@ namespace TurfSyncTurfSchedulingSportsSystem.Forms
 
         private void button6_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            MyProfile profile = new MyProfile(currentstaff);
+            profile.Show();
         }
     }
 }

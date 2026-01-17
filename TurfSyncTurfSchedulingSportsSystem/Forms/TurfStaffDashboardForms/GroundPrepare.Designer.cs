@@ -44,6 +44,8 @@
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.button6 = new System.Windows.Forms.Button();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -53,6 +55,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // radioButton1
@@ -61,7 +65,7 @@
             this.radioButton1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.radioButton1.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton1.ForeColor = System.Drawing.Color.Lime;
-            this.radioButton1.Location = new System.Drawing.Point(146, 220);
+            this.radioButton1.Location = new System.Drawing.Point(12, 5);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(242, 36);
             this.radioButton1.TabIndex = 15;
@@ -76,7 +80,7 @@
             this.radioButton2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.radioButton2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton2.ForeColor = System.Drawing.Color.Lime;
-            this.radioButton2.Location = new System.Drawing.Point(126, 380);
+            this.radioButton2.Location = new System.Drawing.Point(67, 28);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(58, 27);
             this.radioButton2.TabIndex = 16;
@@ -90,7 +94,7 @@
             this.radioButton3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.radioButton3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton3.ForeColor = System.Drawing.Color.Lime;
-            this.radioButton3.Location = new System.Drawing.Point(344, 380);
+            this.radioButton3.Location = new System.Drawing.Point(251, 28);
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.Size = new System.Drawing.Size(62, 27);
             this.radioButton3.TabIndex = 17;
@@ -114,7 +118,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::TurfSyncTurfSchedulingSportsSystem.Properties.Resources.c4bd31be3249f31084aa6ae4564e79e8;
-            this.pictureBox2.Location = new System.Drawing.Point(328, 367);
+            this.pictureBox2.Location = new System.Drawing.Point(235, 15);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(93, 53);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -124,7 +128,7 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = global::TurfSyncTurfSchedulingSportsSystem.Properties.Resources.c4bd31be3249f31084aa6ae4564e79e8;
-            this.pictureBox4.Location = new System.Drawing.Point(107, 367);
+            this.pictureBox4.Location = new System.Drawing.Point(56, 15);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(94, 53);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -231,6 +235,7 @@
             this.button6.TabIndex = 51;
             this.button6.Text = "My Profile";
             this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // pictureBox12
             // 
@@ -242,11 +247,37 @@
             this.pictureBox12.TabIndex = 50;
             this.pictureBox12.TabStop = false;
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel1.Controls.Add(this.radioButton1);
+            this.panel1.Location = new System.Drawing.Point(134, 215);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(271, 52);
+            this.panel1.TabIndex = 52;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel2.BackgroundImage = global::TurfSyncTurfSchedulingSportsSystem.Properties.Resources._3205bc83145fc5826fb3741abeb6edf7;
+            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel2.Controls.Add(this.radioButton3);
+            this.panel2.Controls.Add(this.pictureBox2);
+            this.panel2.Controls.Add(this.radioButton2);
+            this.panel2.Controls.Add(this.pictureBox4);
+            this.panel2.Location = new System.Drawing.Point(104, 346);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(379, 83);
+            this.panel2.TabIndex = 53;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
             // GroundPrepare
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1344, 788);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.pictureBox12);
             this.Controls.Add(this.button1);
@@ -254,11 +285,6 @@
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox6);
-            this.Controls.Add(this.radioButton1);
-            this.Controls.Add(this.radioButton3);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox5);
@@ -274,6 +300,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -297,5 +327,7 @@
         private System.Windows.Forms.PictureBox pictureBox11;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.PictureBox pictureBox12;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
     }
 }

@@ -67,6 +67,11 @@
             this.pictureBox23 = new System.Windows.Forms.PictureBox();
             this.button6 = new System.Windows.Forms.Button();
             this.pictureBox24 = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
@@ -91,6 +96,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).BeginInit();
+            this.panel1.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.panel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -99,7 +107,7 @@
             this.label1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Lime;
-            this.label1.Location = new System.Drawing.Point(212, 222);
+            this.label1.Location = new System.Drawing.Point(100, 60);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(130, 33);
             this.label1.TabIndex = 23;
@@ -112,7 +120,7 @@
             this.label3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Lime;
-            this.label3.Location = new System.Drawing.Point(648, 222);
+            this.label3.Location = new System.Drawing.Point(99, 49);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(65, 33);
             this.label3.TabIndex = 45;
@@ -124,7 +132,7 @@
             this.label4.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Lime;
-            this.label4.Location = new System.Drawing.Point(1052, 222);
+            this.label4.Location = new System.Drawing.Point(93, 50);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(99, 33);
             this.label4.TabIndex = 46;
@@ -136,7 +144,7 @@
             this.radioButton2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.radioButton2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton2.ForeColor = System.Drawing.Color.Lime;
-            this.radioButton2.Location = new System.Drawing.Point(197, 304);
+            this.radioButton2.Location = new System.Drawing.Point(85, 142);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(85, 27);
             this.radioButton2.TabIndex = 47;
@@ -150,7 +158,7 @@
             this.radioButton1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.radioButton1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton1.ForeColor = System.Drawing.Color.Lime;
-            this.radioButton1.Location = new System.Drawing.Point(639, 304);
+            this.radioButton1.Location = new System.Drawing.Point(90, 131);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(85, 27);
             this.radioButton1.TabIndex = 49;
@@ -164,7 +172,7 @@
             this.radioButton3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.radioButton3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton3.ForeColor = System.Drawing.Color.Lime;
-            this.radioButton3.Location = new System.Drawing.Point(1046, 304);
+            this.radioButton3.Location = new System.Drawing.Point(87, 132);
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.Size = new System.Drawing.Size(85, 27);
             this.radioButton3.TabIndex = 51;
@@ -178,7 +186,7 @@
             this.radioButton4.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.radioButton4.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton4.ForeColor = System.Drawing.Color.Lime;
-            this.radioButton4.Location = new System.Drawing.Point(197, 377);
+            this.radioButton4.Location = new System.Drawing.Point(85, 215);
             this.radioButton4.Name = "radioButton4";
             this.radioButton4.Size = new System.Drawing.Size(110, 27);
             this.radioButton4.TabIndex = 53;
@@ -192,7 +200,7 @@
             this.radioButton5.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.radioButton5.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton5.ForeColor = System.Drawing.Color.Lime;
-            this.radioButton5.Location = new System.Drawing.Point(197, 454);
+            this.radioButton5.Location = new System.Drawing.Point(85, 292);
             this.radioButton5.Name = "radioButton5";
             this.radioButton5.Size = new System.Drawing.Size(123, 27);
             this.radioButton5.TabIndex = 55;
@@ -206,7 +214,7 @@
             this.radioButton6.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.radioButton6.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton6.ForeColor = System.Drawing.Color.Lime;
-            this.radioButton6.Location = new System.Drawing.Point(630, 454);
+            this.radioButton6.Location = new System.Drawing.Point(81, 281);
             this.radioButton6.Name = "radioButton6";
             this.radioButton6.Size = new System.Drawing.Size(123, 27);
             this.radioButton6.TabIndex = 59;
@@ -220,7 +228,7 @@
             this.radioButton7.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.radioButton7.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton7.ForeColor = System.Drawing.Color.Lime;
-            this.radioButton7.Location = new System.Drawing.Point(630, 377);
+            this.radioButton7.Location = new System.Drawing.Point(81, 204);
             this.radioButton7.Name = "radioButton7";
             this.radioButton7.Size = new System.Drawing.Size(110, 27);
             this.radioButton7.TabIndex = 57;
@@ -234,7 +242,7 @@
             this.radioButton8.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.radioButton8.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton8.ForeColor = System.Drawing.Color.Lime;
-            this.radioButton8.Location = new System.Drawing.Point(1041, 454);
+            this.radioButton8.Location = new System.Drawing.Point(82, 282);
             this.radioButton8.Name = "radioButton8";
             this.radioButton8.Size = new System.Drawing.Size(123, 27);
             this.radioButton8.TabIndex = 63;
@@ -248,7 +256,7 @@
             this.radioButton9.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.radioButton9.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton9.ForeColor = System.Drawing.Color.Lime;
-            this.radioButton9.Location = new System.Drawing.Point(1041, 377);
+            this.radioButton9.Location = new System.Drawing.Point(82, 205);
             this.radioButton9.Name = "radioButton9";
             this.radioButton9.Size = new System.Drawing.Size(110, 27);
             this.radioButton9.TabIndex = 61;
@@ -259,7 +267,7 @@
             // pictureBox21
             // 
             this.pictureBox21.Image = global::TurfSyncTurfSchedulingSportsSystem.Properties.Resources.c4bd31be3249f31084aa6ae4564e79e8;
-            this.pictureBox21.Location = new System.Drawing.Point(1005, 443);
+            this.pictureBox21.Location = new System.Drawing.Point(46, 271);
             this.pictureBox21.Name = "pictureBox21";
             this.pictureBox21.Size = new System.Drawing.Size(212, 47);
             this.pictureBox21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -269,7 +277,7 @@
             // pictureBox22
             // 
             this.pictureBox22.Image = global::TurfSyncTurfSchedulingSportsSystem.Properties.Resources.c4bd31be3249f31084aa6ae4564e79e8;
-            this.pictureBox22.Location = new System.Drawing.Point(1005, 367);
+            this.pictureBox22.Location = new System.Drawing.Point(46, 195);
             this.pictureBox22.Name = "pictureBox22";
             this.pictureBox22.Size = new System.Drawing.Size(212, 47);
             this.pictureBox22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -279,7 +287,7 @@
             // pictureBox19
             // 
             this.pictureBox19.Image = global::TurfSyncTurfSchedulingSportsSystem.Properties.Resources.c4bd31be3249f31084aa6ae4564e79e8;
-            this.pictureBox19.Location = new System.Drawing.Point(594, 443);
+            this.pictureBox19.Location = new System.Drawing.Point(45, 270);
             this.pictureBox19.Name = "pictureBox19";
             this.pictureBox19.Size = new System.Drawing.Size(212, 47);
             this.pictureBox19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -289,7 +297,7 @@
             // pictureBox20
             // 
             this.pictureBox20.Image = global::TurfSyncTurfSchedulingSportsSystem.Properties.Resources.c4bd31be3249f31084aa6ae4564e79e8;
-            this.pictureBox20.Location = new System.Drawing.Point(594, 367);
+            this.pictureBox20.Location = new System.Drawing.Point(45, 194);
             this.pictureBox20.Name = "pictureBox20";
             this.pictureBox20.Size = new System.Drawing.Size(212, 47);
             this.pictureBox20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -299,7 +307,7 @@
             // pictureBox18
             // 
             this.pictureBox18.Image = global::TurfSyncTurfSchedulingSportsSystem.Properties.Resources.c4bd31be3249f31084aa6ae4564e79e8;
-            this.pictureBox18.Location = new System.Drawing.Point(161, 443);
+            this.pictureBox18.Location = new System.Drawing.Point(49, 281);
             this.pictureBox18.Name = "pictureBox18";
             this.pictureBox18.Size = new System.Drawing.Size(212, 47);
             this.pictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -309,7 +317,7 @@
             // pictureBox17
             // 
             this.pictureBox17.Image = global::TurfSyncTurfSchedulingSportsSystem.Properties.Resources.c4bd31be3249f31084aa6ae4564e79e8;
-            this.pictureBox17.Location = new System.Drawing.Point(161, 367);
+            this.pictureBox17.Location = new System.Drawing.Point(49, 205);
             this.pictureBox17.Name = "pictureBox17";
             this.pictureBox17.Size = new System.Drawing.Size(212, 47);
             this.pictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -319,7 +327,7 @@
             // pictureBox16
             // 
             this.pictureBox16.Image = global::TurfSyncTurfSchedulingSportsSystem.Properties.Resources.c4bd31be3249f31084aa6ae4564e79e8;
-            this.pictureBox16.Location = new System.Drawing.Point(1001, 295);
+            this.pictureBox16.Location = new System.Drawing.Point(42, 123);
             this.pictureBox16.Name = "pictureBox16";
             this.pictureBox16.Size = new System.Drawing.Size(212, 47);
             this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -329,7 +337,7 @@
             // pictureBox15
             // 
             this.pictureBox15.Image = global::TurfSyncTurfSchedulingSportsSystem.Properties.Resources.c4bd31be3249f31084aa6ae4564e79e8;
-            this.pictureBox15.Location = new System.Drawing.Point(597, 295);
+            this.pictureBox15.Location = new System.Drawing.Point(48, 122);
             this.pictureBox15.Name = "pictureBox15";
             this.pictureBox15.Size = new System.Drawing.Size(212, 47);
             this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -339,7 +347,7 @@
             // pictureBox14
             // 
             this.pictureBox14.Image = global::TurfSyncTurfSchedulingSportsSystem.Properties.Resources.c4bd31be3249f31084aa6ae4564e79e8;
-            this.pictureBox14.Location = new System.Drawing.Point(161, 295);
+            this.pictureBox14.Location = new System.Drawing.Point(49, 133);
             this.pictureBox14.Name = "pictureBox14";
             this.pictureBox14.Size = new System.Drawing.Size(212, 47);
             this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -349,7 +357,7 @@
             // pictureBox13
             // 
             this.pictureBox13.Image = global::TurfSyncTurfSchedulingSportsSystem.Properties.Resources._5c968dfa87979e60edb4309e56495415;
-            this.pictureBox13.Location = new System.Drawing.Point(1001, 211);
+            this.pictureBox13.Location = new System.Drawing.Point(42, 39);
             this.pictureBox13.Name = "pictureBox13";
             this.pictureBox13.Size = new System.Drawing.Size(45, 53);
             this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -359,7 +367,7 @@
             // pictureBox12
             // 
             this.pictureBox12.Image = global::TurfSyncTurfSchedulingSportsSystem.Properties.Resources._5c968dfa87979e60edb4309e56495415;
-            this.pictureBox12.Location = new System.Drawing.Point(597, 211);
+            this.pictureBox12.Location = new System.Drawing.Point(48, 38);
             this.pictureBox12.Name = "pictureBox12";
             this.pictureBox12.Size = new System.Drawing.Size(45, 53);
             this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -390,7 +398,7 @@
             // pictureBox8
             // 
             this.pictureBox8.Image = global::TurfSyncTurfSchedulingSportsSystem.Properties.Resources._5c968dfa87979e60edb4309e56495415;
-            this.pictureBox8.Location = new System.Drawing.Point(161, 211);
+            this.pictureBox8.Location = new System.Drawing.Point(49, 49);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(45, 53);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -400,9 +408,9 @@
             // pictureBox9
             // 
             this.pictureBox9.Image = global::TurfSyncTurfSchedulingSportsSystem.Properties.Resources._3205bc83145fc5826fb3741abeb6edf7;
-            this.pictureBox9.Location = new System.Drawing.Point(119, 170);
+            this.pictureBox9.Location = new System.Drawing.Point(6, 3);
             this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(298, 376);
+            this.pictureBox9.Size = new System.Drawing.Size(299, 376);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox9.TabIndex = 40;
             this.pictureBox9.TabStop = false;
@@ -527,6 +535,7 @@
             this.button6.TabIndex = 68;
             this.button6.Text = "My Profile";
             this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // pictureBox24
             // 
@@ -538,43 +547,81 @@
             this.pictureBox24.TabIndex = 67;
             this.pictureBox24.TabStop = false;
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.radioButton5);
+            this.panel1.Controls.Add(this.pictureBox18);
+            this.panel1.Controls.Add(this.radioButton4);
+            this.panel1.Controls.Add(this.pictureBox17);
+            this.panel1.Controls.Add(this.radioButton2);
+            this.panel1.Controls.Add(this.pictureBox14);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.pictureBox8);
+            this.panel1.Controls.Add(this.pictureBox9);
+            this.panel1.Location = new System.Drawing.Point(107, 186);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(305, 376);
+            this.panel1.TabIndex = 69;
+            // 
+            // panel2
+            // 
+            this.panel2.Location = new System.Drawing.Point(542, 170);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(305, 376);
+            this.panel2.TabIndex = 70;
+            // 
+            // panel3
+            // 
+            this.panel3.Location = new System.Drawing.Point(958, 170);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(305, 376);
+            this.panel3.TabIndex = 71;
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.radioButton6);
+            this.panel4.Controls.Add(this.pictureBox19);
+            this.panel4.Controls.Add(this.radioButton7);
+            this.panel4.Controls.Add(this.pictureBox20);
+            this.panel4.Controls.Add(this.radioButton1);
+            this.panel4.Controls.Add(this.pictureBox15);
+            this.panel4.Controls.Add(this.label3);
+            this.panel4.Controls.Add(this.pictureBox12);
+            this.panel4.Location = new System.Drawing.Point(549, 173);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(297, 372);
+            this.panel4.TabIndex = 72;
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.radioButton8);
+            this.panel5.Controls.Add(this.pictureBox21);
+            this.panel5.Controls.Add(this.radioButton9);
+            this.panel5.Controls.Add(this.pictureBox22);
+            this.panel5.Controls.Add(this.radioButton3);
+            this.panel5.Controls.Add(this.pictureBox16);
+            this.panel5.Controls.Add(this.label4);
+            this.panel5.Controls.Add(this.pictureBox13);
+            this.panel5.Location = new System.Drawing.Point(959, 172);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(296, 373);
+            this.panel5.TabIndex = 73;
+            // 
             // EquipmentHandling
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(1337, 796);
+            this.Controls.Add(this.panel5);
+            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.pictureBox24);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox23);
-            this.Controls.Add(this.radioButton8);
-            this.Controls.Add(this.pictureBox21);
-            this.Controls.Add(this.radioButton9);
-            this.Controls.Add(this.pictureBox22);
-            this.Controls.Add(this.radioButton6);
-            this.Controls.Add(this.pictureBox19);
-            this.Controls.Add(this.radioButton7);
-            this.Controls.Add(this.pictureBox20);
-            this.Controls.Add(this.radioButton5);
-            this.Controls.Add(this.pictureBox18);
-            this.Controls.Add(this.radioButton4);
-            this.Controls.Add(this.pictureBox17);
-            this.Controls.Add(this.radioButton3);
-            this.Controls.Add(this.pictureBox16);
-            this.Controls.Add(this.radioButton1);
-            this.Controls.Add(this.pictureBox15);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.pictureBox14);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.pictureBox13);
-            this.Controls.Add(this.pictureBox12);
             this.Controls.Add(this.pictureBox11);
             this.Controls.Add(this.pictureBox10);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox8);
-            this.Controls.Add(this.pictureBox9);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.pictureBox6);
@@ -583,6 +630,8 @@
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel3);
             this.Name = "EquipmentHandling";
             this.Text = "EquipmentHandling";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).EndInit();
@@ -609,6 +658,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -655,5 +710,10 @@
         private System.Windows.Forms.PictureBox pictureBox23;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.PictureBox pictureBox24;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel5;
     }
 }

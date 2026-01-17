@@ -115,5 +115,12 @@ namespace TurfSyncTurfSchedulingSportsSystem.Forms
         {
 
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            MyProfile profile = new MyProfile(currentstaff);
+            profile.Show();
+        }
     }
 }

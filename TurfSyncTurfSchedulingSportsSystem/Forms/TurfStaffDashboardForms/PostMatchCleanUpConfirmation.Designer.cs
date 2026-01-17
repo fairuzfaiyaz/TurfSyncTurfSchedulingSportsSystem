@@ -41,6 +41,11 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.button6 = new System.Windows.Forms.Button();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -48,6 +53,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
+            this.panel4.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.panel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBox2
@@ -101,7 +109,7 @@
             this.radioButton2.Font = new System.Drawing.Font("Century Gothic", 20.25F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
                 | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton2.ForeColor = System.Drawing.Color.Lime;
-            this.radioButton2.Location = new System.Drawing.Point(319, 304);
+            this.radioButton2.Location = new System.Drawing.Point(47, 22);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(209, 37);
             this.radioButton2.TabIndex = 49;
@@ -119,6 +127,7 @@
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox9.TabIndex = 51;
             this.pictureBox9.TabStop = false;
+            this.pictureBox9.Click += new System.EventHandler(this.pictureBox9_Click);
             // 
             // button1
             // 
@@ -151,7 +160,7 @@
             this.radioButton1.Font = new System.Drawing.Font("Century Gothic", 20.25F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
                 | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton1.ForeColor = System.Drawing.Color.Lime;
-            this.radioButton1.Location = new System.Drawing.Point(319, 502);
+            this.radioButton1.Location = new System.Drawing.Point(47, 29);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(329, 37);
             this.radioButton1.TabIndex = 54;
@@ -166,13 +175,14 @@
             this.radioButton3.Font = new System.Drawing.Font("Century Gothic", 20.25F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
                 | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton3.ForeColor = System.Drawing.Color.Lime;
-            this.radioButton3.Location = new System.Drawing.Point(319, 406);
+            this.radioButton3.Location = new System.Drawing.Point(47, 28);
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.Size = new System.Drawing.Size(189, 37);
             this.radioButton3.TabIndex = 56;
             this.radioButton3.TabStop = true;
             this.radioButton3.Text = "Turf brushed";
             this.radioButton3.UseVisualStyleBackColor = false;
+            this.radioButton3.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
             // 
             // pictureBox3
             // 
@@ -196,6 +206,7 @@
             this.button6.TabIndex = 59;
             this.button6.Text = "My Profile";
             this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // pictureBox12
             // 
@@ -207,24 +218,72 @@
             this.pictureBox12.TabIndex = 58;
             this.pictureBox12.TabStop = false;
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel2.Location = new System.Drawing.Point(307, 402);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(200, 51);
+            this.panel2.TabIndex = 61;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel3.Location = new System.Drawing.Point(304, 500);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(343, 48);
+            this.panel3.TabIndex = 62;
+            // 
+            // panel4
+            // 
+            this.panel4.BackgroundImage = global::TurfSyncTurfSchedulingSportsSystem.Properties.Resources.c4bd31be3249f31084aa6ae4564e79e81;
+            this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel4.Controls.Add(this.radioButton2);
+            this.panel4.Location = new System.Drawing.Point(273, 282);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(408, 87);
+            this.panel4.TabIndex = 63;
+            // 
+            // panel1
+            // 
+            this.panel1.BackgroundImage = global::TurfSyncTurfSchedulingSportsSystem.Properties.Resources.c4bd31be3249f31084aa6ae4564e79e81;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Controls.Add(this.radioButton3);
+            this.panel1.Location = new System.Drawing.Point(273, 398);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(408, 87);
+            this.panel1.TabIndex = 64;
+            // 
+            // panel5
+            // 
+            this.panel5.BackgroundImage = global::TurfSyncTurfSchedulingSportsSystem.Properties.Resources.c4bd31be3249f31084aa6ae4564e79e81;
+            this.panel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel5.Controls.Add(this.radioButton1);
+            this.panel5.Location = new System.Drawing.Point(273, 525);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(408, 87);
+            this.panel5.TabIndex = 65;
+            // 
             // Post_Match_Clean_Up_Confirmation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1307, 793);
+            this.Controls.Add(this.panel5);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel4);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.pictureBox12);
             this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.radioButton3);
-            this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox11);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.pictureBox9);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel3);
             this.Name = "Post_Match_Clean_Up_Confirmation";
             this.Text = "PostMatchCleanUpConfirmation";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -234,6 +293,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -254,5 +319,10 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.PictureBox pictureBox12;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel5;
     }
 }
