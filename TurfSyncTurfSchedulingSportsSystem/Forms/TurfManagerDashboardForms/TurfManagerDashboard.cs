@@ -63,5 +63,17 @@ namespace TurfSyncTurfSchedulingSportsSystem.Forms
             new MaintainTurfManager().Show();
 
         }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            new MaintainTurfManager().Show();
+        }
+
+        private void lbladding_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new AddingMenuTurfManager().Show();
+        }
     }
 }
