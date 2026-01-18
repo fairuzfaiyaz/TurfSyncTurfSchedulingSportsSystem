@@ -61,7 +61,7 @@ namespace TurfSyncTurfSchedulingSportsSystem.Forms
         private void button12_Click(object sender, EventArgs e)
         {
             this.Hide();
-            TrackStatus trackStatus = new TrackStatus();
+            TrackStatus trackStatus = new TrackStatus(currentUser);
             trackStatus.Show();
         }
 
@@ -92,14 +92,14 @@ namespace TurfSyncTurfSchedulingSportsSystem.Forms
         private void button13_Click(object sender, EventArgs e)
         {
             this.Hide();
-            RescheduleBooking rescheduleBooking = new RescheduleBooking();
+            RescheduleBooking rescheduleBooking = new RescheduleBooking(currentUser);
             rescheduleBooking.Show();
         }
 
         private void button11_Click(object sender, EventArgs e)
         {
             this.Hide();
-            BookingHistoryPlayer x = new BookingHistoryPlayer();
+            BookingHistoryPlayer x = new BookingHistoryPlayer(currentUser);
             x.Show();
         }
     }
