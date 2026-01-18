@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TurfSyncTurfSchedulingSportsSystem.Forms.TurfManagerDashboardForms;
 using TurfSyncTurfSchedulingSportsSystem.Models;
 
 namespace TurfSyncTurfSchedulingSportsSystem.Forms
@@ -74,6 +75,62 @@ namespace TurfSyncTurfSchedulingSportsSystem.Forms
         {
             this.Hide();
             new AddingMenuTurfManager().Show();
+        }
+
+        private void lblapprove_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new Approve().Show();
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void TurfManagerDashboard_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void lblpendingapproval_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblbooking_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblpendingapproval_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblcheckedin_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblrevenue_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

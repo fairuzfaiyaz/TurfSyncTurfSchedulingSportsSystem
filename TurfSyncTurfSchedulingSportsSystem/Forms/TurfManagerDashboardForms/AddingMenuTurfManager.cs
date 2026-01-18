@@ -34,5 +34,10 @@ namespace TurfSyncTurfSchedulingSportsSystem.Forms
             this.Hide();
             new TurfManagerDashboard().Show();
         }
+
+        private void lblapprove_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

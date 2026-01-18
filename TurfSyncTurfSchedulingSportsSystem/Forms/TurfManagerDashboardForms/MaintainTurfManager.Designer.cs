@@ -30,14 +30,17 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.lbladding = new System.Windows.Forms.Label();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.button4 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.lblmaintain = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.lbloverview = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
@@ -61,12 +64,10 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
-            this.lbladding = new System.Windows.Forms.Label();
-            this.lbloverview = new System.Windows.Forms.Label();
-            this.lblmaintain = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.label6 = new System.Windows.Forms.Label();
+            this.lblapprove = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -84,6 +85,7 @@
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -100,12 +102,13 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.RoyalBlue;
+            this.panel3.Controls.Add(this.pictureBox3);
+            this.panel3.Controls.Add(this.lblapprove);
             this.panel3.Controls.Add(this.label7);
             this.panel3.Controls.Add(this.lbladding);
             this.panel3.Controls.Add(this.pictureBox6);
             this.panel3.Controls.Add(this.pictureBox2);
             this.panel3.Controls.Add(this.pictureBox4);
-            this.panel3.Controls.Add(this.button4);
             this.panel3.Controls.Add(this.button1);
             this.panel3.Controls.Add(this.panel7);
             this.panel3.Controls.Add(this.panel8);
@@ -115,6 +118,27 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(188, 523);
             this.panel3.TabIndex = 1;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Mimmo Float", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(49, 20);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(123, 29);
+            this.label7.TabIndex = 23;
+            this.label7.Text = "TURFSYNC";
+            // 
+            // lbladding
+            // 
+            this.lbladding.AutoSize = true;
+            this.lbladding.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbladding.Location = new System.Drawing.Point(59, 179);
+            this.lbladding.Name = "lbladding";
+            this.lbladding.Size = new System.Drawing.Size(84, 25);
+            this.lbladding.TabIndex = 18;
+            this.lbladding.Text = "ADDING";
+            this.lbladding.Click += new System.EventHandler(this.lbladding_Click);
             // 
             // pictureBox6
             // 
@@ -149,19 +173,6 @@
             this.pictureBox4.TabIndex = 15;
             this.pictureBox4.TabStop = false;
             // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.Crimson;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(11, 487);
-            this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(73, 34);
-            this.button4.TabIndex = 14;
-            this.button4.Text = "back";
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -184,6 +195,16 @@
             this.panel7.Size = new System.Drawing.Size(188, 44);
             this.panel7.TabIndex = 11;
             // 
+            // lblmaintain
+            // 
+            this.lblmaintain.AutoSize = true;
+            this.lblmaintain.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblmaintain.Location = new System.Drawing.Point(59, 10);
+            this.lblmaintain.Name = "lblmaintain";
+            this.lblmaintain.Size = new System.Drawing.Size(105, 25);
+            this.lblmaintain.TabIndex = 19;
+            this.lblmaintain.Text = "MAINTAIN";
+            // 
             // pictureBox5
             // 
             this.pictureBox5.Image = global::TurfSyncTurfSchedulingSportsSystem.Properties.Resources.tool1;
@@ -205,6 +226,17 @@
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(188, 46);
             this.panel8.TabIndex = 12;
+            // 
+            // lbloverview
+            // 
+            this.lbloverview.AutoSize = true;
+            this.lbloverview.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbloverview.Location = new System.Drawing.Point(57, 11);
+            this.lbloverview.Name = "lbloverview";
+            this.lbloverview.Size = new System.Drawing.Size(106, 25);
+            this.lbloverview.TabIndex = 19;
+            this.lbloverview.Text = "OVERVIEW";
+            this.lbloverview.Click += new System.EventHandler(this.lbloverview_Click);
             // 
             // pictureBox1
             // 
@@ -470,57 +502,6 @@
             this.panel6.Size = new System.Drawing.Size(746, 133);
             this.panel6.TabIndex = 8;
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(41, 206);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(67, 16);
-            this.label6.TabIndex = 6;
-            this.label6.Text = "REASON:";
-            // 
-            // lbladding
-            // 
-            this.lbladding.AutoSize = true;
-            this.lbladding.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbladding.Location = new System.Drawing.Point(59, 179);
-            this.lbladding.Name = "lbladding";
-            this.lbladding.Size = new System.Drawing.Size(84, 25);
-            this.lbladding.TabIndex = 18;
-            this.lbladding.Text = "ADDING";
-            this.lbladding.Click += new System.EventHandler(this.lbladding_Click);
-            // 
-            // lbloverview
-            // 
-            this.lbloverview.AutoSize = true;
-            this.lbloverview.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbloverview.Location = new System.Drawing.Point(57, 11);
-            this.lbloverview.Name = "lbloverview";
-            this.lbloverview.Size = new System.Drawing.Size(106, 25);
-            this.lbloverview.TabIndex = 19;
-            this.lbloverview.Text = "OVERVIEW";
-            this.lbloverview.Click += new System.EventHandler(this.lbloverview_Click);
-            // 
-            // lblmaintain
-            // 
-            this.lblmaintain.AutoSize = true;
-            this.lblmaintain.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblmaintain.Location = new System.Drawing.Point(59, 10);
-            this.lblmaintain.Name = "lblmaintain";
-            this.lblmaintain.Size = new System.Drawing.Size(105, 25);
-            this.lblmaintain.TabIndex = 19;
-            this.lblmaintain.Text = "MAINTAIN";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Mimmo Float", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(49, 20);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(123, 29);
-            this.label7.TabIndex = 23;
-            this.label7.Text = "TURFSYNC";
-            // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -531,6 +512,37 @@
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(746, 130);
             this.dataGridView1.TabIndex = 7;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(41, 206);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(67, 16);
+            this.label6.TabIndex = 6;
+            this.label6.Text = "REASON:";
+            // 
+            // lblapprove
+            // 
+            this.lblapprove.AutoSize = true;
+            this.lblapprove.BackColor = System.Drawing.Color.RoyalBlue;
+            this.lblapprove.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblapprove.Location = new System.Drawing.Point(59, 224);
+            this.lblapprove.Name = "lblapprove";
+            this.lblapprove.Size = new System.Drawing.Size(95, 25);
+            this.lblapprove.TabIndex = 24;
+            this.lblapprove.Text = "APPROVE";
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::TurfSyncTurfSchedulingSportsSystem.Properties.Resources.add1;
+            this.pictureBox3.Location = new System.Drawing.Point(12, 229);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(32, 26);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 25;
+            this.pictureBox3.TabStop = false;
             // 
             // MaintainTurfManager
             // 
@@ -569,6 +581,7 @@
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -602,7 +615,6 @@
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox1;
@@ -614,5 +626,7 @@
         private System.Windows.Forms.Label lbloverview;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label lblapprove;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }

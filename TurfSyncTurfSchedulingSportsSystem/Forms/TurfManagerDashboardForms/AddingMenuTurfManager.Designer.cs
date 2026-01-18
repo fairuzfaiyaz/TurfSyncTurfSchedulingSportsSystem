@@ -29,21 +29,25 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.button4 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.lblmaintain = new System.Windows.Forms.Label();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.lbloverview = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.lbladding = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -58,11 +62,8 @@
             this.panel9 = new System.Windows.Forms.Panel();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.lbladding = new System.Windows.Forms.Label();
-            this.lbloverview = new System.Windows.Forms.Label();
-            this.lblmaintain = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.lblapprove = new System.Windows.Forms.Label();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -75,21 +76,23 @@
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel5.SuspendLayout();
             this.panel10.SuspendLayout();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.panel9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.RoyalBlue;
+            this.panel1.Controls.Add(this.pictureBox5);
+            this.panel1.Controls.Add(this.lblapprove);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.pictureBox3);
             this.panel1.Controls.Add(this.pictureBox7);
-            this.panel1.Controls.Add(this.button4);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.panel7);
             this.panel1.Controls.Add(this.panel8);
@@ -100,6 +103,16 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(188, 521);
             this.panel1.TabIndex = 1;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Mimmo Float", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(59, 22);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(123, 29);
+            this.label5.TabIndex = 22;
+            this.label5.Text = "TURFSYNC";
             // 
             // pictureBox3
             // 
@@ -123,19 +136,6 @@
             this.pictureBox7.TabIndex = 15;
             this.pictureBox7.TabStop = false;
             // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.Crimson;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(11, 485);
-            this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(73, 36);
-            this.button4.TabIndex = 14;
-            this.button4.Text = "back";
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -157,6 +157,17 @@
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(188, 53);
             this.panel7.TabIndex = 11;
+            // 
+            // lblmaintain
+            // 
+            this.lblmaintain.AutoSize = true;
+            this.lblmaintain.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblmaintain.Location = new System.Drawing.Point(68, 11);
+            this.lblmaintain.Name = "lblmaintain";
+            this.lblmaintain.Size = new System.Drawing.Size(105, 25);
+            this.lblmaintain.TabIndex = 22;
+            this.lblmaintain.Text = "MAINTAIN";
+            this.lblmaintain.Click += new System.EventHandler(this.lblmaintain_Click);
             // 
             // pictureBox6
             // 
@@ -189,6 +200,17 @@
             this.panel8.Size = new System.Drawing.Size(188, 46);
             this.panel8.TabIndex = 12;
             // 
+            // lbloverview
+            // 
+            this.lbloverview.AutoSize = true;
+            this.lbloverview.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbloverview.Location = new System.Drawing.Point(68, 10);
+            this.lbloverview.Name = "lbloverview";
+            this.lbloverview.Size = new System.Drawing.Size(106, 25);
+            this.lbloverview.TabIndex = 21;
+            this.lbloverview.Text = "OVERVIEW";
+            this.lbloverview.Click += new System.EventHandler(this.lbloverview_Click);
+            // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::TurfSyncTurfSchedulingSportsSystem.Properties.Resources.dashboard__2_1;
@@ -210,6 +232,16 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(189, 50);
             this.panel3.TabIndex = 13;
+            // 
+            // lbladding
+            // 
+            this.lbladding.AutoSize = true;
+            this.lbladding.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbladding.Location = new System.Drawing.Point(68, 11);
+            this.lbladding.Name = "lbladding";
+            this.lbladding.Size = new System.Drawing.Size(84, 25);
+            this.lbladding.TabIndex = 20;
+            this.lbladding.Text = "ADDING";
             // 
             // pictureBox4
             // 
@@ -275,6 +307,17 @@
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Add new Slot Schedule";
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.dataGridView1.Location = new System.Drawing.Point(3, 333);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(726, 106);
+            this.dataGridView1.TabIndex = 14;
             // 
             // button3
             // 
@@ -443,58 +486,28 @@
             this.label4.TabIndex = 6;
             this.label4.Text = "Status";
             // 
-            // lbladding
+            // lblapprove
             // 
-            this.lbladding.AutoSize = true;
-            this.lbladding.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbladding.Location = new System.Drawing.Point(68, 11);
-            this.lbladding.Name = "lbladding";
-            this.lbladding.Size = new System.Drawing.Size(84, 25);
-            this.lbladding.TabIndex = 20;
-            this.lbladding.Text = "ADDING";
+            this.lblapprove.AutoSize = true;
+            this.lblapprove.BackColor = System.Drawing.Color.RoyalBlue;
+            this.lblapprove.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblapprove.Location = new System.Drawing.Point(59, 222);
+            this.lblapprove.Name = "lblapprove";
+            this.lblapprove.Size = new System.Drawing.Size(95, 25);
+            this.lblapprove.TabIndex = 25;
+            this.lblapprove.Text = "APPROVE";
+            this.lblapprove.Click += new System.EventHandler(this.lblapprove_Click);
             // 
-            // lbloverview
+            // pictureBox5
             // 
-            this.lbloverview.AutoSize = true;
-            this.lbloverview.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbloverview.Location = new System.Drawing.Point(68, 10);
-            this.lbloverview.Name = "lbloverview";
-            this.lbloverview.Size = new System.Drawing.Size(106, 25);
-            this.lbloverview.TabIndex = 21;
-            this.lbloverview.Text = "OVERVIEW";
-            this.lbloverview.Click += new System.EventHandler(this.lbloverview_Click);
-            // 
-            // lblmaintain
-            // 
-            this.lblmaintain.AutoSize = true;
-            this.lblmaintain.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblmaintain.Location = new System.Drawing.Point(68, 11);
-            this.lblmaintain.Name = "lblmaintain";
-            this.lblmaintain.Size = new System.Drawing.Size(105, 25);
-            this.lblmaintain.TabIndex = 22;
-            this.lblmaintain.Text = "MAINTAIN";
-            this.lblmaintain.Click += new System.EventHandler(this.lblmaintain_Click);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Mimmo Float", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(59, 22);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(123, 29);
-            this.label5.TabIndex = 22;
-            this.label5.Text = "TURFSYNC";
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 333);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(726, 106);
-            this.dataGridView1.TabIndex = 14;
+            this.pictureBox5.Image = global::TurfSyncTurfSchedulingSportsSystem.Properties.Resources.add1;
+            this.pictureBox5.Location = new System.Drawing.Point(12, 221);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(32, 26);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 21;
+            this.pictureBox5.TabStop = false;
             // 
             // AddingMenuTurfManager
             // 
@@ -524,6 +537,7 @@
             this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.panel10.ResumeLayout(false);
@@ -533,7 +547,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -563,7 +577,6 @@
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
@@ -575,5 +588,7 @@
         private System.Windows.Forms.Label lbladding;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.Label lblapprove;
     }
 }

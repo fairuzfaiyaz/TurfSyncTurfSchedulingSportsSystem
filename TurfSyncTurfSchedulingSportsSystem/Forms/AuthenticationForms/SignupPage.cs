@@ -132,5 +132,10 @@ namespace TurfSyncTurfSchedulingSportsSystem.Forms
                 MessageBox.Show($"Error: {ex.Message}", "Signup Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }            
         }
+
+        private void pictureBox1_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
