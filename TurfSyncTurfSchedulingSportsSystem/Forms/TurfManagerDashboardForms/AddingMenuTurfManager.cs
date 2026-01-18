@@ -106,7 +106,7 @@ namespace TurfSyncTurfSchedulingSportsSystem.Forms
             turfidtxt.Text = "";
             locationtxt.Text = "";
             durationtxt.Text = "";
-            price.Value = 0;
+            price.Value = 1000;
             status.SelectedIndex = 0;
         }
 
@@ -134,6 +134,11 @@ namespace TurfSyncTurfSchedulingSportsSystem.Forms
         {
             this.Hide();
             new MaintainTurfManager().Show();
+        }
+
+        private void price_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

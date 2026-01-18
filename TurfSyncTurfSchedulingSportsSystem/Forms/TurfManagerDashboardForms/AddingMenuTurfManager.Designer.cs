@@ -542,6 +542,7 @@
             0,
             0,
             0});
+            this.price.ValueChanged += new System.EventHandler(this.price_ValueChanged);
             // 
             // label3
             // 
