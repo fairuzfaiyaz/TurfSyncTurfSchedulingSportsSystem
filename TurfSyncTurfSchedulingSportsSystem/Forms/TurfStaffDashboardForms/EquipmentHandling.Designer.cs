@@ -72,6 +72,11 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.pictureBox25 = new System.Windows.Forms.PictureBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.pictureBox26 = new System.Windows.Forms.PictureBox();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
@@ -99,6 +104,9 @@
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -151,6 +159,7 @@
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "Issued";
             this.radioButton2.UseVisualStyleBackColor = false;
+            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             // 
             // radioButton1
             // 
@@ -367,17 +376,18 @@
             // pictureBox12
             // 
             this.pictureBox12.Image = global::TurfSyncTurfSchedulingSportsSystem.Properties.Resources._5c968dfa87979e60edb4309e56495415;
-            this.pictureBox12.Location = new System.Drawing.Point(48, 38);
+            this.pictureBox12.Location = new System.Drawing.Point(48, 53);
             this.pictureBox12.Name = "pictureBox12";
             this.pictureBox12.Size = new System.Drawing.Size(45, 53);
             this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox12.TabIndex = 43;
             this.pictureBox12.TabStop = false;
+            this.pictureBox12.Click += new System.EventHandler(this.pictureBox12_Click);
             // 
             // pictureBox11
             // 
             this.pictureBox11.Image = global::TurfSyncTurfSchedulingSportsSystem.Properties.Resources._3205bc83145fc5826fb3741abeb6edf7;
-            this.pictureBox11.Location = new System.Drawing.Point(958, 170);
+            this.pictureBox11.Location = new System.Drawing.Point(-2, 0);
             this.pictureBox11.Name = "pictureBox11";
             this.pictureBox11.Size = new System.Drawing.Size(298, 376);
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -387,7 +397,7 @@
             // pictureBox10
             // 
             this.pictureBox10.Image = global::TurfSyncTurfSchedulingSportsSystem.Properties.Resources._3205bc83145fc5826fb3741abeb6edf7;
-            this.pictureBox10.Location = new System.Drawing.Point(549, 170);
+            this.pictureBox10.Location = new System.Drawing.Point(3, 6);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(298, 376);
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -410,7 +420,7 @@
             this.pictureBox9.Image = global::TurfSyncTurfSchedulingSportsSystem.Properties.Resources._3205bc83145fc5826fb3741abeb6edf7;
             this.pictureBox9.Location = new System.Drawing.Point(6, 3);
             this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(299, 376);
+            this.pictureBox9.Size = new System.Drawing.Size(287, 370);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox9.TabIndex = 40;
             this.pictureBox9.TabStop = false;
@@ -444,7 +454,7 @@
             this.pictureBox6.Image = global::TurfSyncTurfSchedulingSportsSystem.Properties.Resources.ff644756023be2c8e624322160f4a965;
             this.pictureBox6.Location = new System.Drawing.Point(79, 129);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(1200, 491);
+            this.pictureBox6.Size = new System.Drawing.Size(1200, 591);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox6.TabIndex = 5;
             this.pictureBox6.TabStop = false;
@@ -558,9 +568,9 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox8);
             this.panel1.Controls.Add(this.pictureBox9);
-            this.panel1.Location = new System.Drawing.Point(107, 186);
+            this.panel1.Location = new System.Drawing.Point(79, 129);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(305, 376);
+            this.panel1.Size = new System.Drawing.Size(297, 379);
             this.panel1.TabIndex = 69;
             // 
             // panel2
@@ -587,13 +597,15 @@
             this.panel4.Controls.Add(this.pictureBox15);
             this.panel4.Controls.Add(this.label3);
             this.panel4.Controls.Add(this.pictureBox12);
-            this.panel4.Location = new System.Drawing.Point(549, 173);
+            this.panel4.Controls.Add(this.pictureBox10);
+            this.panel4.Location = new System.Drawing.Point(511, 132);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(297, 372);
             this.panel4.TabIndex = 72;
             // 
             // panel5
             // 
+            this.panel5.Controls.Add(this.pictureBox25);
             this.panel5.Controls.Add(this.radioButton8);
             this.panel5.Controls.Add(this.pictureBox21);
             this.panel5.Controls.Add(this.radioButton9);
@@ -601,11 +613,69 @@
             this.panel5.Controls.Add(this.radioButton3);
             this.panel5.Controls.Add(this.pictureBox16);
             this.panel5.Controls.Add(this.label4);
+            this.panel5.Controls.Add(this.pictureBox11);
             this.panel5.Controls.Add(this.pictureBox13);
-            this.panel5.Location = new System.Drawing.Point(959, 172);
+            this.panel5.Location = new System.Drawing.Point(897, 135);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(296, 373);
             this.panel5.TabIndex = 73;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(79, 523);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(1199, 196);
+            this.dataGridView1.TabIndex = 74;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dataGridView1.SelectionChanged += new System.EventHandler(this.dataGridView1_SelectionChanged_1);
+            // 
+            // pictureBox25
+            // 
+            this.pictureBox25.Image = global::TurfSyncTurfSchedulingSportsSystem.Properties.Resources._5c968dfa87979e60edb4309e56495415;
+            this.pictureBox25.Location = new System.Drawing.Point(42, 46);
+            this.pictureBox25.Name = "pictureBox25";
+            this.pictureBox25.Size = new System.Drawing.Size(45, 53);
+            this.pictureBox25.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox25.TabIndex = 75;
+            this.pictureBox25.TabStop = false;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Black;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.Lime;
+            this.button2.Location = new System.Drawing.Point(601, 746);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(149, 27);
+            this.button2.TabIndex = 76;
+            this.button2.Text = "Save Changes";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
+            // 
+            // pictureBox26
+            // 
+            this.pictureBox26.Image = global::TurfSyncTurfSchedulingSportsSystem.Properties.Resources.c4bd31be3249f31084aa6ae4564e79e8;
+            this.pictureBox26.Location = new System.Drawing.Point(557, 733);
+            this.pictureBox26.Name = "pictureBox26";
+            this.pictureBox26.Size = new System.Drawing.Size(233, 54);
+            this.pictureBox26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox26.TabIndex = 75;
+            this.pictureBox26.TabStop = false;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Lime;
+            this.label5.Location = new System.Drawing.Point(122, 16);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(65, 33);
+            this.label5.TabIndex = 77;
+            this.label5.Text = "Bibs";
             // 
             // EquipmentHandling
             // 
@@ -613,6 +683,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(1337, 796);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.pictureBox26);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel1);
@@ -620,8 +694,6 @@
             this.Controls.Add(this.pictureBox24);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox23);
-            this.Controls.Add(this.pictureBox11);
-            this.Controls.Add(this.pictureBox10);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.pictureBox6);
@@ -664,6 +736,9 @@
             this.panel4.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -715,5 +790,10 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.PictureBox pictureBox25;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.PictureBox pictureBox26;
+        private System.Windows.Forms.Label label5;
     }
 }

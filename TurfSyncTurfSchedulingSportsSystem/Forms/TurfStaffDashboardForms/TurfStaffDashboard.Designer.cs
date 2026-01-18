@@ -50,6 +50,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button6 = new System.Windows.Forms.Button();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
@@ -316,11 +317,28 @@
             this.pictureBox12.TabIndex = 50;
             this.pictureBox12.TabStop = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Lime;
+            this.label1.Image = global::TurfSyncTurfSchedulingSportsSystem.Properties.Resources._2c02cdf777e6c239ae53c5e49b8b9f86;
+            this.label1.Location = new System.Drawing.Point(261, 134);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(314, 35);
+            this.label1.TabIndex = 52;
+            this.label1.Text = "Turf Staff Management";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
             // TurfStaffDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1314, 772);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.pictureBox12);
             this.Controls.Add(this.signUp);
@@ -383,5 +401,6 @@
         private System.Windows.Forms.PictureBox pictureBox11;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.PictureBox pictureBox12;
+        private System.Windows.Forms.Label label1;
     }
 }

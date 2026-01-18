@@ -25,6 +25,7 @@ namespace TurfSyncTurfSchedulingSportsSystem.Forms
             InitializeComponent();
             this.currentstaff = user;
             LoadBookedRequests();
+            label3.Text = currentstaff.Username;
         }
         private void button1_Click(object sender, EventArgs e)
         {
@@ -107,8 +108,9 @@ namespace TurfSyncTurfSchedulingSportsSystem.Forms
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
-            TurfStaffDashboard turfStaffDashboard = new TurfStaffDashboard();
+            TurfStaffDashboard turfStaffDashboard = new TurfStaffDashboard(currentstaff);
             turfStaffDashboard.Show();
+            
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)

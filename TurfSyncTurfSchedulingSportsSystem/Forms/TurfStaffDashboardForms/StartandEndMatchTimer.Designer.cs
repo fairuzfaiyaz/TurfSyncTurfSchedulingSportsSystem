@@ -45,6 +45,7 @@
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.button6 = new System.Windows.Forms.Button();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -257,11 +258,25 @@
             this.pictureBox12.TabIndex = 48;
             this.pictureBox12.TabStop = false;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Lime;
+            this.label4.Location = new System.Drawing.Point(129, 42);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(65, 33);
+            this.label4.TabIndex = 50;
+            this.label4.Text = "Bibs";
+            this.label4.Click += new System.EventHandler(this.label4_Click_1);
+            // 
             // StartandEndMatchTimer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1333, 788);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.pictureBox12);
             this.Controls.Add(this.button3);
@@ -314,5 +329,6 @@
         private System.Windows.Forms.PictureBox pictureBox11;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.PictureBox pictureBox12;
+        private System.Windows.Forms.Label label4;
     }
 }

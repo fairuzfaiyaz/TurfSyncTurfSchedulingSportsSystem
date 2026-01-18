@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -22,6 +23,7 @@ namespace TurfSyncTurfSchedulingSportsSystem.Forms
         {
             InitializeComponent();
             this.currentstaff = user;
+            label3.Text = currentstaff.Username;
         }
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
@@ -37,7 +39,7 @@ namespace TurfSyncTurfSchedulingSportsSystem.Forms
         private void button1_Click(object sender, EventArgs e)
         {
             this.Dispose();
-            TurfStaffDashboard turfStaffDashboard = new TurfStaffDashboard();
+            TurfStaffDashboard turfStaffDashboard = new TurfStaffDashboard(currentstaff);
             turfStaffDashboard.Show();
         }
         private void pictureBox4_Click(object sender, EventArgs e)

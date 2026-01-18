@@ -22,6 +22,7 @@ namespace TurfSyncTurfSchedulingSportsSystem.Forms
         {
             InitializeComponent();
             this.currentstaff = user;
+            label4.Text = currentstaff.Username;
         }
         private void label4_Click(object sender, EventArgs e)
         {
@@ -36,8 +37,9 @@ namespace TurfSyncTurfSchedulingSportsSystem.Forms
         private void button3_Click(object sender, EventArgs e)
         {
             this.Close();
-            TurfStaffDashboard turfStaffDashboard = new TurfStaffDashboard();
+            TurfStaffDashboard turfStaffDashboard = new TurfStaffDashboard(currentstaff);
             turfStaffDashboard.Show();
+
         }
 
         private void button6_Click(object sender, EventArgs e)
@@ -45,6 +47,11 @@ namespace TurfSyncTurfSchedulingSportsSystem.Forms
             this.Hide();
             MyProfile profile = new MyProfile(currentstaff);
             profile.Show();
+        }
+
+        private void label4_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }
