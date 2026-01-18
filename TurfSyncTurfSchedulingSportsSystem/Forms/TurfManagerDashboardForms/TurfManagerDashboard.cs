@@ -89,5 +89,11 @@ namespace TurfSyncTurfSchedulingSportsSystem.Forms
         {
 
         }
+
+        private void lblmaintain_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new MaintainTurfManager().Show();
+        }
     }
 }

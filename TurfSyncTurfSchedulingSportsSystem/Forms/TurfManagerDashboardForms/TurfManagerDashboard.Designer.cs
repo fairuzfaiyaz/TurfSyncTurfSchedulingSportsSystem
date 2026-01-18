@@ -151,6 +151,7 @@
             this.lblmaintain.Size = new System.Drawing.Size(105, 25);
             this.lblmaintain.TabIndex = 14;
             this.lblmaintain.Text = "MAINTAIN";
+            this.lblmaintain.Click += new System.EventHandler(this.lblmaintain_Click);
             // 
             // pictureBox6
             // 

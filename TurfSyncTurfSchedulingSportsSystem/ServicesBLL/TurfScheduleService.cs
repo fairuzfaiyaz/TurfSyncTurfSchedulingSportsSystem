@@ -92,5 +92,27 @@ namespace TurfSyncTurfSchedulingSportsSystem.ServicesBLL
             }
             return list;
         }
+        //newwwww
+        public void UpdateStatusByRow(DateTime date, TimeSpan time, string location, string newStatus)
+        {
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                string query = @"UPDATE TurfSchedule
+                         SET Status=@Status
+                         WHERE ScheduleDate=@Date AND ScheduleTime=@Time AND TurfLocation=@Location";
+
+                SqlCommand cmd = new SqlCommand(query, con);
+                cmd.Parameters.AddWithValue("@Date", date.Date);
+                cmd.Parameters.AddWithValue("@Time", time);
+                cmd.Parameters.AddWithValue("@Location", location);
+                cmd.Parameters.AddWithValue("@Status", newStatus);
+
+                con.Open();
+                int rows = cmd.ExecuteNonQuery();
+                if (rows == 0)
+                    throw new Exception("No matching schedule found!");
+            }
+        }
+
     }
 }
