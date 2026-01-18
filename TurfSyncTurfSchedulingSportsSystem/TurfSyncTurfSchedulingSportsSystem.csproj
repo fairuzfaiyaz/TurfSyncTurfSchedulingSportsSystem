@@ -226,6 +226,8 @@
     </Compile>
     <Compile Include="Interfaces\IAuthenticator.cs" />
     <Compile Include="Interfaces\IUserRepository.cs" />
+    <Compile Include="Models\PendingRequest.cs" />
+    <Compile Include="Models\Turf.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -492,6 +494,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="SQL Query\LoginQuery.txt" />
+    <Content Include="SQL Query\TurfSchedule.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -30,7 +30,7 @@ namespace TurfSyncTurfSchedulingSportsSystem.Forms
         private void button8_Click(object sender, EventArgs e)
         {
             this.Hide();
-            BookTurfSchedule bookTurfSchedule = new BookTurfSchedule();
+            BookTurfSchedule bookTurfSchedule = new BookTurfSchedule(currentUser);
             bookTurfSchedule.Show();
         }
 
