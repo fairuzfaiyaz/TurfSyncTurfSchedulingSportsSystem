@@ -46,19 +46,19 @@
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.todaysbooking = new System.Windows.Forms.Panel();
+            this.lblbooking = new System.Windows.Forms.Label();
+            this.lblbookingtxt = new System.Windows.Forms.Label();
             this.pendingapproval = new System.Windows.Forms.Panel();
+            this.lblpendingapproval = new System.Windows.Forms.Label();
+            this.lblpendingapprovaltxt = new System.Windows.Forms.Label();
             this.checkedinpanel = new System.Windows.Forms.Panel();
+            this.lblcheckedin = new System.Windows.Forms.Label();
+            this.lblcheckedintxt = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.lblrevenue = new System.Windows.Forms.Label();
+            this.lblrevenuetxt = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.lblbookingtxt = new System.Windows.Forms.Label();
-            this.lblpendingapprovaltxt = new System.Windows.Forms.Label();
-            this.lblcheckedintxt = new System.Windows.Forms.Label();
-            this.lblrevenuetxt = new System.Windows.Forms.Label();
-            this.lblbooking = new System.Windows.Forms.Label();
-            this.lblpendingapproval = new System.Windows.Forms.Label();
-            this.lblcheckedin = new System.Windows.Forms.Label();
-            this.lblrevenue = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -151,7 +151,6 @@
             this.lblmaintain.Size = new System.Drawing.Size(105, 25);
             this.lblmaintain.TabIndex = 14;
             this.lblmaintain.Text = "MAINTAIN";
-            this.lblmaintain.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // pictureBox6
             // 
@@ -251,7 +250,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(747, 80);
             this.panel2.TabIndex = 1;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // richTextBox1
             // 
@@ -264,7 +262,6 @@
             this.richTextBox1.Size = new System.Drawing.Size(324, 70);
             this.richTextBox1.TabIndex = 4;
             this.richTextBox1.Text = "Welcome to \nManager Dashborad\n";
-            this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
             // 
             // pictureBox4
             // 
@@ -288,7 +285,25 @@
             this.todaysbooking.Name = "todaysbooking";
             this.todaysbooking.Size = new System.Drawing.Size(163, 110);
             this.todaysbooking.TabIndex = 2;
-            this.todaysbooking.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
+            // 
+            // lblbooking
+            // 
+            this.lblbooking.AutoSize = true;
+            this.lblbooking.Location = new System.Drawing.Point(62, 47);
+            this.lblbooking.Name = "lblbooking";
+            this.lblbooking.Size = new System.Drawing.Size(52, 18);
+            this.lblbooking.TabIndex = 1;
+            this.lblbooking.Text = "label1";
+            // 
+            // lblbookingtxt
+            // 
+            this.lblbookingtxt.AutoSize = true;
+            this.lblbookingtxt.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblbookingtxt.Location = new System.Drawing.Point(36, 17);
+            this.lblbookingtxt.Name = "lblbookingtxt";
+            this.lblbookingtxt.Size = new System.Drawing.Size(96, 18);
+            this.lblbookingtxt.TabIndex = 0;
+            this.lblbookingtxt.Text = "BOOKINGS";
             // 
             // pendingapproval
             // 
@@ -302,6 +317,25 @@
             this.pendingapproval.Size = new System.Drawing.Size(191, 110);
             this.pendingapproval.TabIndex = 3;
             // 
+            // lblpendingapproval
+            // 
+            this.lblpendingapproval.AutoSize = true;
+            this.lblpendingapproval.Location = new System.Drawing.Point(56, 47);
+            this.lblpendingapproval.Name = "lblpendingapproval";
+            this.lblpendingapproval.Size = new System.Drawing.Size(52, 18);
+            this.lblpendingapproval.TabIndex = 2;
+            this.lblpendingapproval.Text = "label1";
+            // 
+            // lblpendingapprovaltxt
+            // 
+            this.lblpendingapprovaltxt.AutoSize = true;
+            this.lblpendingapprovaltxt.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblpendingapprovaltxt.Location = new System.Drawing.Point(14, 11);
+            this.lblpendingapprovaltxt.Name = "lblpendingapprovaltxt";
+            this.lblpendingapprovaltxt.Size = new System.Drawing.Size(174, 18);
+            this.lblpendingapprovaltxt.TabIndex = 1;
+            this.lblpendingapprovaltxt.Text = "PENDING APPROVAL";
+            // 
             // checkedinpanel
             // 
             this.checkedinpanel.BackColor = System.Drawing.Color.MidnightBlue;
@@ -314,6 +348,26 @@
             this.checkedinpanel.Size = new System.Drawing.Size(145, 110);
             this.checkedinpanel.TabIndex = 4;
             // 
+            // lblcheckedin
+            // 
+            this.lblcheckedin.AutoSize = true;
+            this.lblcheckedin.Location = new System.Drawing.Point(41, 49);
+            this.lblcheckedin.Name = "lblcheckedin";
+            this.lblcheckedin.Size = new System.Drawing.Size(52, 18);
+            this.lblcheckedin.TabIndex = 3;
+            this.lblcheckedin.Text = "label1";
+            this.lblcheckedin.Click += new System.EventHandler(this.lblcheckedin_Click);
+            // 
+            // lblcheckedintxt
+            // 
+            this.lblcheckedintxt.AutoSize = true;
+            this.lblcheckedintxt.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblcheckedintxt.Location = new System.Drawing.Point(19, 15);
+            this.lblcheckedintxt.Name = "lblcheckedintxt";
+            this.lblcheckedintxt.Size = new System.Drawing.Size(110, 18);
+            this.lblcheckedintxt.TabIndex = 2;
+            this.lblcheckedintxt.Text = "CHECKED IN";
+            // 
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.MidnightBlue;
@@ -325,6 +379,25 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(205, 112);
             this.panel6.TabIndex = 5;
+            // 
+            // lblrevenue
+            // 
+            this.lblrevenue.AutoSize = true;
+            this.lblrevenue.Location = new System.Drawing.Point(66, 49);
+            this.lblrevenue.Name = "lblrevenue";
+            this.lblrevenue.Size = new System.Drawing.Size(52, 18);
+            this.lblrevenue.TabIndex = 4;
+            this.lblrevenue.Text = "label1";
+            // 
+            // lblrevenuetxt
+            // 
+            this.lblrevenuetxt.AutoSize = true;
+            this.lblrevenuetxt.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblrevenuetxt.Location = new System.Drawing.Point(46, 15);
+            this.lblrevenuetxt.Name = "lblrevenuetxt";
+            this.lblrevenuetxt.Size = new System.Drawing.Size(87, 18);
+            this.lblrevenuetxt.TabIndex = 3;
+            this.lblrevenuetxt.Text = "REVENUE";
             // 
             // groupBox1
             // 
@@ -339,7 +412,6 @@
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Booking Details";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // dataGridView1
             // 
@@ -356,87 +428,6 @@
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(719, 248);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // lblbookingtxt
-            // 
-            this.lblbookingtxt.AutoSize = true;
-            this.lblbookingtxt.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblbookingtxt.Location = new System.Drawing.Point(36, 17);
-            this.lblbookingtxt.Name = "lblbookingtxt";
-            this.lblbookingtxt.Size = new System.Drawing.Size(96, 18);
-            this.lblbookingtxt.TabIndex = 0;
-            this.lblbookingtxt.Text = "BOOKINGS";
-            // 
-            // lblpendingapprovaltxt
-            // 
-            this.lblpendingapprovaltxt.AutoSize = true;
-            this.lblpendingapprovaltxt.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblpendingapprovaltxt.Location = new System.Drawing.Point(14, 11);
-            this.lblpendingapprovaltxt.Name = "lblpendingapprovaltxt";
-            this.lblpendingapprovaltxt.Size = new System.Drawing.Size(174, 18);
-            this.lblpendingapprovaltxt.TabIndex = 1;
-            this.lblpendingapprovaltxt.Text = "PENDING APPROVAL";
-            this.lblpendingapprovaltxt.Click += new System.EventHandler(this.lblpendingapproval_Click);
-            // 
-            // lblcheckedintxt
-            // 
-            this.lblcheckedintxt.AutoSize = true;
-            this.lblcheckedintxt.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblcheckedintxt.Location = new System.Drawing.Point(19, 15);
-            this.lblcheckedintxt.Name = "lblcheckedintxt";
-            this.lblcheckedintxt.Size = new System.Drawing.Size(110, 18);
-            this.lblcheckedintxt.TabIndex = 2;
-            this.lblcheckedintxt.Text = "CHECKED IN";
-            // 
-            // lblrevenuetxt
-            // 
-            this.lblrevenuetxt.AutoSize = true;
-            this.lblrevenuetxt.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblrevenuetxt.Location = new System.Drawing.Point(46, 15);
-            this.lblrevenuetxt.Name = "lblrevenuetxt";
-            this.lblrevenuetxt.Size = new System.Drawing.Size(87, 18);
-            this.lblrevenuetxt.TabIndex = 3;
-            this.lblrevenuetxt.Text = "REVENUE";
-            // 
-            // lblbooking
-            // 
-            this.lblbooking.AutoSize = true;
-            this.lblbooking.Location = new System.Drawing.Point(62, 47);
-            this.lblbooking.Name = "lblbooking";
-            this.lblbooking.Size = new System.Drawing.Size(52, 18);
-            this.lblbooking.TabIndex = 1;
-            this.lblbooking.Text = "label1";
-            this.lblbooking.Click += new System.EventHandler(this.lblbooking_Click);
-            // 
-            // lblpendingapproval
-            // 
-            this.lblpendingapproval.AutoSize = true;
-            this.lblpendingapproval.Location = new System.Drawing.Point(56, 47);
-            this.lblpendingapproval.Name = "lblpendingapproval";
-            this.lblpendingapproval.Size = new System.Drawing.Size(52, 18);
-            this.lblpendingapproval.TabIndex = 2;
-            this.lblpendingapproval.Text = "label1";
-            this.lblpendingapproval.Click += new System.EventHandler(this.lblpendingapproval_Click_1);
-            // 
-            // lblcheckedin
-            // 
-            this.lblcheckedin.AutoSize = true;
-            this.lblcheckedin.Location = new System.Drawing.Point(41, 49);
-            this.lblcheckedin.Name = "lblcheckedin";
-            this.lblcheckedin.Size = new System.Drawing.Size(52, 18);
-            this.lblcheckedin.TabIndex = 3;
-            this.lblcheckedin.Text = "label1";
-            this.lblcheckedin.Click += new System.EventHandler(this.lblcheckedin_Click);
-            // 
-            // lblrevenue
-            // 
-            this.lblrevenue.AutoSize = true;
-            this.lblrevenue.Location = new System.Drawing.Point(66, 49);
-            this.lblrevenue.Name = "lblrevenue";
-            this.lblrevenue.Size = new System.Drawing.Size(52, 18);
-            this.lblrevenue.TabIndex = 4;
-            this.lblrevenue.Text = "label1";
-            this.lblrevenue.Click += new System.EventHandler(this.lblrevenue_Click);
             // 
             // TurfManagerDashboard
             // 
