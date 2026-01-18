@@ -234,11 +234,13 @@
     <Compile Include="Interfaces\IAuthenticator.cs" />
     <Compile Include="Interfaces\IUserRepository.cs" />
     <Compile Include="Models\PendingRequest.cs" />
+    <Compile Include="Models\TurfSchedule.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ServicesBLL\Authenticator.cs" />
     <Compile Include="ServicesBLL\PendingRequestService.cs" />
+    <Compile Include="ServicesBLL\TurfScheduleService.cs" />
     <EmbeddedResource Include="Forms\AdminDashboardForms\AdminDashboard.resx">
       <DependentUpon>AdminDashboard.cs</DependentUpon>
     </EmbeddedResource>

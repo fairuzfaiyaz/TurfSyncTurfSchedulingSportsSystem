@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.lblapprove = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
@@ -47,24 +49,30 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnupdate = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.label1 = new System.Windows.Forms.Label();
+            this.locationtxt = new System.Windows.Forms.TextBox();
+            this.locationlbl = new System.Windows.Forms.Label();
+            this.turfidtxt = new System.Windows.Forms.TextBox();
+            this.lblid = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
+            this.lblslottime = new System.Windows.Forms.Label();
+            this.dateTimePickerslottime = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePickerslotdate = new System.Windows.Forms.DateTimePicker();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.durationtxt = new System.Windows.Forms.TextBox();
+            this.durationlbl = new System.Windows.Forms.Label();
+            this.price = new System.Windows.Forms.NumericUpDown();
             this.label3 = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.status = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.lblapprove = new System.Windows.Forms.Label();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.panel7.SuspendLayout();
@@ -80,9 +88,8 @@
             this.panel5.SuspendLayout();
             this.panel10.SuspendLayout();
             this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.price)).BeginInit();
             this.panel9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -103,6 +110,28 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(188, 521);
             this.panel1.TabIndex = 1;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::TurfSyncTurfSchedulingSportsSystem.Properties.Resources.add1;
+            this.pictureBox5.Location = new System.Drawing.Point(12, 221);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(32, 26);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 21;
+            this.pictureBox5.TabStop = false;
+            // 
+            // lblapprove
+            // 
+            this.lblapprove.AutoSize = true;
+            this.lblapprove.BackColor = System.Drawing.Color.RoyalBlue;
+            this.lblapprove.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblapprove.Location = new System.Drawing.Point(59, 222);
+            this.lblapprove.Name = "lblapprove";
+            this.lblapprove.Size = new System.Drawing.Size(95, 25);
+            this.lblapprove.TabIndex = 25;
+            this.lblapprove.Text = "APPROVE";
             // 
             // label5
             // 
@@ -291,6 +320,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnupdate);
             this.groupBox1.Controls.Add(this.dataGridView1);
             this.groupBox1.Controls.Add(this.button3);
             this.groupBox1.Controls.Add(this.button2);
@@ -307,6 +337,18 @@
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Add new Slot Schedule";
+            // 
+            // btnupdate
+            // 
+            this.btnupdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnupdate.Location = new System.Drawing.Point(298, 300);
+            this.btnupdate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnupdate.Name = "btnupdate";
+            this.btnupdate.Size = new System.Drawing.Size(116, 28);
+            this.btnupdate.TabIndex = 15;
+            this.btnupdate.Text = "Update Slot";
+            this.btnupdate.UseVisualStyleBackColor = false;
+            this.btnupdate.Click += new System.EventHandler(this.btnupdate_Click);
             // 
             // dataGridView1
             // 
@@ -329,6 +371,7 @@
             this.button3.TabIndex = 13;
             this.button3.Text = "Clear Slot";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -340,75 +383,118 @@
             this.button2.TabIndex = 12;
             this.button2.Text = "Save Slot";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.MidnightBlue;
-            this.panel5.Controls.Add(this.dateTimePicker1);
-            this.panel5.Controls.Add(this.label1);
+            this.panel5.Controls.Add(this.locationtxt);
+            this.panel5.Controls.Add(this.locationlbl);
+            this.panel5.Controls.Add(this.turfidtxt);
+            this.panel5.Controls.Add(this.lblid);
             this.panel5.Location = new System.Drawing.Point(5, 20);
             this.panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(720, 58);
             this.panel5.TabIndex = 8;
             // 
-            // dateTimePicker1
+            // locationtxt
             // 
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dateTimePicker1.Location = new System.Drawing.Point(8, 32);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.ShowUpDown = true;
-            this.dateTimePicker1.Size = new System.Drawing.Size(127, 22);
-            this.dateTimePicker1.TabIndex = 1;
+            this.locationtxt.Location = new System.Drawing.Point(454, 18);
+            this.locationtxt.Name = "locationtxt";
+            this.locationtxt.Size = new System.Drawing.Size(100, 22);
+            this.locationtxt.TabIndex = 7;
             // 
-            // label1
+            // locationlbl
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(90, 17);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "SLOT TIME";
+            this.locationlbl.AutoSize = true;
+            this.locationlbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.locationlbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.locationlbl.Location = new System.Drawing.Point(347, 21);
+            this.locationlbl.Name = "locationlbl";
+            this.locationlbl.Size = new System.Drawing.Size(86, 17);
+            this.locationlbl.TabIndex = 6;
+            this.locationlbl.Text = "LOCATION";
+            // 
+            // turfidtxt
+            // 
+            this.turfidtxt.Location = new System.Drawing.Point(121, 16);
+            this.turfidtxt.Name = "turfidtxt";
+            this.turfidtxt.Size = new System.Drawing.Size(100, 22);
+            this.turfidtxt.TabIndex = 5;
+            // 
+            // lblid
+            // 
+            this.lblid.AutoSize = true;
+            this.lblid.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblid.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblid.Location = new System.Drawing.Point(15, 12);
+            this.lblid.Name = "lblid";
+            this.lblid.Size = new System.Drawing.Size(64, 17);
+            this.lblid.TabIndex = 4;
+            this.lblid.Text = "TURFID";
             // 
             // panel10
             // 
             this.panel10.BackColor = System.Drawing.Color.MidnightBlue;
+            this.panel10.Controls.Add(this.lblslottime);
+            this.panel10.Controls.Add(this.dateTimePickerslottime);
             this.panel10.Controls.Add(this.label2);
-            this.panel10.Controls.Add(this.dateTimePicker2);
+            this.panel10.Controls.Add(this.dateTimePickerslotdate);
             this.panel10.Location = new System.Drawing.Point(6, 83);
             this.panel10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(720, 65);
             this.panel10.TabIndex = 11;
             // 
+            // lblslottime
+            // 
+            this.lblslottime.AutoSize = true;
+            this.lblslottime.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblslottime.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblslottime.Location = new System.Drawing.Point(14, 23);
+            this.lblslottime.Name = "lblslottime";
+            this.lblslottime.Size = new System.Drawing.Size(90, 17);
+            this.lblslottime.TabIndex = 0;
+            this.lblslottime.Text = "SLOT TIME";
+            // 
+            // dateTimePickerslottime
+            // 
+            this.dateTimePickerslottime.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.dateTimePickerslottime.Location = new System.Drawing.Point(120, 22);
+            this.dateTimePickerslottime.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dateTimePickerslottime.Name = "dateTimePickerslottime";
+            this.dateTimePickerslottime.ShowUpDown = true;
+            this.dateTimePickerslottime.Size = new System.Drawing.Size(127, 22);
+            this.dateTimePickerslottime.TabIndex = 1;
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(4, 3);
+            this.label2.Location = new System.Drawing.Point(346, 28);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(95, 17);
             this.label2.TabIndex = 2;
             this.label2.Text = "SLOT DATE";
             // 
-            // dateTimePicker2
+            // dateTimePickerslotdate
             // 
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker2.Location = new System.Drawing.Point(7, 32);
-            this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.ShowUpDown = true;
-            this.dateTimePicker2.Size = new System.Drawing.Size(127, 22);
-            this.dateTimePicker2.TabIndex = 3;
+            this.dateTimePickerslotdate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePickerslotdate.Location = new System.Drawing.Point(453, 23);
+            this.dateTimePickerslotdate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dateTimePickerslotdate.Name = "dateTimePickerslotdate";
+            this.dateTimePickerslotdate.ShowUpDown = true;
+            this.dateTimePickerslotdate.Size = new System.Drawing.Size(127, 22);
+            this.dateTimePickerslotdate.TabIndex = 3;
             // 
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.MidnightBlue;
-            this.panel6.Controls.Add(this.numericUpDown1);
+            this.panel6.Controls.Add(this.durationtxt);
+            this.panel6.Controls.Add(this.durationlbl);
+            this.panel6.Controls.Add(this.price);
             this.panel6.Controls.Add(this.label3);
             this.panel6.Location = new System.Drawing.Point(6, 153);
             this.panel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -416,24 +502,42 @@
             this.panel6.Size = new System.Drawing.Size(725, 64);
             this.panel6.TabIndex = 9;
             // 
-            // numericUpDown1
+            // durationtxt
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(16, 43);
-            this.numericUpDown1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.numericUpDown1.Maximum = new decimal(new int[] {
+            this.durationtxt.Location = new System.Drawing.Point(120, 21);
+            this.durationtxt.Name = "durationtxt";
+            this.durationtxt.Size = new System.Drawing.Size(100, 22);
+            this.durationtxt.TabIndex = 8;
+            // 
+            // durationlbl
+            // 
+            this.durationlbl.AutoSize = true;
+            this.durationlbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.durationlbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.durationlbl.Location = new System.Drawing.Point(14, 24);
+            this.durationlbl.Name = "durationlbl";
+            this.durationlbl.Size = new System.Drawing.Size(88, 17);
+            this.durationlbl.TabIndex = 8;
+            this.durationlbl.Text = "DURATION";
+            // 
+            // price
+            // 
+            this.price.Location = new System.Drawing.Point(453, 24);
+            this.price.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.price.Maximum = new decimal(new int[] {
             5000,
             0,
             0,
             0});
-            this.numericUpDown1.Minimum = new decimal(new int[] {
+            this.price.Minimum = new decimal(new int[] {
             1000,
             0,
             0,
             0});
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(107, 22);
-            this.numericUpDown1.TabIndex = 5;
-            this.numericUpDown1.Value = new decimal(new int[] {
+            this.price.Name = "price";
+            this.price.Size = new System.Drawing.Size(107, 22);
+            this.price.TabIndex = 5;
+            this.price.Value = new decimal(new int[] {
             1000,
             0,
             0,
@@ -444,7 +548,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(13, 14);
+            this.label3.Location = new System.Drawing.Point(346, 24);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(53, 17);
             this.label3.TabIndex = 4;
@@ -453,7 +557,7 @@
             // panel9
             // 
             this.panel9.BackColor = System.Drawing.Color.MidnightBlue;
-            this.panel9.Controls.Add(this.comboBox1);
+            this.panel9.Controls.Add(this.status);
             this.panel9.Controls.Add(this.label4);
             this.panel9.Location = new System.Drawing.Point(6, 222);
             this.panel9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -461,53 +565,30 @@
             this.panel9.Size = new System.Drawing.Size(725, 74);
             this.panel9.TabIndex = 10;
             // 
-            // comboBox1
+            // status
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.status.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.status.FormattingEnabled = true;
+            this.status.Items.AddRange(new object[] {
             "Available",
             "Booked",
             "Maintenance"});
-            this.comboBox1.Location = new System.Drawing.Point(17, 38);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(108, 24);
-            this.comboBox1.TabIndex = 7;
+            this.status.Location = new System.Drawing.Point(120, 22);
+            this.status.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.status.Name = "status";
+            this.status.Size = new System.Drawing.Size(108, 24);
+            this.status.TabIndex = 7;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label4.Location = new System.Drawing.Point(14, 10);
+            this.label4.Location = new System.Drawing.Point(14, 22);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(54, 17);
             this.label4.TabIndex = 6;
             this.label4.Text = "Status";
-            // 
-            // lblapprove
-            // 
-            this.lblapprove.AutoSize = true;
-            this.lblapprove.BackColor = System.Drawing.Color.RoyalBlue;
-            this.lblapprove.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblapprove.Location = new System.Drawing.Point(59, 222);
-            this.lblapprove.Name = "lblapprove";
-            this.lblapprove.Size = new System.Drawing.Size(95, 25);
-            this.lblapprove.TabIndex = 25;
-            this.lblapprove.Text = "APPROVE";
-            this.lblapprove.Click += new System.EventHandler(this.lblapprove_Click);
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::TurfSyncTurfSchedulingSportsSystem.Properties.Resources.add1;
-            this.pictureBox5.Location = new System.Drawing.Point(12, 221);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(32, 26);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 21;
-            this.pictureBox5.TabStop = false;
             // 
             // AddingMenuTurfManager
             // 
@@ -521,8 +602,10 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "AddingMenuTurfManager";
             this.Text = "Adding";
+            this.Load += new System.EventHandler(this.AddingMenuTurfManager_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.panel7.ResumeLayout(false);
@@ -544,10 +627,9 @@
             this.panel10.PerformLayout();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.price)).EndInit();
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -563,13 +645,13 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label lblslottime;
+        private System.Windows.Forms.DateTimePicker dateTimePickerslottime;
+        private System.Windows.Forms.ComboBox status;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown price;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker dateTimePickerslotdate;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel10;
@@ -590,5 +672,12 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Label lblapprove;
+        private System.Windows.Forms.Label locationlbl;
+        private System.Windows.Forms.TextBox turfidtxt;
+        private System.Windows.Forms.Label lblid;
+        private System.Windows.Forms.TextBox locationtxt;
+        private System.Windows.Forms.TextBox durationtxt;
+        private System.Windows.Forms.Label durationlbl;
+        private System.Windows.Forms.Button btnupdate;
     }
 }
