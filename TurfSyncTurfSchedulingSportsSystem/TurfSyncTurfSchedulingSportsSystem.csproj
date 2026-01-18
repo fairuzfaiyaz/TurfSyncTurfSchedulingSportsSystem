@@ -268,6 +268,12 @@
     <EmbeddedResource Include="Forms\Dashboard%24Users.resx">
       <DependentUpon>Dashboard%24Users.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TurfManagerDashboardForms\AddingMenuTurfManager.resx">
+      <DependentUpon>AddingMenuTurfManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TurfManagerDashboardForms\MaintainTurfManager.resx">
+      <DependentUpon>MaintainTurfManager.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\TurfStaffDashboardForms\EquipmentHandling.resx">
       <DependentUpon>EquipmentHandling.cs</DependentUpon>
     </EmbeddedResource>
@@ -493,6 +499,12 @@
     <None Include="Resources\dg.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\field1.png" />
+    <None Include="Resources\dashboard %282%291.png" />
+    <None Include="Resources\tool1.png" />
+    <None Include="Resources\add1.png" />
+    <None Include="Resources\login1.png" />
+    <None Include="Resources\user - Copy.png" />
     <Content Include="SQL Query\LoginQuery.txt" />
     <Content Include="SQL Query\TurfSchedule.txt" />
   </ItemGroup>
