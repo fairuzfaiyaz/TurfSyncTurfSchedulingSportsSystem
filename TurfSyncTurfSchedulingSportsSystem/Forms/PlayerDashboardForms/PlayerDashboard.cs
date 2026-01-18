@@ -54,7 +54,7 @@ namespace TurfSyncTurfSchedulingSportsSystem.Forms
         private void button7_Click(object sender, EventArgs e)
         {
             this.Hide();
-            CancelBooking cancelBooking = new CancelBooking();
+            CancelBooking cancelBooking = new CancelBooking(currentUser);
             cancelBooking.Show();
         }
 

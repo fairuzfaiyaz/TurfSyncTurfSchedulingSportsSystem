@@ -43,6 +43,9 @@ namespace TurfSyncTurfSchedulingSportsSystem.Forms
             dataGridView1.CellFormatting += dataGridView1_CellFormatting;
             dataGridView1.SelectionChanged += dataGridView1_SelectionChanged;
 
+            dataGridView1.ReadOnly = true;
+
+
         }
 
         private void dataGridView1_SelectionChanged(object sender, EventArgs e)
