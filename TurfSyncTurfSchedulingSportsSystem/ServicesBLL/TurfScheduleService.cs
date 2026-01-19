@@ -114,5 +114,29 @@ namespace TurfSyncTurfSchedulingSportsSystem.ServicesBLL
             }
         }
 
+        //delete row
+
+        // DELETE SCHEDULE
+        public void DeleteSchedule(int turfId, DateTime scheduleDate)
+        {
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                string query = @"DELETE FROM TurfSchedule
+                         WHERE TurfId = @TurfId AND ScheduleDate = @Date";
+
+                SqlCommand cmd = new SqlCommand(query, con);
+                cmd.Parameters.AddWithValue("@TurfId", turfId);
+                cmd.Parameters.AddWithValue("@Date", scheduleDate.Date);
+
+                con.Open();
+                int rows = cmd.ExecuteNonQuery();
+                if (rows == 0)
+                {
+                    throw new Exception("No matching schedule found to delete.");
+                }
+            }
+        }
+
+
     }
 }

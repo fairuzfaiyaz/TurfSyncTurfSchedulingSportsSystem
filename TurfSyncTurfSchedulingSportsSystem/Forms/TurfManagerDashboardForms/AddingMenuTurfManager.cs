@@ -98,17 +98,57 @@ namespace TurfSyncTurfSchedulingSportsSystem.Forms
         // CLEAR
         private void button3_Click(object sender, EventArgs e)
         {
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
+                DataGridViewRow row = dataGridView1.SelectedRows[0];
+                int turfId = Convert.ToInt32(row.Cells["TurfId"].Value);
+                DateTime scheduleDate = Convert.ToDateTime(row.Cells["ScheduleDate"].Value);
+
+                try
+                {
+                    service.DeleteSchedule(turfId, scheduleDate);
+                    MessageBox.Show("Schedule removed successfully!");
+                    LoadGrid(); // refresh the table
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Please select a row to clear.");
+            }
+
+            // Clear input fields anyway
             ClearFields();
         }
 
+        //changing
         private void ClearFields()
         {
+            // Reset input fields
             turfidtxt.Text = "";
             locationtxt.Text = "";
             durationtxt.Text = "";
-            price.Value = 1000;
+
+            // Make sure price value is within Min/Max
+            price.Value = price.Minimum;
+
+            // Reset status dropdown
             status.SelectedIndex = 0;
+
+            // Deselect any selected row in the grid
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
+                dataGridView1.ClearSelection();
+            }
+
+            // Optional: If you allow cell selection instead of full row select
+            if (dataGridView1.CurrentCell != null)
+                dataGridView1.CurrentCell = null;
         }
+
 
         // GRID CLICK → LOAD DATA TO FIELDS
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
