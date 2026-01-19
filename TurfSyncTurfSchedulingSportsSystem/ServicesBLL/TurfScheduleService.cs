@@ -164,6 +164,32 @@ namespace TurfSyncTurfSchedulingSportsSystem.ServicesBLL
             }
         }
 
+        //change to previous
+
+        public void UpdatePriceForNightWeekend(decimal changeAmount)
+        {
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                string query = @"
+            UPDATE TurfSchedule
+            SET Price = Price + @Change
+            WHERE 
+                (DATEPART(HOUR, ScheduleTime) >= 18)       -- Night: after 6 PM
+                OR (DATEPART(WEEKDAY, ScheduleDate) IN (6,7))  -- Weekend: Friday=6, Saturday=7 depending on SQL settings
+        ";
+
+                SqlCommand cmd = new SqlCommand(query, con);
+                cmd.Parameters.AddWithValue("@Change", changeAmount);
+
+                con.Open();
+                int rows = cmd.ExecuteNonQuery();
+
+                if (rows == 0)
+                    throw new Exception("No matching slots found for night or weekend price update.");
+            }
+        }
+
+
 
 
 

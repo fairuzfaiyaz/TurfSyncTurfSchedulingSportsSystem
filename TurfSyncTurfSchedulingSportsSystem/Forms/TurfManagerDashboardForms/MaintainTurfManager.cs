@@ -140,7 +140,33 @@ namespace TurfSyncTurfSchedulingSportsSystem.Forms
             }
         }
 
-       
+        private void btnupdate_Click(object sender, EventArgs e)
+        {
+            decimal changeAmount = 0;
+
+            //if (chkNight.Checked)
+              //  changeAmount += 500;      // increase for night
+
+            if (chkWeekend.Checked)
+                changeAmount -= 500;      // increase for weekend
+
+            // if you want to allow decrease, you can use negative numbers
+            if (chkNight.Checked)       // optional checkbox to decrease
+                changeAmount = -500;
+
+            try
+            {
+                // Call service
+                service.UpdatePriceForNightWeekend(changeAmount);
+
+                MessageBox.Show($"Price updated successfully!\nChange applied: {changeAmount:C}");
+                LoadGrid(); // refresh the table
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 
 }

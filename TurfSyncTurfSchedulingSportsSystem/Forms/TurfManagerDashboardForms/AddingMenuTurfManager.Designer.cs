@@ -579,6 +579,7 @@
             this.status.Name = "status";
             this.status.Size = new System.Drawing.Size(108, 24);
             this.status.TabIndex = 7;
+            this.status.SelectedIndexChanged += new System.EventHandler(this.status_SelectedIndexChanged);
             // 
             // label4
             // 

@@ -61,6 +61,7 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label6 = new System.Windows.Forms.Label();
+            this.btnupdate = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -300,6 +301,7 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.MidnightBlue;
+            this.panel4.Controls.Add(this.btnupdate);
             this.panel4.Controls.Add(this.chkWeekend);
             this.panel4.Controls.Add(this.btnSave);
             this.panel4.Controls.Add(this.chkNight);
@@ -464,6 +466,18 @@
             this.label6.TabIndex = 6;
             this.label6.Text = "REASON:";
             // 
+            // btnupdate
+            // 
+            this.btnupdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnupdate.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnupdate.Location = new System.Drawing.Point(145, 231);
+            this.btnupdate.Name = "btnupdate";
+            this.btnupdate.Size = new System.Drawing.Size(95, 34);
+            this.btnupdate.TabIndex = 11;
+            this.btnupdate.Text = "PREVIOUS";
+            this.btnupdate.UseVisualStyleBackColor = false;
+            this.btnupdate.Click += new System.EventHandler(this.btnupdate_Click);
+            // 
             // MaintainTurfManager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -540,5 +554,6 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.ComboBox Status;
         private System.Windows.Forms.CheckBox chkWeekend;
+        private System.Windows.Forms.Button btnupdate;
     }
 }

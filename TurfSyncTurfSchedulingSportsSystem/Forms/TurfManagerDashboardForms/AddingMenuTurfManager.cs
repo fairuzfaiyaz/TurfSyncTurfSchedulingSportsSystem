@@ -180,5 +180,10 @@ namespace TurfSyncTurfSchedulingSportsSystem.Forms
         {
 
         }
+
+        private void status_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
