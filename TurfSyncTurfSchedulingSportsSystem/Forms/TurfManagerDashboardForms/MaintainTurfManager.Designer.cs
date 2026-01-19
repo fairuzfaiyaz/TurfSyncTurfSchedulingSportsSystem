@@ -57,16 +57,13 @@
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.label2 = new System.Windows.Forms.Label();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.Status = new System.Windows.Forms.ComboBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label6 = new System.Windows.Forms.Label();
-            this.Status = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -419,41 +416,16 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(41, 79);
+            this.label1.Location = new System.Drawing.Point(105, 65);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(66, 16);
+            this.label1.Size = new System.Drawing.Size(124, 16);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Start Date";
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(44, 98);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(286, 22);
-            this.dateTimePicker1.TabIndex = 3;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(41, 135);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(63, 16);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "End Date";
-            // 
-            // dateTimePicker2
-            // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(44, 161);
-            this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(286, 22);
-            this.dateTimePicker2.TabIndex = 5;
+            this.label1.Text = "Under Maintenance";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(41, 206);
+            this.label4.Location = new System.Drawing.Point(41, 174);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(67, 16);
             this.label4.TabIndex = 6;
@@ -478,9 +450,6 @@
             this.panel5.Controls.Add(this.Status);
             this.panel5.Controls.Add(this.button2);
             this.panel5.Controls.Add(this.label4);
-            this.panel5.Controls.Add(this.dateTimePicker2);
-            this.panel5.Controls.Add(this.label2);
-            this.panel5.Controls.Add(this.dateTimePicker1);
             this.panel5.Controls.Add(this.label1);
             this.panel5.Controls.Add(this.textBox5);
             this.panel5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -489,6 +458,17 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(367, 278);
             this.panel5.TabIndex = 4;
+            // 
+            // Status
+            // 
+            this.Status.FormattingEnabled = true;
+            this.Status.Items.AddRange(new object[] {
+            "Maintenence",
+            "Available"});
+            this.Status.Location = new System.Drawing.Point(129, 171);
+            this.Status.Name = "Status";
+            this.Status.Size = new System.Drawing.Size(121, 24);
+            this.Status.TabIndex = 8;
             // 
             // panel6
             // 
@@ -513,7 +493,6 @@
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(746, 130);
             this.dataGridView1.TabIndex = 7;
-          //  this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // label6
             // 
@@ -523,17 +502,6 @@
             this.label6.Size = new System.Drawing.Size(67, 16);
             this.label6.TabIndex = 6;
             this.label6.Text = "REASON:";
-            // 
-            // Status
-            // 
-            this.Status.FormattingEnabled = true;
-            this.Status.Items.AddRange(new object[] {
-            "Maintenence"});
-            this.Status.Location = new System.Drawing.Point(133, 201);
-            this.Status.Name = "Status";
-            this.Status.Size = new System.Drawing.Size(121, 24);
-            this.Status.TabIndex = 8;
-          //  this.Status.SelectedIndexChanged += new System.EventHandler(this.Status_SelectedIndexChanged);
             // 
             // MaintainTurfManager
             // 
@@ -597,9 +565,6 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Panel panel5;
