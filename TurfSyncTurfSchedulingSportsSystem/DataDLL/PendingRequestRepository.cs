@@ -40,7 +40,9 @@ namespace TurfSyncTurfSchedulingSportsSystem.DataDLL
                         Duration = Convert.ToInt32(reader["Duration"]),
                         Price = Convert.ToDecimal(reader["Price"]),
                         RequestedBy = reader["RequestedBy"].ToString(),
-                        RequestStatus = reader["RequestStatus"].ToString()
+                        RequestStatus = reader["RequestStatus"].ToString(),
+                        RequestedAt = Convert.ToDateTime(reader["RequestedAt"])  // <-- add this
+
                     });
                 }
             }

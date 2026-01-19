@@ -211,6 +211,11 @@ namespace TurfSyncTurfSchedulingSportsSystem.Forms
             this.Dispose();
             new LoginPage().ShowDialog();
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 
 }

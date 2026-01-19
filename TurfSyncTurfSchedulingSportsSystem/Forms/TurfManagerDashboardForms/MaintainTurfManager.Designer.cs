@@ -319,7 +319,7 @@
             this.panel4.Location = new System.Drawing.Point(567, 98);
             this.panel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(356, 278);
+            this.panel4.Size = new System.Drawing.Size(356, 244);
             this.panel4.TabIndex = 6;
             // 
             // chkWeekend
@@ -338,7 +338,7 @@
             // 
             this.btnSave.BackColor = System.Drawing.Color.Crimson;
             this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.Location = new System.Drawing.Point(28, 231);
+            this.btnSave.Location = new System.Drawing.Point(28, 198);
             this.btnSave.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(88, 34);
@@ -397,7 +397,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(41, 174);
+            this.label4.Location = new System.Drawing.Point(41, 104);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(67, 16);
             this.label4.TabIndex = 6;
@@ -407,7 +407,7 @@
             // 
             this.button2.BackColor = System.Drawing.Color.Crimson;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(44, 231);
+            this.button2.Location = new System.Drawing.Point(44, 161);
             this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(72, 34);
@@ -428,7 +428,7 @@
             this.panel5.Location = new System.Drawing.Point(191, 98);
             this.panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(367, 278);
+            this.panel5.Size = new System.Drawing.Size(367, 244);
             this.panel5.TabIndex = 4;
             // 
             // Status
@@ -437,7 +437,7 @@
             this.Status.Items.AddRange(new object[] {
             "Maintenence",
             "Available"});
-            this.Status.Location = new System.Drawing.Point(129, 171);
+            this.Status.Location = new System.Drawing.Point(125, 105);
             this.Status.Name = "Status";
             this.Status.Size = new System.Drawing.Size(121, 24);
             this.Status.TabIndex = 8;
@@ -449,10 +449,10 @@
             this.panel6.Controls.Add(this.label6);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.panel6.Location = new System.Drawing.Point(178, 390);
+            this.panel6.Location = new System.Drawing.Point(178, 346);
             this.panel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(746, 133);
+            this.panel6.Size = new System.Drawing.Size(746, 177);
             this.panel6.TabIndex = 8;
             // 
             // dataGridView1
@@ -463,8 +463,9 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(746, 130);
+            this.dataGridView1.Size = new System.Drawing.Size(746, 174);
             this.dataGridView1.TabIndex = 7;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // label6
             // 
@@ -479,7 +480,7 @@
             // 
             this.btnupdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnupdate.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnupdate.Location = new System.Drawing.Point(122, 231);
+            this.btnupdate.Location = new System.Drawing.Point(122, 199);
             this.btnupdate.Name = "btnupdate";
             this.btnupdate.Size = new System.Drawing.Size(95, 34);
             this.btnupdate.TabIndex = 11;
@@ -513,7 +514,7 @@
             // 
             this.btnApplyPrice.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnApplyPrice.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnApplyPrice.Location = new System.Drawing.Point(230, 231);
+            this.btnApplyPrice.Location = new System.Drawing.Point(230, 198);
             this.btnApplyPrice.Name = "btnApplyPrice";
             this.btnApplyPrice.Size = new System.Drawing.Size(95, 34);
             this.btnApplyPrice.TabIndex = 14;
