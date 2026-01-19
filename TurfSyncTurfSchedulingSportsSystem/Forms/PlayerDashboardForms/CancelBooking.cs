@@ -27,6 +27,8 @@ namespace TurfSyncTurfSchedulingSportsSystem.Forms
         {
             InitializeComponent();
             currentUser = user;
+            label1.Text = currentUser.FullName;
+            label2.Text = currentUser.Username;
             LoadUserBookings();
 
         }
@@ -217,6 +219,27 @@ namespace TurfSyncTurfSchedulingSportsSystem.Forms
                     MessageBox.Show("Cancellation failed.");
                 }
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            MyProfile profile = new MyProfile(currentUser);
+            profile.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ChangeProfile changeProfilePicture = new ChangeProfile(currentUser);
+            changeProfilePicture.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            LoginPage loginPage = new LoginPage();
+            loginPage.Show();
         }
     }
 }

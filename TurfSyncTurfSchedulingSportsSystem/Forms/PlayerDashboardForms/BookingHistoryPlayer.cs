@@ -25,6 +25,8 @@ namespace TurfSyncTurfSchedulingSportsSystem.Forms
         {
             InitializeComponent();
             currentUser = user;
+            label1.Text = currentUser.FullName;
+            label2.Text = currentUser.Username;
             LoadPendingRequests();
         }
         private void LoadPendingRequests()
@@ -112,12 +114,26 @@ namespace TurfSyncTurfSchedulingSportsSystem.Forms
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            MyProfile profile = new MyProfile(currentUser);
+            profile.Show();
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ChangeProfile changeProfilePicture = new ChangeProfile(currentUser);  
+            changeProfilePicture.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Hide();
         }
     }
 }

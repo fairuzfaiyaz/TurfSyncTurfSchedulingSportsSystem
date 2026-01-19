@@ -41,7 +41,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -71,6 +70,7 @@
             this.button4.TabIndex = 44;
             this.button4.Text = "Log out";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -82,6 +82,7 @@
             this.button3.TabIndex = 43;
             this.button3.Text = "Change Profile";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // label2
             // 
@@ -124,6 +125,7 @@
             this.button2.TabIndex = 39;
             this.button2.Text = "My Profile";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // dataGridView1
             // 
@@ -186,17 +188,6 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button6
-            // 
-            this.button6.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.button6.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(1159, 142);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(198, 85);
-            this.button6.TabIndex = 52;
-            this.button6.Text = "Remove";
-            this.button6.UseVisualStyleBackColor = false;
-            // 
             // pictureBox8
             // 
             this.pictureBox8.Image = global::TurfSyncTurfSchedulingSportsSystem.Properties.Resources.close;
@@ -215,7 +206,6 @@
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(1395, 666);
             this.Controls.Add(this.pictureBox8);
-            this.Controls.Add(this.button6);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -257,7 +247,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button6;
         private System.Windows.Forms.PictureBox pictureBox8;
     }
 }

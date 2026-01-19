@@ -79,6 +79,7 @@ namespace TurfSyncTurfSchedulingSportsSystem.Forms
             this.button4.TabIndex = 12;
             this.button4.Text = "Log out";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -90,6 +91,7 @@ namespace TurfSyncTurfSchedulingSportsSystem.Forms
             this.button3.TabIndex = 11;
             this.button3.Text = "Change Profile";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // label2
             // 
@@ -122,6 +124,7 @@ namespace TurfSyncTurfSchedulingSportsSystem.Forms
             this.button2.TabIndex = 7;
             this.button2.Text = "My Profile";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // turfLocationCombo
             // 

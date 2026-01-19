@@ -21,12 +21,14 @@ namespace TurfSyncTurfSchedulingSportsSystem.Forms
         {
             InitializeComponent();
         }
-        public RescheduleBooking(User currentUser)
+        public RescheduleBooking(User user)
         {
-            this.currentUser = currentUser;
-            InitializeComponent();
-            button1.Enabled = false; 
-
+            InitializeComponent();  // Must be first
+            this.currentUser = user;
+            label1.Text = currentUser.FullName;
+            label2.Text = currentUser.Username;
+            button1.Enabled = false;
+            
             LoadTurfSchedule();
             LoadUserBookings();
         }
@@ -265,6 +267,26 @@ namespace TurfSyncTurfSchedulingSportsSystem.Forms
             }
         }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            MyProfile myProfile = new MyProfile(currentUser);
+            myProfile.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ChangeProfile changeProfile = new ChangeProfile(currentUser);
+            changeProfile.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            LoginPage loginPage = new LoginPage();
+            loginPage.Show();
+        }
     }
 }
 

@@ -515,6 +515,7 @@
     <None Include="Resources\login1.png" />
     <None Include="Resources\user - Copy.png" />
     <Content Include="SQL Query\LoginQuery.txt" />
+    <Content Include="SQL Query\RatingService.txt" />
     <Content Include="SQL Query\StaffManagement.txt" />
     <Content Include="SQL Query\TurfSchedule.txt" />
   </ItemGroup>

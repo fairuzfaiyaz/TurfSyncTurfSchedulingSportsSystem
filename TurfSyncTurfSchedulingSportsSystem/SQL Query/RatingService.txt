@@ -1,0 +1,30 @@
+﻿CREATE TABLE [dbo].[ServiceRatings] (
+    RatingId INT IDENTITY(1,1) PRIMARY KEY,
+
+    RequestId INT NOT NULL,
+    TurfId INT NOT NULL,
+
+    RatedBy NVARCHAR(100) NOT NULL,
+
+    OverallRating NVARCHAR(20) NOT NULL
+        CHECK (OverallRating IN ('Excellent','Good','Average','Bad','Poor')),
+
+    ServiceQualityRating NVARCHAR(20)
+        CHECK (ServiceQualityRating IN ('Excellent','Good','Average','Bad','Poor')),
+
+    TurfConditionRating NVARCHAR(20)
+        CHECK (TurfConditionRating IN ('Excellent','Good','Average','Bad','Poor')),
+
+    LightingRating NVARCHAR(20)
+        CHECK (LightingRating IN ('Excellent','Good','Average','Bad','Poor')),
+
+    EquipmentRating NVARCHAR(20)
+        CHECK (EquipmentRating IN ('Excellent','Good','Average','Bad','Poor')),
+
+    CleanlinessRating NVARCHAR(20)
+        CHECK (CleanlinessRating IN ('Excellent','Good','Average','Bad','Poor')),
+
+    Comment NVARCHAR(500),
+
+    RatedAt DATETIME DEFAULT GETDATE()
+);

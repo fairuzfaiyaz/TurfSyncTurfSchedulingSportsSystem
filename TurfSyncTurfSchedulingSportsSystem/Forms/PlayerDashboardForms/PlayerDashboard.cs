@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using TurfSyncTurfSchedulingSportsSystem.Forms;
+using TurfSyncTurfSchedulingSportsSystem.Forms.PlayerDashboardForms;
 using TurfSyncTurfSchedulingSportsSystem.Models;
 
 namespace TurfSyncTurfSchedulingSportsSystem.Forms
@@ -101,6 +102,13 @@ namespace TurfSyncTurfSchedulingSportsSystem.Forms
             this.Hide();
             BookingHistoryPlayer x = new BookingHistoryPlayer(currentUser);
             x.Show();
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            RateTurfService rateTurfService = new RateTurfService(currentUser);
+            rateTurfService.Show();
         }
     }
 }

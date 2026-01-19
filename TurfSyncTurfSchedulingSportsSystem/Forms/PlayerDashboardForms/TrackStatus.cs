@@ -23,6 +23,8 @@ namespace TurfSyncTurfSchedulingSportsSystem.Forms
         public TrackStatus(User user) : this()
         {
             currentUser = user;
+            label1.Text= currentUser.FullName;
+            label2.Text= currentUser.Username;
             LoadUserBookings();
             dataGridView2.SelectionChanged += DataGridView2_SelectionChanged;
 
@@ -148,6 +150,26 @@ ORDER BY ScheduleDate, ScheduleTime";
         private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            MyProfile myProfile = new MyProfile(currentUser);
+            myProfile.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            ChangeProfile changeProfile = new ChangeProfile(currentUser);
+            changeProfile.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            LoginPage loginPage = new LoginPage();
+            loginPage.Show();
         }
     }
 }

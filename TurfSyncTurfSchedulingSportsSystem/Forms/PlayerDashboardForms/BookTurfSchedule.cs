@@ -30,8 +30,8 @@ namespace TurfSyncTurfSchedulingSportsSystem.Forms
         {
             InitializeComponent();
             currentUser = user;
-            label1.Text = "Welcome, " + currentUser.FullName;
-            label2.Text = DateTime.Now.ToString("dddd, MMMM dd, yyyy");
+            label1.Text = currentUser.FullName;
+            label2.Text = currentUser.Username;
 
             // Populate controls directly
             LoadTurfSchedule();
@@ -368,6 +368,27 @@ namespace TurfSyncTurfSchedulingSportsSystem.Forms
             {
                 MessageBox.Show("Error booking turf: " + ex.Message);
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            MyProfile myProfile = new MyProfile(currentUser);
+            myProfile.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ChangeProfile changeProfile = new ChangeProfile(currentUser);
+            changeProfile.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            LoginPage loginPage = new LoginPage();
+            loginPage.Show();
         }
     }
 }
