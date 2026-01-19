@@ -137,7 +137,7 @@ namespace TurfSyncTurfSchedulingSportsSystem.ServicesBLL
             }
         }
 
-        //price control
+        //price control adding
         public void UpdatePriceByRow(DateTime date, TimeSpan time, string location, decimal newPrice)
         {
             using (SqlConnection con = new SqlConnection(connectionString))
@@ -188,6 +188,30 @@ namespace TurfSyncTurfSchedulingSportsSystem.ServicesBLL
                     throw new Exception("No matching slots found for night or weekend price update.");
             }
         }
+
+        //change price manually by row maintain page
+        // Update price manually for a selected schedule
+        public void UpdatePriceSelectedSchedule(DateTime scheduleDate, TimeSpan scheduleTime, string location, decimal newPrice)
+        {
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                string query = @"UPDATE TurfSchedule
+                         SET Price = @Price
+                         WHERE ScheduleDate = @Date AND ScheduleTime = @Time AND TurfLocation = @Location";
+
+                SqlCommand cmd = new SqlCommand(query, con);
+                cmd.Parameters.AddWithValue("@Price", newPrice);
+                cmd.Parameters.AddWithValue("@Date", scheduleDate.Date);
+                cmd.Parameters.AddWithValue("@Time", scheduleTime);
+                cmd.Parameters.AddWithValue("@Location", location);
+
+                con.Open();
+                int rows = cmd.ExecuteNonQuery();
+                if (rows == 0)
+                    throw new Exception("No matching schedule found.");
+            }
+        }
+
 
 
 

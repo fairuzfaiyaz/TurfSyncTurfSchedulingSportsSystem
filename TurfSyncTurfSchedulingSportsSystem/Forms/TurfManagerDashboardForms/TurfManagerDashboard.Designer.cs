@@ -290,9 +290,11 @@
             // lblbooking
             // 
             this.lblbooking.AutoSize = true;
-            this.lblbooking.Location = new System.Drawing.Point(62, 47);
+            this.lblbooking.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblbooking.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblbooking.Location = new System.Drawing.Point(47, 47);
             this.lblbooking.Name = "lblbooking";
-            this.lblbooking.Size = new System.Drawing.Size(52, 18);
+            this.lblbooking.Size = new System.Drawing.Size(85, 29);
             this.lblbooking.TabIndex = 1;
             this.lblbooking.Text = "label1";
             // 
@@ -321,9 +323,11 @@
             // lblpendingapproval
             // 
             this.lblpendingapproval.AutoSize = true;
+            this.lblpendingapproval.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblpendingapproval.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblpendingapproval.Location = new System.Drawing.Point(56, 47);
             this.lblpendingapproval.Name = "lblpendingapproval";
-            this.lblpendingapproval.Size = new System.Drawing.Size(52, 18);
+            this.lblpendingapproval.Size = new System.Drawing.Size(85, 29);
             this.lblpendingapproval.TabIndex = 2;
             this.lblpendingapproval.Text = "label1";
             // 
@@ -352,9 +356,11 @@
             // lblcheckedin
             // 
             this.lblcheckedin.AutoSize = true;
-            this.lblcheckedin.Location = new System.Drawing.Point(41, 49);
+            this.lblcheckedin.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblcheckedin.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblcheckedin.Location = new System.Drawing.Point(32, 52);
             this.lblcheckedin.Name = "lblcheckedin";
-            this.lblcheckedin.Size = new System.Drawing.Size(52, 18);
+            this.lblcheckedin.Size = new System.Drawing.Size(85, 29);
             this.lblcheckedin.TabIndex = 3;
             this.lblcheckedin.Text = "label1";
             this.lblcheckedin.Click += new System.EventHandler(this.lblcheckedin_Click);
@@ -384,9 +390,11 @@
             // lblrevenue
             // 
             this.lblrevenue.AutoSize = true;
-            this.lblrevenue.Location = new System.Drawing.Point(66, 49);
+            this.lblrevenue.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblrevenue.ForeColor = System.Drawing.Color.Lime;
+            this.lblrevenue.Location = new System.Drawing.Point(43, 49);
             this.lblrevenue.Name = "lblrevenue";
-            this.lblrevenue.Size = new System.Drawing.Size(52, 18);
+            this.lblrevenue.Size = new System.Drawing.Size(98, 32);
             this.lblrevenue.TabIndex = 4;
             this.lblrevenue.Text = "label1";
             // 

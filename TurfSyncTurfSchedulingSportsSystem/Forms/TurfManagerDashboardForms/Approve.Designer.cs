@@ -166,6 +166,7 @@
             this.button4.TabIndex = 25;
             this.button4.Text = "LOGOUT";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // lbloverview
             // 
@@ -219,6 +220,7 @@
             this.lbladding.Size = new System.Drawing.Size(84, 25);
             this.lbladding.TabIndex = 15;
             this.lbladding.Text = "ADDING";
+            this.lbladding.Click += new System.EventHandler(this.lbladding_Click);
             // 
             // lblmaintain
             // 
@@ -229,6 +231,7 @@
             this.lblmaintain.Size = new System.Drawing.Size(105, 25);
             this.lblmaintain.TabIndex = 14;
             this.lblmaintain.Text = "MAINTAIN";
+            this.lblmaintain.Click += new System.EventHandler(this.lblmaintain_Click);
             // 
             // pictureBox6
             // 

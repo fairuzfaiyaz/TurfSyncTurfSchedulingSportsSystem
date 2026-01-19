@@ -132,6 +132,7 @@
             this.lblapprove.Size = new System.Drawing.Size(95, 25);
             this.lblapprove.TabIndex = 25;
             this.lblapprove.Text = "APPROVE";
+            this.lblapprove.Click += new System.EventHandler(this.lblapprove_Click);
             // 
             // label5
             // 
@@ -175,6 +176,7 @@
             this.button1.TabIndex = 8;
             this.button1.Text = "LOGOUT";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel7
             // 
@@ -465,7 +467,7 @@
             this.dateTimePickerslottime.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dateTimePickerslottime.Name = "dateTimePickerslottime";
             this.dateTimePickerslottime.ShowUpDown = true;
-            this.dateTimePickerslottime.Size = new System.Drawing.Size(127, 22);
+            this.dateTimePickerslottime.Size = new System.Drawing.Size(121, 22);
             this.dateTimePickerslottime.TabIndex = 1;
             // 
             // label2
@@ -481,13 +483,12 @@
             // 
             // dateTimePickerslotdate
             // 
-            this.dateTimePickerslotdate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePickerslotdate.Location = new System.Drawing.Point(453, 23);
             this.dateTimePickerslotdate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dateTimePickerslotdate.Name = "dateTimePickerslotdate";
-            this.dateTimePickerslotdate.ShowUpDown = true;
-            this.dateTimePickerslotdate.Size = new System.Drawing.Size(127, 22);
+            this.dateTimePickerslotdate.Size = new System.Drawing.Size(250, 22);
             this.dateTimePickerslotdate.TabIndex = 3;
+            this.dateTimePickerslotdate.Value = new System.DateTime(2026, 1, 19, 0, 0, 0, 0);
             // 
             // panel6
             // 

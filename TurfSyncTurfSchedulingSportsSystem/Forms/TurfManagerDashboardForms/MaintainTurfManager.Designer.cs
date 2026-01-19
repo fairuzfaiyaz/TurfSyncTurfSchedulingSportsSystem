@@ -62,6 +62,9 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label6 = new System.Windows.Forms.Label();
             this.btnupdate = new System.Windows.Forms.Button();
+            this.numPriceManual = new System.Windows.Forms.NumericUpDown();
+            this.lblprice = new System.Windows.Forms.Label();
+            this.btnApplyPrice = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -78,6 +81,7 @@
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numPriceManual)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -132,6 +136,7 @@
             this.lblapprove.Size = new System.Drawing.Size(95, 25);
             this.lblapprove.TabIndex = 24;
             this.lblapprove.Text = "APPROVE";
+            this.lblapprove.Click += new System.EventHandler(this.lblapprove_Click);
             // 
             // label7
             // 
@@ -197,6 +202,7 @@
             this.button1.TabIndex = 8;
             this.button1.Text = "LOGOUT";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel7
             // 
@@ -301,6 +307,9 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.MidnightBlue;
+            this.panel4.Controls.Add(this.btnApplyPrice);
+            this.panel4.Controls.Add(this.lblprice);
+            this.panel4.Controls.Add(this.numPriceManual);
             this.panel4.Controls.Add(this.btnupdate);
             this.panel4.Controls.Add(this.chkWeekend);
             this.panel4.Controls.Add(this.btnSave);
@@ -470,13 +479,47 @@
             // 
             this.btnupdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnupdate.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnupdate.Location = new System.Drawing.Point(145, 231);
+            this.btnupdate.Location = new System.Drawing.Point(122, 231);
             this.btnupdate.Name = "btnupdate";
             this.btnupdate.Size = new System.Drawing.Size(95, 34);
             this.btnupdate.TabIndex = 11;
             this.btnupdate.Text = "PREVIOUS";
             this.btnupdate.UseVisualStyleBackColor = false;
             this.btnupdate.Click += new System.EventHandler(this.btnupdate_Click);
+            // 
+            // numPriceManual
+            // 
+            this.numPriceManual.Location = new System.Drawing.Point(145, 161);
+            this.numPriceManual.Maximum = new decimal(new int[] {
+            100000000,
+            0,
+            0,
+            0});
+            this.numPriceManual.Name = "numPriceManual";
+            this.numPriceManual.Size = new System.Drawing.Size(120, 22);
+            this.numPriceManual.TabIndex = 12;
+            this.numPriceManual.ValueChanged += new System.EventHandler(this.numPriceManual_ValueChanged);
+            // 
+            // lblprice
+            // 
+            this.lblprice.AutoSize = true;
+            this.lblprice.Location = new System.Drawing.Point(28, 161);
+            this.lblprice.Name = "lblprice";
+            this.lblprice.Size = new System.Drawing.Size(88, 16);
+            this.lblprice.TabIndex = 13;
+            this.lblprice.Text = "Change Price";
+            // 
+            // btnApplyPrice
+            // 
+            this.btnApplyPrice.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnApplyPrice.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnApplyPrice.Location = new System.Drawing.Point(230, 231);
+            this.btnApplyPrice.Name = "btnApplyPrice";
+            this.btnApplyPrice.Size = new System.Drawing.Size(95, 34);
+            this.btnApplyPrice.TabIndex = 14;
+            this.btnApplyPrice.Text = "UPDATE";
+            this.btnApplyPrice.UseVisualStyleBackColor = false;
+            this.btnApplyPrice.Click += new System.EventHandler(this.btnApplyPrice_Click);
             // 
             // MaintainTurfManager
             // 
@@ -515,6 +558,7 @@
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numPriceManual)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -555,5 +599,8 @@
         private System.Windows.Forms.ComboBox Status;
         private System.Windows.Forms.CheckBox chkWeekend;
         private System.Windows.Forms.Button btnupdate;
+        private System.Windows.Forms.NumericUpDown numPriceManual;
+        private System.Windows.Forms.Label lblprice;
+        private System.Windows.Forms.Button btnApplyPrice;
     }
 }

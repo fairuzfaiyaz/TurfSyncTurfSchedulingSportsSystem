@@ -7,8 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
-
+using TurfSyncTurfSchedulingSportsSystem.Forms.TurfManagerDashboardForms;
 using TurfSyncTurfSchedulingSportsSystem.Models;
 using TurfSyncTurfSchedulingSportsSystem.ServicesBLL;
 
@@ -166,6 +165,51 @@ namespace TurfSyncTurfSchedulingSportsSystem.Forms
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void numPriceManual_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnApplyPrice_Click(object sender, EventArgs e)
+        {
+            if (dataGridView1.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Please select a schedule first.");
+                return;
+            }
+
+            DataGridViewRow row = dataGridView1.SelectedRows[0];
+            decimal oldPrice = Convert.ToDecimal(row.Cells["Price"].Value);
+            decimal newPrice = numPriceManual.Value;
+
+            DateTime date = (DateTime)row.Cells["ScheduleDate"].Value;
+            TimeSpan time = (TimeSpan)row.Cells["ScheduleTime"].Value;
+            string location = row.Cells["TurfLocation"].Value.ToString();
+
+            try
+            {
+                service.UpdatePriceSelectedSchedule(date, time, location, newPrice);
+                MessageBox.Show($"Price updated successfully!\nOld Price: {oldPrice:C} → New Price: {newPrice:C}");
+                LoadGrid(); // Refresh table
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void lblapprove_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new Approve().Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+            new LoginPage().ShowDialog();
         }
     }
 

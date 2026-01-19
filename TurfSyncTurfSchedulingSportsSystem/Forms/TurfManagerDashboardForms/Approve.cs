@@ -84,5 +84,23 @@ namespace TurfSyncTurfSchedulingSportsSystem.Forms.TurfManagerDashboardForms
             this.Hide();
             new TurfManagerDashboard().Show();
         }
+
+        private void lbladding_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new AddingMenuTurfManager().Show();
+        }
+
+        private void lblmaintain_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new MaintainTurfManager().Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+            new LoginPage().ShowDialog();
+        }
     }
 }

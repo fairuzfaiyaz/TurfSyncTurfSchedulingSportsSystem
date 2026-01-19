@@ -7,8 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
-
+using TurfSyncTurfSchedulingSportsSystem.Forms.TurfManagerDashboardForms;
 using TurfSyncTurfSchedulingSportsSystem.Models;
 using TurfSyncTurfSchedulingSportsSystem.ServicesBLL;
 
@@ -185,5 +184,19 @@ namespace TurfSyncTurfSchedulingSportsSystem.Forms
         {
 
         }
+
+        private void lblapprove_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new Approve().Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+            new LoginPage().ShowDialog();
+        }
+
+       
     }
 }
