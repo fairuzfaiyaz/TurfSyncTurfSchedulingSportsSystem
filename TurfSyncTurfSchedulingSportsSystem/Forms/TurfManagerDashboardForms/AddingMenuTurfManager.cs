@@ -39,6 +39,9 @@ namespace TurfSyncTurfSchedulingSportsSystem.Forms
         {
             dataGridView1.DataSource = null;
             dataGridView1.DataSource = service.GetAllSchedules();
+
+            //color
+            ColorScheduleRows();
         }
 
         // SAVE
@@ -196,7 +199,41 @@ namespace TurfSyncTurfSchedulingSportsSystem.Forms
             this.Dispose();
             new LoginPage().ShowDialog();
         }
+        //color the row
+        private void ColorScheduleRows()
+        {
+            foreach (DataGridViewRow row in dataGridView1.Rows)
+            {
+                if (row.Cells["Status"].Value == null)
+                    continue;
 
-       
+                string status = row.Cells["Status"].Value.ToString();
+
+                switch (status)
+                {
+                    case "Booked":
+                        row.DefaultCellStyle.BackColor = Color.Red;
+                        row.DefaultCellStyle.ForeColor = Color.White;
+                        break;
+
+                    case "Available":
+                        row.DefaultCellStyle.BackColor = Color.LightGreen;
+                        row.DefaultCellStyle.ForeColor = Color.Black;
+                        break;
+
+                    case "Maintenance":
+                        row.DefaultCellStyle.BackColor = Color.Orange;
+                        row.DefaultCellStyle.ForeColor = Color.Black;
+                        break;
+
+                    default:
+                        row.DefaultCellStyle.BackColor = Color.White;
+                        row.DefaultCellStyle.ForeColor = Color.Black;
+                        break;
+                }
+            }
+        }
+
+
     }
 }

@@ -322,10 +322,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.btnupdate);
             this.groupBox1.Controls.Add(this.dataGridView1);
-            this.groupBox1.Controls.Add(this.button3);
-            this.groupBox1.Controls.Add(this.button2);
             this.groupBox1.Controls.Add(this.panel5);
             this.groupBox1.Controls.Add(this.panel10);
             this.groupBox1.Controls.Add(this.panel6);
@@ -343,7 +340,7 @@
             // btnupdate
             // 
             this.btnupdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnupdate.Location = new System.Drawing.Point(298, 300);
+            this.btnupdate.Location = new System.Drawing.Point(527, 18);
             this.btnupdate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnupdate.Name = "btnupdate";
             this.btnupdate.Size = new System.Drawing.Size(116, 28);
@@ -356,17 +353,17 @@
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 333);
+            this.dataGridView1.Location = new System.Drawing.Point(3, 301);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(726, 106);
+            this.dataGridView1.Size = new System.Drawing.Size(726, 138);
             this.dataGridView1.TabIndex = 14;
             // 
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.Red;
-            this.button3.Location = new System.Drawing.Point(149, 300);
+            this.button3.Location = new System.Drawing.Point(396, 22);
             this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(116, 28);
@@ -378,7 +375,7 @@
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.button2.Location = new System.Drawing.Point(12, 300);
+            this.button2.Location = new System.Drawing.Point(262, 22);
             this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(116, 28);
@@ -559,8 +556,11 @@
             // panel9
             // 
             this.panel9.BackColor = System.Drawing.Color.MidnightBlue;
+            this.panel9.Controls.Add(this.btnupdate);
             this.panel9.Controls.Add(this.status);
             this.panel9.Controls.Add(this.label4);
+            this.panel9.Controls.Add(this.button3);
+            this.panel9.Controls.Add(this.button2);
             this.panel9.Location = new System.Drawing.Point(6, 222);
             this.panel9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel9.Name = "panel9";

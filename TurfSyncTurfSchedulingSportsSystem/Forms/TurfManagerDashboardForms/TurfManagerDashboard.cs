@@ -55,6 +55,9 @@ namespace TurfSyncTurfSchedulingSportsSystem.Forms
                 .Sum(r => r.Price);
 
             lblrevenue.Text = revenue.ToString("C"); // formatted as currency
+
+            // for color
+            ColorRequestRows();
         }
 
         // Navigate to Approve page
@@ -95,5 +98,47 @@ namespace TurfSyncTurfSchedulingSportsSystem.Forms
             this.Hide();
             new MaintainTurfManager().Show();
         }
+
+        //color the roe code
+
+        private void ColorRequestRows()
+        {
+            foreach (DataGridViewRow row in dataGridView1.Rows)
+            {
+                if (row.Cells["RequestStatus"].Value == null)
+                    continue;
+
+                string status = row.Cells["RequestStatus"].Value.ToString();
+
+                switch (status)
+                {
+                    case "Pending":
+                        row.DefaultCellStyle.BackColor = Color.Khaki;
+                        row.DefaultCellStyle.ForeColor = Color.Black;
+                        break;
+
+                    case "Approved":
+                        row.DefaultCellStyle.BackColor = Color.LightGreen;
+                        row.DefaultCellStyle.ForeColor = Color.Black;
+                        break;
+
+                    case "Cancelled":
+                        row.DefaultCellStyle.BackColor = Color.Orange;
+                        row.DefaultCellStyle.ForeColor = Color.Black;
+                        break;
+
+                    case "Booked":
+                        row.DefaultCellStyle.BackColor = Color.Red;
+                        row.DefaultCellStyle.ForeColor = Color.White;
+                        break;
+
+                    default:
+                        row.DefaultCellStyle.BackColor = Color.White;
+                        row.DefaultCellStyle.ForeColor = Color.Black;
+                        break;
+                }
+            }
+        }
+
     }
 }

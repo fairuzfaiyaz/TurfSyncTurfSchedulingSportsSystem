@@ -35,6 +35,9 @@ namespace TurfSyncTurfSchedulingSportsSystem.Forms.TurfManagerDashboardForms
         {
             dataGridView1.DataSource = null;
             dataGridView1.DataSource = service.GetAllPending();
+
+            //color
+            ColorRowsByStatus();
         }
 
         // ✅ APPROVE
@@ -102,5 +105,45 @@ namespace TurfSyncTurfSchedulingSportsSystem.Forms.TurfManagerDashboardForms
             this.Dispose();
             new LoginPage().ShowDialog();
         }
+
+        //colour code
+
+        private void ColorRowsByStatus()
+        {
+            foreach (DataGridViewRow row in dataGridView1.Rows)
+            {
+                if (row.Cells["RequestStatus"].Value == null)
+                    continue;
+
+                string status = row.Cells["RequestStatus"].Value.ToString();
+
+                switch (status)
+                {
+                    case "Pending":
+                        row.DefaultCellStyle.BackColor = Color.Yellow;
+                        break;
+
+                    case "Approved":
+                    case "Booked":
+                        row.DefaultCellStyle.BackColor = Color.Red;
+                        row.DefaultCellStyle.ForeColor = Color.White;
+                        break;
+
+                    case "Cancelled":
+                        row.DefaultCellStyle.BackColor = Color.Orange;
+                        break;
+
+                    case "Available":
+                        row.DefaultCellStyle.BackColor = Color.LightGreen;
+                        break;
+
+                    default:
+                        row.DefaultCellStyle.BackColor = Color.White;
+                        row.DefaultCellStyle.ForeColor = Color.Black;
+                        break;
+                }
+            }
+        }
+
     }
 }
