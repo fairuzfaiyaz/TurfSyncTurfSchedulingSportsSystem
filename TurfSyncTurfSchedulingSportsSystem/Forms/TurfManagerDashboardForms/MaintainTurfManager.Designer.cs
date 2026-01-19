@@ -48,12 +48,9 @@
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.chkWeekend = new System.Windows.Forms.CheckBox();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.chkNight = new System.Windows.Forms.CheckBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -77,8 +74,6 @@
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -305,12 +300,9 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.MidnightBlue;
-            this.panel4.Controls.Add(this.button3);
-            this.panel4.Controls.Add(this.checkBox2);
-            this.panel4.Controls.Add(this.numericUpDown2);
-            this.panel4.Controls.Add(this.label5);
-            this.panel4.Controls.Add(this.label3);
-            this.panel4.Controls.Add(this.numericUpDown1);
+            this.panel4.Controls.Add(this.chkWeekend);
+            this.panel4.Controls.Add(this.btnSave);
+            this.panel4.Controls.Add(this.chkNight);
             this.panel4.Controls.Add(this.textBox4);
             this.panel4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel4.Location = new System.Drawing.Point(567, 98);
@@ -319,73 +311,42 @@
             this.panel4.Size = new System.Drawing.Size(356, 278);
             this.panel4.TabIndex = 6;
             // 
-            // button3
+            // chkWeekend
             // 
-            this.button3.BackColor = System.Drawing.Color.Crimson;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(28, 231);
-            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(88, 34);
-            this.button3.TabIndex = 8;
-            this.button3.Text = "APPLY";
-            this.button3.UseVisualStyleBackColor = false;
+            this.chkWeekend.AutoSize = true;
+            this.chkWeekend.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkWeekend.Location = new System.Drawing.Point(14, 104);
+            this.chkWeekend.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.chkWeekend.Name = "chkWeekend";
+            this.chkWeekend.Size = new System.Drawing.Size(343, 24);
+            this.chkWeekend.TabIndex = 10;
+            this.chkWeekend.Text = "ENABLE WEEKEND HOUR PRICING";
+            this.chkWeekend.UseVisualStyleBackColor = true;
             // 
-            // checkBox2
+            // btnSave
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox2.Location = new System.Drawing.Point(18, 61);
-            this.checkBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(299, 24);
-            this.checkBox2.TabIndex = 9;
-            this.checkBox2.Text = "ENABLE PEAK HOUR PRICING";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.btnSave.BackColor = System.Drawing.Color.Crimson;
+            this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.Location = new System.Drawing.Point(28, 231);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(88, 34);
+            this.btnSave.TabIndex = 8;
+            this.btnSave.Text = "APPLY";
+            this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
-            // numericUpDown2
+            // chkNight
             // 
-            this.numericUpDown2.Location = new System.Drawing.Point(28, 204);
-            this.numericUpDown2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.numericUpDown2.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(288, 22);
-            this.numericUpDown2.TabIndex = 8;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(24, 174);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(124, 16);
-            this.label5.TabIndex = 7;
-            this.label5.Text = "WEEKEND PRICE :";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(24, 102);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(98, 16);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "NIGHT PRICE :";
-            // 
-            // numericUpDown1
-            // 
-            this.numericUpDown1.Location = new System.Drawing.Point(28, 135);
-            this.numericUpDown1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.numericUpDown1.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(288, 22);
-            this.numericUpDown1.TabIndex = 1;
+            this.chkNight.AutoSize = true;
+            this.chkNight.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkNight.Location = new System.Drawing.Point(17, 57);
+            this.chkNight.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.chkNight.Name = "chkNight";
+            this.chkNight.Size = new System.Drawing.Size(308, 24);
+            this.chkNight.TabIndex = 9;
+            this.chkNight.Text = "ENABLE NIGHT HOUR PRICING";
+            this.chkNight.UseVisualStyleBackColor = true;
             // 
             // textBox4
             // 
@@ -535,8 +496,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.panel6.ResumeLayout(false);
@@ -557,12 +516,8 @@
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.CheckBox chkNight;
+        private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
@@ -584,5 +539,6 @@
         private System.Windows.Forms.Label lblapprove;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.ComboBox Status;
+        private System.Windows.Forms.CheckBox chkWeekend;
     }
 }

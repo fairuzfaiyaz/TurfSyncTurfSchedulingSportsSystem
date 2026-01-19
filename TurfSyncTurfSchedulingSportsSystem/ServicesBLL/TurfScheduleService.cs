@@ -137,6 +137,29 @@ namespace TurfSyncTurfSchedulingSportsSystem.ServicesBLL
             }
         }
 
+        //price control
+        public void UpdatePriceByRow(DateTime date, TimeSpan time, string location, decimal newPrice)
+        {
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                string query = @"UPDATE TurfSchedule
+                         SET Price = @Price
+                         WHERE ScheduleDate = @Date AND ScheduleTime = @Time AND TurfLocation = @Location";
+
+                SqlCommand cmd = new SqlCommand(query, con);
+                cmd.Parameters.AddWithValue("@Price", newPrice);
+                cmd.Parameters.AddWithValue("@Date", date.Date);
+                cmd.Parameters.AddWithValue("@Time", time);
+                cmd.Parameters.AddWithValue("@Location", location);
+
+                con.Open();
+                int rows = cmd.ExecuteNonQuery();
+                if (rows == 0)
+                    throw new Exception("No matching schedule found.");
+            }
+        }
+
+
 
     }
 }
