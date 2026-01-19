@@ -94,50 +94,49 @@ namespace TurfSyncTurfSchedulingSportsSystem.Forms
         //save btn for price control
         private void btnSave_Click(object sender, EventArgs e)
         {
-            // Make sure a schedule is selected
-            if (dataGridView1.SelectedRows.Count == 0)
-            {
-                MessageBox.Show("Please select a schedule from the table.");
-                return;
-            }
-
-            // Get the selected row
-            DataGridViewRow row = dataGridView1.SelectedRows[0];
-
-            DateTime date = (DateTime)row.Cells["ScheduleDate"].Value;
-            TimeSpan time = (TimeSpan)row.Cells["ScheduleTime"].Value;
-            decimal currentPrice = Convert.ToDecimal(row.Cells["Price"].Value);
-
-            // Flags for checkboxes
-            bool isNight = chkNight.Checked && time.Hours >= 18; // after 6 PM
-            bool isWeekend = chkWeekend.Checked &&
-                             (date.DayOfWeek == DayOfWeek.Friday || date.DayOfWeek == DayOfWeek.Saturday);
-
-            // If none selected
-            if (!isNight && !isWeekend)
-            {
-                MessageBox.Show("No pricing option selected or applicable.");
-                return;
-            }
-
-            // Increment price
-            decimal increment = 0;
-            if (isNight) increment += 500;
-            if (isWeekend) increment += 500;
-
-            decimal newPrice = currentPrice + increment;
-
-            // Update the database
             try
             {
-                string location = row.Cells["TurfLocation"].Value.ToString();
-                service.UpdatePriceByRow(date, time, location, newPrice);
-                MessageBox.Show($"Price updated successfully!\nOld Price: {currentPrice:C} → New Price: {newPrice:C}");
-                LoadGrid(); // refresh the table
+                // Get all schedules
+                List<TurfSchedule> schedules = service.GetAllSchedules();
+
+                foreach (var schedule in schedules)
+                {
+                    decimal oldPrice = schedule.Price;
+                    decimal newPrice = oldPrice;
+                    bool priceChanged = false;
+
+                    // Check night pricing (after 6 PM)
+                    if (chkNight.Checked && schedule.ScheduleTime.Hours >= 18)
+                    {
+                        newPrice += 500;
+                        priceChanged = true;
+                    }
+
+                    // Check weekend pricing (Friday/Saturday)
+                    if (chkWeekend.Checked &&
+                        (schedule.ScheduleDate.DayOfWeek == DayOfWeek.Friday ||
+                         schedule.ScheduleDate.DayOfWeek == DayOfWeek.Saturday))
+                    {
+                        newPrice += 500;
+                        priceChanged = true;
+                    }
+
+                    // Update price if it changed
+                    if (priceChanged)
+                    {
+                        service.UpdatePriceByRow(schedule.ScheduleDate, schedule.ScheduleTime, schedule.TurfLocation, newPrice);
+
+                        // Optional: show a message for each row updated
+                        Console.WriteLine($"Updated {schedule.TurfLocation} on {schedule.ScheduleDate:d} from {oldPrice:C} to {newPrice:C}");
+                    }
+                }
+
+                MessageBox.Show("Pricing updated automatically based on night/weekend settings!");
+                LoadGrid(); // refresh the DataGridView
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error: " + ex.Message);
+                MessageBox.Show("Error updating prices: " + ex.Message);
             }
         }
 

@@ -144,20 +144,26 @@ namespace TurfSyncTurfSchedulingSportsSystem.ServicesBLL
             {
                 string query = @"UPDATE TurfSchedule
                          SET Price = @Price
-                         WHERE ScheduleDate = @Date AND ScheduleTime = @Time AND TurfLocation = @Location";
+                         WHERE ScheduleDate = @Date
+                           AND DATEPART(HOUR, ScheduleTime) = @Hour
+                           AND DATEPART(MINUTE, ScheduleTime) = @Minute
+                           AND LTRIM(RTRIM(TurfLocation)) = @Location";
 
                 SqlCommand cmd = new SqlCommand(query, con);
                 cmd.Parameters.AddWithValue("@Price", newPrice);
                 cmd.Parameters.AddWithValue("@Date", date.Date);
-                cmd.Parameters.AddWithValue("@Time", time);
-                cmd.Parameters.AddWithValue("@Location", location);
+                cmd.Parameters.AddWithValue("@Hour", time.Hours);
+                cmd.Parameters.AddWithValue("@Minute", time.Minutes);
+                cmd.Parameters.AddWithValue("@Location", location.Trim());
 
                 con.Open();
                 int rows = cmd.ExecuteNonQuery();
+
                 if (rows == 0)
-                    throw new Exception("No matching schedule found.");
+                    throw new Exception("No matching row found to update price. Check time and location.");
             }
         }
+
 
 
 
