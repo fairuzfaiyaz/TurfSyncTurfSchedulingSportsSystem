@@ -62,6 +62,21 @@ namespace TurfSyncTurfSchedulingSportsSystem.ServicesBLL
 
             return turfSyncUser.CreateUser(user);
         }
+        public bool ChangePassword(User user, string currentPassword, string newPassword)
+        {
+            // Verify current password
+            if (!Login(user.Username, currentPassword, out _))
+                return false;
+
+            string newHash = HashPassword(newPassword);
+
+            bool updated = turfSyncUser.UpdatePassword(user.UserId, newHash);
+            if (!updated) return false;
+
+            user.PasswordHash = newHash;
+            return true;
+        }
+
 
         private string HashPassword(string password)
         {

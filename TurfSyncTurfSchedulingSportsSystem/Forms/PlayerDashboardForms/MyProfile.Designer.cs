@@ -41,6 +41,7 @@
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.changeprofile = new System.Windows.Forms.Button();
             this.accCreatDate = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.SuspendLayout();
@@ -182,12 +183,23 @@
             this.accCreatDate.TabIndex = 59;
             this.accCreatDate.Text = "xxx";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(133, 367);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(37, 22);
+            this.label1.TabIndex = 60;
+            this.label1.Text = "xxx";
+            // 
             // MyProfile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(473, 707);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.accCreatDate);
             this.Controls.Add(this.changeprofile);
             this.Controls.Add(this.pictureBox8);
@@ -227,5 +239,6 @@
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.Button changeprofile;
         private System.Windows.Forms.Label accCreatDate;
+        private System.Windows.Forms.Label label1;
     }
 }

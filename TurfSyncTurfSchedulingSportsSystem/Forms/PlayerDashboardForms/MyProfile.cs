@@ -22,6 +22,10 @@ namespace TurfSyncTurfSchedulingSportsSystem.Forms
             InitializeComponent();
             currentUser = user;
             Email.Text = user.Email;
+            password.Text = user.PhoneNumber; //number
+            label1.Text = user.Gender;
+
+
             playerName.Text = user.FullName;
             playerUsername.Text = user.Username;
             //label8.Text = user.Email;
