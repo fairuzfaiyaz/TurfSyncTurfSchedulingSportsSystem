@@ -38,7 +38,6 @@
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.button6 = new System.Windows.Forms.Button();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -47,16 +46,20 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.button2 = new System.Windows.Forms.Button();
+            this.pictureBox26 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             this.panel4.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox2
@@ -107,12 +110,12 @@
             // 
             this.radioButton2.AutoSize = true;
             this.radioButton2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.radioButton2.Font = new System.Drawing.Font("Century Gothic", 20.25F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
+            this.radioButton2.Font = new System.Drawing.Font("Century Gothic", 14.25F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
                 | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton2.ForeColor = System.Drawing.Color.Lime;
-            this.radioButton2.Location = new System.Drawing.Point(47, 22);
+            this.radioButton2.Location = new System.Drawing.Point(20, 18);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(209, 37);
+            this.radioButton2.Size = new System.Drawing.Size(152, 27);
             this.radioButton2.TabIndex = 49;
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "Trash cleared";
@@ -121,10 +124,10 @@
             // 
             // pictureBox9
             // 
-            this.pictureBox9.Image = global::TurfSyncTurfSchedulingSportsSystem.Properties.Resources._3205bc83145fc5826fb3741abeb6edf7;
-            this.pictureBox9.Location = new System.Drawing.Point(142, 188);
+            this.pictureBox9.Image = global::TurfSyncTurfSchedulingSportsSystem.Properties.Resources._2c02cdf777e6c239ae53c5e49b8b9f86;
+            this.pictureBox9.Location = new System.Drawing.Point(125, 188);
             this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(1054, 502);
+            this.pictureBox9.Size = new System.Drawing.Size(1071, 502);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox9.TabIndex = 51;
             this.pictureBox9.TabStop = false;
@@ -158,42 +161,33 @@
             // 
             this.radioButton1.AutoSize = true;
             this.radioButton1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.radioButton1.Font = new System.Drawing.Font("Century Gothic", 20.25F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
+            this.radioButton1.Font = new System.Drawing.Font("Century Gothic", 14.25F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
                 | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton1.ForeColor = System.Drawing.Color.Lime;
-            this.radioButton1.Location = new System.Drawing.Point(47, 29);
+            this.radioButton1.Location = new System.Drawing.Point(6, 20);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(329, 37);
+            this.radioButton1.Size = new System.Drawing.Size(238, 27);
             this.radioButton1.TabIndex = 54;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Water bottles removed";
             this.radioButton1.UseVisualStyleBackColor = false;
+            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // radioButton3
             // 
             this.radioButton3.AutoSize = true;
             this.radioButton3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.radioButton3.Font = new System.Drawing.Font("Century Gothic", 20.25F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
+            this.radioButton3.Font = new System.Drawing.Font("Century Gothic", 14.25F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
                 | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton3.ForeColor = System.Drawing.Color.Lime;
-            this.radioButton3.Location = new System.Drawing.Point(47, 28);
+            this.radioButton3.Location = new System.Drawing.Point(20, 14);
             this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(189, 37);
+            this.radioButton3.Size = new System.Drawing.Size(137, 27);
             this.radioButton3.TabIndex = 56;
             this.radioButton3.TabStop = true;
             this.radioButton3.Text = "Turf brushed";
             this.radioButton3.UseVisualStyleBackColor = false;
             this.radioButton3.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::TurfSyncTurfSchedulingSportsSystem.Properties.Resources._5c968dfa87979e60edb4309e56495415;
-            this.pictureBox3.Location = new System.Drawing.Point(710, 282);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(340, 310);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 57;
-            this.pictureBox3.TabStop = false;
             // 
             // button6
             // 
@@ -237,32 +231,32 @@
             // 
             // panel4
             // 
-            this.panel4.BackgroundImage = global::TurfSyncTurfSchedulingSportsSystem.Properties.Resources.c4bd31be3249f31084aa6ae4564e79e81;
+            this.panel4.BackgroundImage = global::TurfSyncTurfSchedulingSportsSystem.Properties.Resources.c4bd31be3249f31084aa6ae4564e79e8;
             this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel4.Controls.Add(this.radioButton2);
-            this.panel4.Location = new System.Drawing.Point(273, 282);
+            this.panel4.Location = new System.Drawing.Point(146, 209);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(408, 87);
+            this.panel4.Size = new System.Drawing.Size(244, 61);
             this.panel4.TabIndex = 63;
             // 
             // panel1
             // 
-            this.panel1.BackgroundImage = global::TurfSyncTurfSchedulingSportsSystem.Properties.Resources.c4bd31be3249f31084aa6ae4564e79e81;
+            this.panel1.BackgroundImage = global::TurfSyncTurfSchedulingSportsSystem.Properties.Resources.c4bd31be3249f31084aa6ae4564e79e8;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.Controls.Add(this.radioButton3);
-            this.panel1.Location = new System.Drawing.Point(273, 398);
+            this.panel1.Location = new System.Drawing.Point(146, 276);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(408, 87);
+            this.panel1.Size = new System.Drawing.Size(244, 57);
             this.panel1.TabIndex = 64;
             // 
             // panel5
             // 
-            this.panel5.BackgroundImage = global::TurfSyncTurfSchedulingSportsSystem.Properties.Resources.c4bd31be3249f31084aa6ae4564e79e81;
+            this.panel5.BackgroundImage = global::TurfSyncTurfSchedulingSportsSystem.Properties.Resources.c4bd31be3249f31084aa6ae4564e79e8;
             this.panel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel5.Controls.Add(this.radioButton1);
-            this.panel5.Location = new System.Drawing.Point(273, 525);
+            this.panel5.Location = new System.Drawing.Point(146, 349);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(408, 87);
+            this.panel5.Size = new System.Drawing.Size(244, 60);
             this.panel5.TabIndex = 65;
             // 
             // label3
@@ -277,18 +271,55 @@
             this.label3.TabIndex = 66;
             this.label3.Text = "Bibs";
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(422, 212);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(760, 353);
+            this.dataGridView1.TabIndex = 67;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dataGridView1.SelectionChanged += new System.EventHandler(this.dataGridView1_SelectionChanged);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Black;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.Lime;
+            this.button2.Location = new System.Drawing.Point(744, 595);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(149, 27);
+            this.button2.TabIndex = 78;
+            this.button2.Text = "Save Changes";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // pictureBox26
+            // 
+            this.pictureBox26.Image = global::TurfSyncTurfSchedulingSportsSystem.Properties.Resources.c4bd31be3249f31084aa6ae4564e79e8;
+            this.pictureBox26.Location = new System.Drawing.Point(700, 582);
+            this.pictureBox26.Name = "pictureBox26";
+            this.pictureBox26.Size = new System.Drawing.Size(233, 54);
+            this.pictureBox26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox26.TabIndex = 77;
+            this.pictureBox26.TabStop = false;
+            // 
             // Post_Match_Clean_Up_Confirmation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1307, 793);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.pictureBox26);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.pictureBox12);
-            this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox11);
             this.Controls.Add(this.label2);
@@ -305,7 +336,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
@@ -313,6 +343,8 @@
             this.panel1.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -330,7 +362,6 @@
         private System.Windows.Forms.PictureBox pictureBox11;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.PictureBox pictureBox12;
         private System.Windows.Forms.Panel panel2;
@@ -339,5 +370,8 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.PictureBox pictureBox26;
     }
 }
