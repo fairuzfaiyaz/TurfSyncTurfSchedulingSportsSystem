@@ -43,7 +43,7 @@ namespace TurfSyncTurfSchedulingSportsSystem.ServicesBLL
         // Update existing schedule
         public void UpdateSchedule(TurfSchedule schedule)
         {
-            using (SqlConnection con = new SqlConnection(connectionString))
+            using (SqlConnection con = DatabaseHelper.GetConnection())
             {
                 string query = @"UPDATE TurfSchedule SET
                                 ScheduleDate=@Date,
@@ -97,7 +97,7 @@ namespace TurfSyncTurfSchedulingSportsSystem.ServicesBLL
         //newwwww
         public void UpdateStatusByRow(DateTime date, TimeSpan time, string location, string newStatus)
         {
-            using (SqlConnection con = new SqlConnection(connectionString))
+            using (SqlConnection con = DatabaseHelper.GetConnection())
             {
                 string query = @"UPDATE TurfSchedule
                          SET Status=@Status
@@ -121,7 +121,7 @@ namespace TurfSyncTurfSchedulingSportsSystem.ServicesBLL
         // DELETE SCHEDULE
         public void DeleteSchedule(int turfId, DateTime scheduleDate)
         {
-            using (SqlConnection con = new SqlConnection(connectionString))
+            using (SqlConnection con = DatabaseHelper.GetConnection())
             {
                 string query = @"DELETE FROM TurfSchedule
                          WHERE TurfId = @TurfId AND ScheduleDate = @Date";
@@ -142,7 +142,7 @@ namespace TurfSyncTurfSchedulingSportsSystem.ServicesBLL
         //price control adding
         public void UpdatePriceByRow(DateTime date, TimeSpan time, string location, decimal newPrice)
         {
-            using (SqlConnection con = new SqlConnection(connectionString))
+            using (SqlConnection con = DatabaseHelper.GetConnection())
             {
                 string query = @"UPDATE TurfSchedule
                          SET Price = @Price
@@ -170,7 +170,7 @@ namespace TurfSyncTurfSchedulingSportsSystem.ServicesBLL
 
         public void UpdatePriceForNightWeekend(decimal changeAmount)
         {
-            using (SqlConnection con = new SqlConnection(connectionString))
+            using (SqlConnection con =DatabaseHelper.GetConnection())
             {
                 string query = @"
             UPDATE TurfSchedule
@@ -195,7 +195,7 @@ namespace TurfSyncTurfSchedulingSportsSystem.ServicesBLL
         // Update price manually for a selected schedule
         public void UpdatePriceSelectedSchedule(DateTime scheduleDate, TimeSpan scheduleTime, string location, decimal newPrice)
         {
-            using (SqlConnection con = new SqlConnection(connectionString))
+            using (SqlConnection con = DatabaseHelper.GetConnection())
             {
                 string query = @"UPDATE TurfSchedule
                          SET Price = @Price
