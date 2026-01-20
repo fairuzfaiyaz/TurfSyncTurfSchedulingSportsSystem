@@ -47,7 +47,7 @@ namespace TurfSyncTurfSchedulingSportsSystem.Forms
             // 3️⃣ Update counts
             lblbooking.Text = allRequests.Count.ToString();
             lblpendingapproval.Text = allRequests.Count(r => r.RequestStatus == "Pending").ToString();
-            lblcheckedin.Text = allRequests.Count(r => r.RequestStatus == "Approved").ToString();
+            lblcheckedin.Text = allRequests.Count(r => r.RequestStatus == "Arrived").ToString();
 
             // 4️⃣ Revenue = sum of Price for Approved requests
             decimal revenue = allRequests
