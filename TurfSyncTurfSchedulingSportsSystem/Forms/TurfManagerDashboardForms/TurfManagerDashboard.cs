@@ -7,73 +7,138 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TurfSyncTurfSchedulingSportsSystem.Forms.TurfManagerDashboardForms;
 using TurfSyncTurfSchedulingSportsSystem.Models;
+
+
+using TurfSyncTurfSchedulingSportsSystem.ServicesBLL;
 
 namespace TurfSyncTurfSchedulingSportsSystem.Forms
 {
     public partial class TurfManagerDashboard : Form
     {
+        private readonly PendingRequestService service;
+
         public TurfManagerDashboard()
         {
             InitializeComponent();
+            service = new PendingRequestService(); // init service
         }
+
         public TurfManagerDashboard(User user)
         {
             InitializeComponent();
+            service = new PendingRequestService(); // init service
         }
-        private void richTextBox1_TextChanged(object sender, EventArgs e)
+
+        private void TurfManagerDashboard_Load(object sender, EventArgs e)
         {
-
+            LoadDashboard();
         }
 
-        private void panel7_Paint(object sender, PaintEventArgs e)
+        private void LoadDashboard()
         {
-            //this.Dispose();
-            //MaintainTurfManager maintainTurfManager = new MaintainTurfManager();
-            //maintainTurfManager.ShowDialog();
+            // 1️⃣ Get all requests
+            List<PendingRequest> allRequests = service.GetAllPending();
+
+            // 2️⃣ Bind to DataGridView
+            dataGridView1.DataSource = allRequests;
+
+            // 3️⃣ Update counts
+            lblbooking.Text = allRequests.Count.ToString();
+            lblpendingapproval.Text = allRequests.Count(r => r.RequestStatus == "Pending").ToString();
+            lblcheckedin.Text = allRequests.Count(r => r.RequestStatus == "Arrived").ToString();
+
+            // 4️⃣ Revenue = sum of Price for Approved requests
+            decimal revenue = allRequests
+                .Where(r => r.RequestStatus == "Approved")
+                .Sum(r => r.Price);
+
+            lblrevenue.Text = revenue.ToString("C"); // formatted as currency
+
+            // for color
+            ColorRequestRows();
         }
 
-        private void textBox8_TextChanged(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-            this.Close();
-            AddingMenuTurfManager   adding = new AddingMenuTurfManager();
-            adding.ShowDialog();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            this.Dispose();
-            LoginPage loginPage = new LoginPage();
-            loginPage.ShowDialog();
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
+        // Navigate to Approve page
+        private void lblapprove_Click(object sender, EventArgs e)
         {
             this.Hide();
-            new MaintainTurfManager().Show();
-
+            new Approve().Show();
         }
 
-        private void label1_Click_1(object sender, EventArgs e)
-        {
-            this.Hide();
-            new MaintainTurfManager().Show();
-        }
-
+        // Navigate to Adding page
         private void lbladding_Click(object sender, EventArgs e)
         {
             this.Hide();
             new AddingMenuTurfManager().Show();
         }
+
+        // Navigate to Maintain page
+        private void label1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new MaintainTurfManager().Show();
+        }
+
+        // Logout
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+            new LoginPage().ShowDialog();
+        }
+
+        private void lblcheckedin_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblmaintain_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new MaintainTurfManager().Show();
+        }
+
+        //color the roe code
+
+        private void ColorRequestRows()
+        {
+            foreach (DataGridViewRow row in dataGridView1.Rows)
+            {
+                if (row.Cells["RequestStatus"].Value == null)
+                    continue;
+
+                string status = row.Cells["RequestStatus"].Value.ToString();
+
+                switch (status)
+                {
+                    case "Pending":
+                        row.DefaultCellStyle.BackColor = Color.Khaki;
+                        row.DefaultCellStyle.ForeColor = Color.Black;
+                        break;
+
+                    case "Approved":
+                        row.DefaultCellStyle.BackColor = Color.LightGreen;
+                        row.DefaultCellStyle.ForeColor = Color.Black;
+                        break;
+
+                    case "Cancelled":
+                        row.DefaultCellStyle.BackColor = Color.Orange;
+                        row.DefaultCellStyle.ForeColor = Color.Black;
+                        break;
+
+                    case "Booked":
+                        row.DefaultCellStyle.BackColor = Color.Red;
+                        row.DefaultCellStyle.ForeColor = Color.White;
+                        break;
+
+                    default:
+                        row.DefaultCellStyle.BackColor = Color.White;
+                        row.DefaultCellStyle.ForeColor = Color.Black;
+                        break;
+                }
+            }
+        }
+
     }
 }

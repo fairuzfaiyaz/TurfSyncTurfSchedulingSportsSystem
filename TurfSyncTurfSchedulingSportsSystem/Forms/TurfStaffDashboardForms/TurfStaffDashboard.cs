@@ -13,6 +13,7 @@ namespace TurfSyncTurfSchedulingSportsSystem.Forms
 {
     public partial class TurfStaffDashboard : Form
     {
+        User currentstaff;
         public TurfStaffDashboard()
         {
             InitializeComponent();
@@ -20,6 +21,8 @@ namespace TurfSyncTurfSchedulingSportsSystem.Forms
         public TurfStaffDashboard(User user)
         {
             InitializeComponent();
+            this.currentstaff = user;
+            label1.Text = currentstaff.Username;
         }
 
         private void pictureBox7_Click(object sender, EventArgs e)
@@ -34,22 +37,22 @@ namespace TurfSyncTurfSchedulingSportsSystem.Forms
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Close();
-            Dashboard_Users dashboard_Users = new Dashboard_Users();
-            dashboard_Users.Show();
+            this.Dispose();
+            LoginPage loginPage = new LoginPage();
+            loginPage.Show();
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
             this.Close();
-            CustomerArrivalCheck check = new CustomerArrivalCheck();
+            CustomerArrivalCheck check = new CustomerArrivalCheck(currentstaff);
             check.Show();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
             this.Close();
-            StartandEndMatchTimer timer = new StartandEndMatchTimer();
+            StartandEndMatchTimer timer = new StartandEndMatchTimer(currentstaff);
             timer.Show();
         }
 
@@ -57,21 +60,21 @@ namespace TurfSyncTurfSchedulingSportsSystem.Forms
         {
             this.Close();
             GroundPrepare groundPrepare
-                = new GroundPrepare();
+                = new GroundPrepare(currentstaff);
             groundPrepare.Show();
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
             this.Close();
-            EquipmentHandling equipmentHandling = new EquipmentHandling();
+            EquipmentHandling equipmentHandling = new EquipmentHandling(currentstaff);
             equipmentHandling.Show();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             this.Close();
-            Post_Match_Clean_Up_Confirmation post_Match_Clean_Up_Confirmation = new Post_Match_Clean_Up_Confirmation();
+            Post_Match_Clean_Up_Confirmation post_Match_Clean_Up_Confirmation = new Post_Match_Clean_Up_Confirmation(currentstaff);
             post_Match_Clean_Up_Confirmation.Show();
         }
 
@@ -79,6 +82,18 @@ namespace TurfSyncTurfSchedulingSportsSystem.Forms
         {
             this.Close();
             
+
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            MyProfile profile = new MyProfile(currentstaff);
+            profile.Show();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
 
         }
     }

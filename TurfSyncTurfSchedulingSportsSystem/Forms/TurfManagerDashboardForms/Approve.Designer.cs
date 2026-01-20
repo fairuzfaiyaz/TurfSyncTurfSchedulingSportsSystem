@@ -1,6 +1,6 @@
-﻿namespace TurfSyncTurfSchedulingSportsSystem.Forms
+﻿namespace TurfSyncTurfSchedulingSportsSystem.Forms.TurfManagerDashboardForms
 {
-    partial class TurfManagerDashboard
+    partial class Approve
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.textBox9 = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.button4 = new System.Windows.Forms.Button();
+            this.lbloverview = new System.Windows.Forms.Label();
             this.lblapprove = new System.Windows.Forms.Label();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -41,45 +48,84 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.lbloverview = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.todaysbooking = new System.Windows.Forms.Panel();
-            this.lblbooking = new System.Windows.Forms.Label();
-            this.lblbookingtxt = new System.Windows.Forms.Label();
-            this.pendingapproval = new System.Windows.Forms.Panel();
-            this.lblpendingapproval = new System.Windows.Forms.Label();
-            this.lblpendingapprovaltxt = new System.Windows.Forms.Label();
-            this.checkedinpanel = new System.Windows.Forms.Panel();
-            this.lblcheckedin = new System.Windows.Forms.Label();
-            this.lblcheckedintxt = new System.Windows.Forms.Label();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.lblrevenue = new System.Windows.Forms.Label();
-            this.lblrevenuetxt = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.panel9.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel8.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            this.todaysbooking.SuspendLayout();
-            this.pendingapproval.SuspendLayout();
-            this.checkedinpanel.SuspendLayout();
-            this.panel6.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.MidnightBlue;
+            this.panel9.Controls.Add(this.button3);
+            this.panel9.Controls.Add(this.button2);
+            this.panel9.Controls.Add(this.textBox9);
+            this.panel9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.panel9.Location = new System.Drawing.Point(188, 84);
+            this.panel9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(612, 105);
+            this.panel9.TabIndex = 9;
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.Crimson;
+            this.button3.Location = new System.Drawing.Point(286, 64);
+            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(114, 39);
+            this.button3.TabIndex = 2;
+            this.button3.Text = "REJECT";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.LimeGreen;
+            this.button2.Location = new System.Drawing.Point(159, 63);
+            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(105, 40);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "APPROVE";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // textBox9
+            // 
+            this.textBox9.BackColor = System.Drawing.Color.MidnightBlue;
+            this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox9.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.textBox9.Location = new System.Drawing.Point(159, 24);
+            this.textBox9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(241, 24);
+            this.textBox9.TabIndex = 0;
+            this.textBox9.Text = "Pending Booking Request";
+            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.RoyalBlue;
+            this.panel1.Controls.Add(this.pictureBox9);
+            this.panel1.Controls.Add(this.button4);
+            this.panel1.Controls.Add(this.lbloverview);
             this.panel1.Controls.Add(this.lblapprove);
             this.panel1.Controls.Add(this.pictureBox7);
             this.panel1.Controls.Add(this.label5);
@@ -96,19 +142,53 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(188, 505);
-            this.panel1.TabIndex = 0;
+            this.panel1.Size = new System.Drawing.Size(188, 450);
+            this.panel1.TabIndex = 10;
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Image = global::TurfSyncTurfSchedulingSportsSystem.Properties.Resources.login1;
+            this.pictureBox9.Location = new System.Drawing.Point(3, 386);
+            this.pictureBox9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(32, 26);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox9.TabIndex = 26;
+            this.pictureBox9.TabStop = false;
+            // 
+            // button4
+            // 
+            this.button4.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Location = new System.Drawing.Point(54, 386);
+            this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(80, 26);
+            this.button4.TabIndex = 25;
+            this.button4.Text = "LOGOUT";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // lbloverview
+            // 
+            this.lbloverview.AutoSize = true;
+            this.lbloverview.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbloverview.Location = new System.Drawing.Point(58, 84);
+            this.lbloverview.Name = "lbloverview";
+            this.lbloverview.Size = new System.Drawing.Size(106, 25);
+            this.lbloverview.TabIndex = 16;
+            this.lbloverview.Text = "OVERVIEW";
+            this.lbloverview.Click += new System.EventHandler(this.lbloverview_Click);
             // 
             // lblapprove
             // 
             this.lblapprove.AutoSize = true;
+            this.lblapprove.BackColor = System.Drawing.Color.LightBlue;
             this.lblapprove.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblapprove.Location = new System.Drawing.Point(59, 223);
             this.lblapprove.Name = "lblapprove";
             this.lblapprove.Size = new System.Drawing.Size(95, 25);
             this.lblapprove.TabIndex = 17;
             this.lblapprove.Text = "APPROVE";
-            this.lblapprove.Click += new System.EventHandler(this.lblapprove_Click);
             // 
             // pictureBox7
             // 
@@ -174,7 +254,6 @@
             this.button1.TabIndex = 8;
             this.button1.Text = "LOGOUT";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // pictureBox5
             // 
@@ -223,34 +302,35 @@
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.Color.LightBlue;
-            this.panel8.Controls.Add(this.lbloverview);
-            this.panel8.Location = new System.Drawing.Point(0, 70);
+            this.panel8.Location = new System.Drawing.Point(0, 208);
             this.panel8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(188, 46);
+            this.panel8.Size = new System.Drawing.Size(188, 56);
             this.panel8.TabIndex = 12;
-            // 
-            // lbloverview
-            // 
-            this.lbloverview.AutoSize = true;
-            this.lbloverview.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbloverview.Location = new System.Drawing.Point(59, 9);
-            this.lbloverview.Name = "lbloverview";
-            this.lbloverview.Size = new System.Drawing.Size(106, 25);
-            this.lbloverview.TabIndex = 16;
-            this.lbloverview.Text = "OVERVIEW";
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.panel2.Controls.Add(this.pictureBox8);
             this.panel2.Controls.Add(this.richTextBox1);
             this.panel2.Controls.Add(this.pictureBox4);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(188, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(747, 80);
-            this.panel2.TabIndex = 1;
+            this.panel2.Size = new System.Drawing.Size(612, 80);
+            this.panel2.TabIndex = 11;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Image = global::TurfSyncTurfSchedulingSportsSystem.Properties.Resources.user___Copy;
+            this.pictureBox8.Location = new System.Drawing.Point(568, 20);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(32, 26);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox8.TabIndex = 5;
+            this.pictureBox8.TabStop = false;
             // 
             // richTextBox1
             // 
@@ -275,206 +355,52 @@
             this.pictureBox4.TabIndex = 3;
             this.pictureBox4.TabStop = false;
             // 
-            // todaysbooking
-            // 
-            this.todaysbooking.BackColor = System.Drawing.Color.MidnightBlue;
-            this.todaysbooking.Controls.Add(this.lblbooking);
-            this.todaysbooking.Controls.Add(this.lblbookingtxt);
-            this.todaysbooking.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.todaysbooking.Location = new System.Drawing.Point(194, 94);
-            this.todaysbooking.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.todaysbooking.Name = "todaysbooking";
-            this.todaysbooking.Size = new System.Drawing.Size(163, 110);
-            this.todaysbooking.TabIndex = 2;
-            // 
-            // lblbooking
-            // 
-            this.lblbooking.AutoSize = true;
-            this.lblbooking.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblbooking.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblbooking.Location = new System.Drawing.Point(47, 47);
-            this.lblbooking.Name = "lblbooking";
-            this.lblbooking.Size = new System.Drawing.Size(85, 29);
-            this.lblbooking.TabIndex = 1;
-            this.lblbooking.Text = "label1";
-            // 
-            // lblbookingtxt
-            // 
-            this.lblbookingtxt.AutoSize = true;
-            this.lblbookingtxt.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblbookingtxt.Location = new System.Drawing.Point(36, 17);
-            this.lblbookingtxt.Name = "lblbookingtxt";
-            this.lblbookingtxt.Size = new System.Drawing.Size(96, 18);
-            this.lblbookingtxt.TabIndex = 0;
-            this.lblbookingtxt.Text = "BOOKINGS";
-            // 
-            // pendingapproval
-            // 
-            this.pendingapproval.BackColor = System.Drawing.Color.MidnightBlue;
-            this.pendingapproval.Controls.Add(this.lblpendingapproval);
-            this.pendingapproval.Controls.Add(this.lblpendingapprovaltxt);
-            this.pendingapproval.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pendingapproval.Location = new System.Drawing.Point(363, 94);
-            this.pendingapproval.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pendingapproval.Name = "pendingapproval";
-            this.pendingapproval.Size = new System.Drawing.Size(191, 110);
-            this.pendingapproval.TabIndex = 3;
-            // 
-            // lblpendingapproval
-            // 
-            this.lblpendingapproval.AutoSize = true;
-            this.lblpendingapproval.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblpendingapproval.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblpendingapproval.Location = new System.Drawing.Point(56, 47);
-            this.lblpendingapproval.Name = "lblpendingapproval";
-            this.lblpendingapproval.Size = new System.Drawing.Size(85, 29);
-            this.lblpendingapproval.TabIndex = 2;
-            this.lblpendingapproval.Text = "label1";
-            // 
-            // lblpendingapprovaltxt
-            // 
-            this.lblpendingapprovaltxt.AutoSize = true;
-            this.lblpendingapprovaltxt.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblpendingapprovaltxt.Location = new System.Drawing.Point(14, 11);
-            this.lblpendingapprovaltxt.Name = "lblpendingapprovaltxt";
-            this.lblpendingapprovaltxt.Size = new System.Drawing.Size(174, 18);
-            this.lblpendingapprovaltxt.TabIndex = 1;
-            this.lblpendingapprovaltxt.Text = "PENDING APPROVAL";
-            // 
-            // checkedinpanel
-            // 
-            this.checkedinpanel.BackColor = System.Drawing.Color.MidnightBlue;
-            this.checkedinpanel.Controls.Add(this.lblcheckedin);
-            this.checkedinpanel.Controls.Add(this.lblcheckedintxt);
-            this.checkedinpanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkedinpanel.Location = new System.Drawing.Point(560, 92);
-            this.checkedinpanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.checkedinpanel.Name = "checkedinpanel";
-            this.checkedinpanel.Size = new System.Drawing.Size(145, 110);
-            this.checkedinpanel.TabIndex = 4;
-            // 
-            // lblcheckedin
-            // 
-            this.lblcheckedin.AutoSize = true;
-            this.lblcheckedin.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblcheckedin.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblcheckedin.Location = new System.Drawing.Point(32, 52);
-            this.lblcheckedin.Name = "lblcheckedin";
-            this.lblcheckedin.Size = new System.Drawing.Size(85, 29);
-            this.lblcheckedin.TabIndex = 3;
-            this.lblcheckedin.Text = "label1";
-            this.lblcheckedin.Click += new System.EventHandler(this.lblcheckedin_Click);
-            // 
-            // lblcheckedintxt
-            // 
-            this.lblcheckedintxt.AutoSize = true;
-            this.lblcheckedintxt.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblcheckedintxt.Location = new System.Drawing.Point(19, 15);
-            this.lblcheckedintxt.Name = "lblcheckedintxt";
-            this.lblcheckedintxt.Size = new System.Drawing.Size(110, 18);
-            this.lblcheckedintxt.TabIndex = 2;
-            this.lblcheckedintxt.Text = "CHECKED IN";
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.MidnightBlue;
-            this.panel6.Controls.Add(this.lblrevenue);
-            this.panel6.Controls.Add(this.lblrevenuetxt);
-            this.panel6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel6.Location = new System.Drawing.Point(711, 92);
-            this.panel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(205, 112);
-            this.panel6.TabIndex = 5;
-            // 
-            // lblrevenue
-            // 
-            this.lblrevenue.AutoSize = true;
-            this.lblrevenue.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblrevenue.ForeColor = System.Drawing.Color.Lime;
-            this.lblrevenue.Location = new System.Drawing.Point(43, 49);
-            this.lblrevenue.Name = "lblrevenue";
-            this.lblrevenue.Size = new System.Drawing.Size(98, 32);
-            this.lblrevenue.TabIndex = 4;
-            this.lblrevenue.Text = "label1";
-            // 
-            // lblrevenuetxt
-            // 
-            this.lblrevenuetxt.AutoSize = true;
-            this.lblrevenuetxt.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblrevenuetxt.Location = new System.Drawing.Point(46, 15);
-            this.lblrevenuetxt.Name = "lblrevenuetxt";
-            this.lblrevenuetxt.Size = new System.Drawing.Size(87, 18);
-            this.lblrevenuetxt.TabIndex = 3;
-            this.lblrevenuetxt.Text = "REVENUE";
-            // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.groupBox1.Controls.Add(this.dataGridView1);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(194, 215);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox1.Location = new System.Drawing.Point(188, 194);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Size = new System.Drawing.Size(725, 268);
-            this.groupBox1.TabIndex = 7;
+            this.groupBox1.Size = new System.Drawing.Size(612, 256);
+            this.groupBox1.TabIndex = 12;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Booking Details";
+            this.groupBox1.Text = "Status";
             // 
             // dataGridView1
             // 
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 18);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dataGridView1.MultiSelect = false;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 21);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(719, 248);
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(612, 232);
             this.dataGridView1.TabIndex = 0;
             // 
-            // TurfManagerDashboard
+            // Approve
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(935, 505);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.checkedinpanel);
-            this.Controls.Add(this.panel6);
-            this.Controls.Add(this.pendingapproval);
-            this.Controls.Add(this.todaysbooking);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Name = "TurfManagerDashboard";
-            this.Text = "ManagerDashboard";
-            this.Load += new System.EventHandler(this.TurfManagerDashboard_Load);
+            this.Controls.Add(this.panel9);
+            this.Name = "Approve";
+            this.Text = "Approve";
+            this.Load += new System.EventHandler(this.Approve_Load);
+            this.panel9.ResumeLayout(false);
+            this.panel9.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel8.ResumeLayout(false);
-            this.panel8.PerformLayout();
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            this.todaysbooking.ResumeLayout(false);
-            this.todaysbooking.PerformLayout();
-            this.pendingapproval.ResumeLayout(false);
-            this.pendingapproval.PerformLayout();
-            this.checkedinpanel.ResumeLayout(false);
-            this.checkedinpanel.PerformLayout();
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
@@ -483,36 +409,31 @@
 
         #endregion
 
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label lblapprove;
+        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lbladding;
+        private System.Windows.Forms.Label lblmaintain;
+        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Panel todaysbooking;
-        private System.Windows.Forms.Panel pendingapproval;
-        private System.Windows.Forms.Panel checkedinpanel;
-        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Label lblmaintain;
-        private System.Windows.Forms.Label lbladding;
+        private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label lbloverview;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label lblapprove;
-        private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.Label lblbookingtxt;
-        private System.Windows.Forms.Label lblpendingapprovaltxt;
-        private System.Windows.Forms.Label lblcheckedintxt;
-        private System.Windows.Forms.Label lblrevenuetxt;
-        private System.Windows.Forms.Label lblbooking;
-        private System.Windows.Forms.Label lblpendingapproval;
-        private System.Windows.Forms.Label lblcheckedin;
-        private System.Windows.Forms.Label lblrevenue;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.PictureBox pictureBox9;
     }
 }

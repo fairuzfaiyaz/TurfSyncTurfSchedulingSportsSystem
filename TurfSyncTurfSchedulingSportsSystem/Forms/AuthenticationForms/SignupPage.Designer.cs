@@ -60,7 +60,7 @@
             this.textBox1.Location = new System.Drawing.Point(41, 294);
             this.textBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(338, 24);
+            this.textBox1.Size = new System.Drawing.Size(338, 28);
             this.textBox1.TabIndex = 6;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -75,7 +75,7 @@
             this.textBox2.Location = new System.Drawing.Point(41, 498);
             this.textBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(338, 24);
+            this.textBox2.Size = new System.Drawing.Size(338, 28);
             this.textBox2.TabIndex = 7;
             // 
             // textBox3
@@ -89,7 +89,7 @@
             this.textBox3.Location = new System.Drawing.Point(41, 397);
             this.textBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(338, 24);
+            this.textBox3.Size = new System.Drawing.Size(338, 28);
             this.textBox3.TabIndex = 8;
             // 
             // textBox4
@@ -103,7 +103,7 @@
             this.textBox4.Location = new System.Drawing.Point(41, 594);
             this.textBox4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(338, 24);
+            this.textBox4.Size = new System.Drawing.Size(338, 28);
             this.textBox4.TabIndex = 9;
             this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
@@ -118,7 +118,7 @@
             this.textBox5.Location = new System.Drawing.Point(41, 206);
             this.textBox5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(338, 24);
+            this.textBox5.Size = new System.Drawing.Size(338, 28);
             this.textBox5.TabIndex = 10;
             // 
             // checkBox1
@@ -130,7 +130,7 @@
             this.checkBox1.Location = new System.Drawing.Point(41, 635);
             this.checkBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(209, 23);
+            this.checkBox1.Size = new System.Drawing.Size(257, 25);
             this.checkBox1.TabIndex = 11;
             this.checkBox1.Text = "I agree to the terms of user";
             this.checkBox1.UseVisualStyleBackColor = false;
@@ -156,7 +156,7 @@
             this.signUp.Image = global::TurfSyncTurfSchedulingSportsSystem.Properties.Resources._5335765;
             this.signUp.Location = new System.Drawing.Point(501, 86);
             this.signUp.Name = "signUp";
-            this.signUp.Size = new System.Drawing.Size(296, 35);
+            this.signUp.Size = new System.Drawing.Size(358, 42);
             this.signUp.TabIndex = 13;
             this.signUp.Text = "Create Your Account";
             this.signUp.Click += new System.EventHandler(this.signUp_Click);
@@ -187,7 +187,7 @@
             this.repeatPass.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
             this.repeatPass.Location = new System.Drawing.Point(44, 557);
             this.repeatPass.Name = "repeatPass";
-            this.repeatPass.Size = new System.Drawing.Size(243, 33);
+            this.repeatPass.Size = new System.Drawing.Size(296, 40);
             this.repeatPass.TabIndex = 5;
             this.repeatPass.Text = "Repeat Password";
             this.repeatPass.Click += new System.EventHandler(this.repeatPass_Click);
@@ -202,7 +202,7 @@
             this.passWord.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
             this.passWord.Location = new System.Drawing.Point(44, 461);
             this.passWord.Name = "passWord";
-            this.passWord.Size = new System.Drawing.Size(138, 33);
+            this.passWord.Size = new System.Drawing.Size(169, 40);
             this.passWord.TabIndex = 4;
             this.passWord.Text = "Password";
             this.passWord.Click += new System.EventHandler(this.passWord_Click);
@@ -217,7 +217,7 @@
             this.userName.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
             this.userName.Location = new System.Drawing.Point(40, 360);
             this.userName.Name = "userName";
-            this.userName.Size = new System.Drawing.Size(146, 33);
+            this.userName.Size = new System.Drawing.Size(176, 40);
             this.userName.TabIndex = 3;
             this.userName.Text = "Username";
             this.userName.Click += new System.EventHandler(this.userName_Click);
@@ -232,7 +232,7 @@
             this.eMail.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
             this.eMail.Location = new System.Drawing.Point(44, 257);
             this.eMail.Name = "eMail";
-            this.eMail.Size = new System.Drawing.Size(85, 33);
+            this.eMail.Size = new System.Drawing.Size(101, 40);
             this.eMail.TabIndex = 2;
             this.eMail.Text = "Email";
             this.eMail.Click += new System.EventHandler(this.eMail_Click);
@@ -247,7 +247,7 @@
             this.fullName.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
             this.fullName.Location = new System.Drawing.Point(44, 169);
             this.fullName.Name = "fullName";
-            this.fullName.Size = new System.Drawing.Size(145, 33);
+            this.fullName.Size = new System.Drawing.Size(172, 40);
             this.fullName.TabIndex = 1;
             this.fullName.Text = "Full Name";
             this.fullName.Click += new System.EventHandler(this.label1_Click);
@@ -262,6 +262,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 15;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click_1);
             // 
             // button1
             // 
@@ -281,7 +282,7 @@
             // 
             // SignupPage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SeaGreen;
             this.ClientSize = new System.Drawing.Size(1301, 750);
