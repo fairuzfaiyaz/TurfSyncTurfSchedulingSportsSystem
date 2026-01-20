@@ -135,5 +135,10 @@ namespace TurfSyncTurfSchedulingSportsSystem
             //{   
             //    username.Clear();
         }
+
+        private void LoginPage_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
