@@ -68,7 +68,8 @@ namespace TurfSyncTurfSchedulingSportsSystem.Forms
 
             try
             {
-                using (SqlConnection conn = new SqlConnection(connectionString))
+                //using (SqlConnection conn = new SqlConnection(connectionString))
+                using (SqlConnection conn = DatabaseHelper.GetConnection())
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
                     // IMPORTANT: adjust parameter names & order to match your textboxes
@@ -138,7 +139,8 @@ namespace TurfSyncTurfSchedulingSportsSystem.Forms
 
             try
             {
-                using (SqlConnection conn = new SqlConnection(connectionString))
+                //using (SqlConnection conn = new SqlConnection(connectionString))
+                using (SqlConnection conn = DatabaseHelper.GetConnection())
                 using (SqlDataAdapter adapter = new SqlDataAdapter(selectQuery, conn))
                 {
                     DataTable dt = new DataTable();
@@ -195,7 +197,8 @@ namespace TurfSyncTurfSchedulingSportsSystem.Forms
 
             try
             {
-                using (SqlConnection conn = new SqlConnection(connectionString))
+                using (SqlConnection conn = DatabaseHelper.GetConnection())
+
                 using (SqlCommand cmd = new SqlCommand(sql, conn))
                 {
                     cmd.Parameters.AddWithValue("@UserId", userId);

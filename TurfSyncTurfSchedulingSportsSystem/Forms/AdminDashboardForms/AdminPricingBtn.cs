@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using TurfSyncTurfSchedulingSportsSystem.Forms.AdminDashboardForms;
 using System.Data.SqlClient;
+using TurfSyncTurfSchedulingSportsSystem.DataDLL;
 
 namespace TurfSyncTurfSchedulingSportsSystem.Forms
 {
@@ -38,7 +39,8 @@ namespace TurfSyncTurfSchedulingSportsSystem.Forms
 
             string ConnectionString = "Data Source=DESKTOP-JOLM288\\SQLEXPRESS;Initial Catalog=TurfSyncDB;Persist Security Info=True;User ID=sa;Password=123";
 
-            SqlConnection con = new SqlConnection(ConnectionString);
+            //SqlConnection con = new SqlConnection(ConnectionString);
+            SqlConnection con = DatabaseHelper.GetConnection();
             con.Open();
 
             string t1= textBox1.Text;
@@ -75,7 +77,8 @@ namespace TurfSyncTurfSchedulingSportsSystem.Forms
         private void button2_Click(object sender, EventArgs e)
         {
             string ConnectionString = "Data Source=DESKTOP-JOLM288\\SQLEXPRESS;Initial Catalog=TurfSyncDB;Persist Security Info=True;User ID=sa;Password=123";
-            SqlConnection con = new SqlConnection(ConnectionString);
+            //SqlConnection con = new SqlConnection(ConnectionString);
+            SqlConnection con = DatabaseHelper.GetConnection();
             con.Open();
             string qry = "SELECT* FROM Packages";
             SqlCommand qgv = new SqlCommand(qry, con);

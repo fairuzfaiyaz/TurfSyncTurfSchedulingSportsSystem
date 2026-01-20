@@ -13,6 +13,9 @@ using TurfSyncTurfSchedulingSportsSystem.Forms.AdminDashboardForms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
 
 
+using TurfSyncTurfSchedulingSportsSystem.DataDLL;
+
+
 namespace TurfSyncTurfSchedulingSportsSystem.Forms
 {
     public partial class AdminTurfBookingBtn : Form
@@ -31,8 +34,9 @@ namespace TurfSyncTurfSchedulingSportsSystem.Forms
             atb.Add(atbs);
 
             string ConnectionString = "Data Source=DESKTOP-JOLM288\\SQLEXPRESS;Initial Catalog=TurfSyncDB;Persist Security Info=True;User ID=sa;Password=123";
-
-            SqlConnection con = new SqlConnection(ConnectionString);
+            
+            //SqlConnection con = new SqlConnection(ConnectionString);
+            SqlConnection con = DatabaseHelper.GetConnection();
             con.Open();
 
             string t1 = textBox1.Text;
@@ -108,7 +112,8 @@ namespace TurfSyncTurfSchedulingSportsSystem.Forms
         private void button3_Click(object sender, EventArgs e)
         {
             string ConnectionString = "Data Source=DESKTOP-JOLM288\\SQLEXPRESS;Initial Catalog=TurfSyncDB;Persist Security Info=True;User ID=sa;Password=123";
-            SqlConnection con = new SqlConnection(ConnectionString);
+            //SqlConnection con = new SqlConnection(ConnectionString);
+            SqlConnection con = DatabaseHelper.GetConnection();
             con.Open();
             string qry = "SELECT* FROM turfBookings";
             SqlCommand qgv = new SqlCommand(qry, con);

@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TurfSyncTurfSchedulingSportsSystem.DataDLL;
 using TurfSyncTurfSchedulingSportsSystem.Forms.AdminDashboardForms;
 
 namespace TurfSyncTurfSchedulingSportsSystem.Forms
@@ -54,7 +55,9 @@ namespace TurfSyncTurfSchedulingSportsSystem.Forms
             tfn.Add (tf);
 
             string ConnectionString = "Data Source=DESKTOP-JOLM288\\SQLEXPRESS;Initial Catalog=TurfSyncDB;Persist Security Info=True;User ID=sa;Password=123";
-            SqlConnection con = new SqlConnection(ConnectionString);
+            //SqlConnection con = new SqlConnection(ConnectionString);
+
+            SqlConnection con = DatabaseHelper.GetConnection();
             con.Open();
             string qry = "SELECT* FROM turfLocation";
             SqlCommand qgv = new SqlCommand(qry, con);
@@ -96,7 +99,8 @@ namespace TurfSyncTurfSchedulingSportsSystem.Forms
             {
                 string ConnectionString = "Data Source=DESKTOP-JOLM288\\SQLEXPRESS;Initial Catalog=TurfSyncDB;Persist Security Info=True;User ID=sa;Password=123";
 
-                using (SqlConnection con = new SqlConnection(ConnectionString))
+                //using (SqlConnection con = new SqlConnection(ConnectionString))
+                using (SqlConnection con = DatabaseHelper.GetConnection())
                 {
                     con.Open();
 
@@ -129,7 +133,8 @@ namespace TurfSyncTurfSchedulingSportsSystem.Forms
         private void button3_Click(object sender, EventArgs e)
         {
             string ConnectionString = "Data Source=DESKTOP-JOLM288\\SQLEXPRESS;Initial Catalog=TurfSyncDB;Persist Security Info=True;User ID=sa;Password=123";
-            SqlConnection con = new SqlConnection(ConnectionString);
+            //SqlConnection con = new SqlConnection(ConnectionString);
+            SqlConnection con = DatabaseHelper.GetConnection();
             con.Open();
             string qry = "SELECT* FROM turfBookings";
             SqlCommand qgv = new SqlCommand(qry, con);
