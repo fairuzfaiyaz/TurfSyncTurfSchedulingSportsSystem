@@ -39,8 +39,9 @@
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.label4 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             this.SuspendLayout();
             // 
@@ -71,12 +72,13 @@
             this.button2.BackColor = System.Drawing.Color.Salmon;
             this.button2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button2.Location = new System.Drawing.Point(331, 351);
+            this.button2.Location = new System.Drawing.Point(379, 351);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(194, 29);
+            this.button2.Size = new System.Drawing.Size(146, 29);
             this.button2.TabIndex = 41;
             this.button2.Text = "- Delete Booking";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -85,10 +87,11 @@
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.button1.Location = new System.Drawing.Point(31, 351);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(194, 29);
+            this.button1.Size = new System.Drawing.Size(137, 29);
             this.button1.TabIndex = 40;
             this.button1.Text = "+ Add New Booking ";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label6
             // 
@@ -132,13 +135,15 @@
             // 
             // dataGridView3
             // 
+            this.dataGridView3.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView3.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(39)))));
             this.dataGridView3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Location = new System.Drawing.Point(21, 428);
+            this.dataGridView3.Location = new System.Drawing.Point(21, 406);
             this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.Size = new System.Drawing.Size(541, 134);
+            this.dataGridView3.Size = new System.Drawing.Size(541, 156);
             this.dataGridView3.TabIndex = 33;
+            this.dataGridView3.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView3_CellContentClick);
             // 
             // label4
             // 
@@ -158,20 +163,6 @@
             this.textBox4.Size = new System.Drawing.Size(412, 21);
             this.textBox4.TabIndex = 42;
             // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "a",
-            "b",
-            "c",
-            "d",
-            "e"});
-            this.comboBox1.Location = new System.Drawing.Point(150, 208);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 24);
-            this.comboBox1.TabIndex = 44;
-            // 
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(150, 241);
@@ -179,13 +170,34 @@
             this.textBox2.Size = new System.Drawing.Size(412, 21);
             this.textBox2.TabIndex = 35;
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(150, 209);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(412, 21);
+            this.textBox1.TabIndex = 44;
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.Gold;
+            this.button3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.button3.Location = new System.Drawing.Point(203, 351);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(146, 29);
+            this.button3.TabIndex = 45;
+            this.button3.Text = "Show";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // AdminTurfBookingBtn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(39)))));
             this.ClientSize = new System.Drawing.Size(597, 574);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.button2);
@@ -199,7 +211,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label3);
             this.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AdminTurfBookingBtn";
             this.Text = "AdminTurfBookingBtn";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
@@ -221,7 +233,8 @@
         private System.Windows.Forms.DataGridView dataGridView3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button button3;
     }
 }
