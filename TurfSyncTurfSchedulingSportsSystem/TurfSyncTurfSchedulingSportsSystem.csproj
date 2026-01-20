@@ -50,6 +50,10 @@
   <ItemGroup>
     <Compile Include="DataDLL\DatabaseHelper.cs" />
     <Compile Include="DataDLL\UserRepository.cs" />
+    <Compile Include="Forms\AdminDashboardForms\Adminpricing.cs" />
+    <Compile Include="Forms\AdminDashboardForms\adminStaff.cs" />
+    <Compile Include="Forms\AdminDashboardForms\AdminTurfBookings.cs" />
+    <Compile Include="Forms\AdminDashboardForms\turflocation.cs" />
     <Compile Include="Forms\TurfManagerDashboardForms\AddingMenuTurfManager.cs">
       <SubType>Form</SubType>
     </Compile>

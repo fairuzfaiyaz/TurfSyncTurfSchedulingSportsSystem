@@ -65,7 +65,7 @@
             this.dataGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView5.Location = new System.Drawing.Point(37, 114);
             this.dataGridView5.Name = "dataGridView5";
-            this.dataGridView5.Size = new System.Drawing.Size(352, 73);
+            this.dataGridView5.Size = new System.Drawing.Size(352, 149);
             this.dataGridView5.TabIndex = 4;
             this.dataGridView5.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView5_CellContentClick);
             // 
@@ -73,11 +73,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(123, 123);
+            this.label1.Location = new System.Drawing.Point(43, 161);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(81, 19);
+            this.label1.Size = new System.Drawing.Size(106, 25);
             this.label1.TabIndex = 9;
             this.label1.Text = "Manager";
             this.label1.Click += new System.EventHandler(this.label1_Click_1);
@@ -86,11 +86,11 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label2.Location = new System.Drawing.Point(124, 142);
+            this.label2.Location = new System.Drawing.Point(44, 194);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(235, 32);
+            this.label2.Size = new System.Drawing.Size(338, 42);
             this.label2.TabIndex = 10;
             this.label2.Text = "Manage all users (add/remove customers,\r\n staff, managers)";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -101,16 +101,17 @@
             this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView4.Location = new System.Drawing.Point(410, 114);
             this.dataGridView4.Name = "dataGridView4";
-            this.dataGridView4.Size = new System.Drawing.Size(352, 73);
+            this.dataGridView4.Size = new System.Drawing.Size(352, 149);
             this.dataGridView4.TabIndex = 3;
+            this.dataGridView4.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView4_CellContentClick);
             // 
             // dataGridView7
             // 
             this.dataGridView7.BackgroundColor = System.Drawing.Color.SkyBlue;
             this.dataGridView7.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView7.Location = new System.Drawing.Point(410, 190);
+            this.dataGridView7.Location = new System.Drawing.Point(410, 274);
             this.dataGridView7.Name = "dataGridView7";
-            this.dataGridView7.Size = new System.Drawing.Size(352, 73);
+            this.dataGridView7.Size = new System.Drawing.Size(352, 156);
             this.dataGridView7.TabIndex = 7;
             this.dataGridView7.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView7_CellContentClick);
             // 
@@ -118,29 +119,31 @@
             // 
             this.dataGridView6.BackgroundColor = System.Drawing.Color.LimeGreen;
             this.dataGridView6.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView6.Location = new System.Drawing.Point(37, 190);
+            this.dataGridView6.Location = new System.Drawing.Point(37, 274);
             this.dataGridView6.Name = "dataGridView6";
-            this.dataGridView6.Size = new System.Drawing.Size(352, 73);
+            this.dataGridView6.Size = new System.Drawing.Size(352, 156);
             this.dataGridView6.TabIndex = 6;
+            this.dataGridView6.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView6_CellContentClick);
             // 
             // dataGridView3
             // 
             this.dataGridView3.BackgroundColor = System.Drawing.Color.Turquoise;
             this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Location = new System.Drawing.Point(37, 269);
+            this.dataGridView3.Location = new System.Drawing.Point(561, 14);
             this.dataGridView3.Name = "dataGridView3";
             this.dataGridView3.Size = new System.Drawing.Size(352, 73);
             this.dataGridView3.TabIndex = 5;
+            this.dataGridView3.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView3_CellContentClick);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.LimeGreen;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label3.Location = new System.Drawing.Point(123, 203);
+            this.label3.Location = new System.Drawing.Point(88, 323);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(104, 19);
+            this.label3.Size = new System.Drawing.Size(137, 25);
             this.label3.TabIndex = 11;
             this.label3.Text = "Turf booking\r\n";
             this.label3.Click += new System.EventHandler(this.label3_Click);
@@ -149,13 +152,14 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Orange;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label4.Location = new System.Drawing.Point(488, 123);
+            this.label4.Location = new System.Drawing.Point(424, 161);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(62, 19);
+            this.label4.Size = new System.Drawing.Size(81, 25);
             this.label4.TabIndex = 12;
             this.label4.Text = "Pricing";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label5
             // 
@@ -163,7 +167,7 @@
             this.label5.BackColor = System.Drawing.Color.Turquoise;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label5.Location = new System.Drawing.Point(123, 286);
+            this.label5.Location = new System.Drawing.Point(628, 49);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(151, 19);
             this.label5.TabIndex = 13;
@@ -174,11 +178,11 @@
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.SkyBlue;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label6.Location = new System.Drawing.Point(488, 203);
+            this.label6.Location = new System.Drawing.Point(447, 314);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(108, 19);
+            this.label6.Size = new System.Drawing.Size(144, 25);
             this.label6.TabIndex = 14;
             this.label6.Text = "Turf locations";
             this.label6.Click += new System.EventHandler(this.label6_Click);
@@ -187,55 +191,60 @@
             // 
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.Orange;
-            this.label9.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label9.Location = new System.Drawing.Point(489, 142);
+            this.label9.Location = new System.Drawing.Point(425, 194);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(207, 32);
+            this.label9.Size = new System.Drawing.Size(301, 42);
             this.label9.TabIndex = 17;
             this.label9.Text = " Set pricing (hourly rate, special offers,\r\n tournament packages)\r\n";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.LimeGreen;
-            this.label10.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label10.Location = new System.Drawing.Point(124, 222);
+            this.label10.Location = new System.Drawing.Point(66, 355);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(246, 16);
+            this.label10.Size = new System.Drawing.Size(247, 42);
             this.label10.TabIndex = 18;
-            this.label10.Text = "Create & manage turf locations (multiple turfs)\r\n";
+            this.label10.Text = "Create & manage turf locations\r\n (multiple turfs)\r\n";
+            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // label12
             // 
             this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.Color.SkyBlue;
-            this.label12.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label12.Location = new System.Drawing.Point(489, 222);
+            this.label12.Location = new System.Drawing.Point(441, 355);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(246, 16);
+            this.label12.Size = new System.Drawing.Size(251, 42);
             this.label12.TabIndex = 16;
-            this.label12.Text = "Create & manage turf locations (multiple turfs)\r\n";
+            this.label12.Text = "Create & manage turf locations \r\n(multiple turfs)\r\n";
+            this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
             // dataGridView8
             // 
             this.dataGridView8.BackgroundColor = System.Drawing.Color.Salmon;
             this.dataGridView8.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView8.Location = new System.Drawing.Point(233, 348);
+            this.dataGridView8.Location = new System.Drawing.Point(561, 14);
             this.dataGridView8.Name = "dataGridView8";
             this.dataGridView8.Size = new System.Drawing.Size(352, 73);
             this.dataGridView8.TabIndex = 21;
+            this.dataGridView8.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView8_CellContentClick);
             // 
             // dataGridView9
             // 
             this.dataGridView9.BackgroundColor = System.Drawing.Color.DarkCyan;
             this.dataGridView9.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView9.Location = new System.Drawing.Point(410, 268);
+            this.dataGridView9.Location = new System.Drawing.Point(561, 14);
             this.dataGridView9.Name = "dataGridView9";
             this.dataGridView9.Size = new System.Drawing.Size(352, 73);
             this.dataGridView9.TabIndex = 22;
+            this.dataGridView9.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView9_CellContentClick);
             // 
             // label7
             // 
@@ -243,11 +252,12 @@
             this.label7.BackColor = System.Drawing.Color.Turquoise;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label7.Location = new System.Drawing.Point(124, 305);
+            this.label7.Location = new System.Drawing.Point(407, 55);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(121, 32);
             this.label7.TabIndex = 23;
             this.label7.Text = "view total revenue \r\n(from bokings + store) \r\n";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // label8
             // 
@@ -255,7 +265,7 @@
             this.label8.BackColor = System.Drawing.Color.DarkCyan;
             this.label8.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label8.Location = new System.Drawing.Point(479, 286);
+            this.label8.Location = new System.Drawing.Point(567, 26);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(125, 19);
             this.label8.TabIndex = 24;
@@ -268,7 +278,7 @@
             this.label11.BackColor = System.Drawing.Color.Salmon;
             this.label11.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label11.Location = new System.Drawing.Point(329, 362);
+            this.label11.Location = new System.Drawing.Point(730, 17);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(126, 19);
             this.label11.TabIndex = 25;
@@ -280,7 +290,7 @@
             this.label13.BackColor = System.Drawing.Color.DarkCyan;
             this.label13.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label13.Location = new System.Drawing.Point(480, 305);
+            this.label13.Location = new System.Drawing.Point(707, 17);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(168, 32);
             this.label13.TabIndex = 26;
@@ -292,11 +302,12 @@
             this.label14.BackColor = System.Drawing.Color.Salmon;
             this.label14.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label14.Location = new System.Drawing.Point(330, 381);
+            this.label14.Location = new System.Drawing.Point(582, 49);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(221, 32);
             this.label14.TabIndex = 27;
             this.label14.Text = "Global settings \r\n(payment methods,maintenance days)\r\n";
+            this.label14.Click += new System.EventHandler(this.label14_Click);
             // 
             // label15
             // 
