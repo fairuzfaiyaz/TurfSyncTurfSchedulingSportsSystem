@@ -48,7 +48,6 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
@@ -228,11 +227,11 @@
             // 
             // dataGridView8
             // 
-            this.dataGridView8.BackgroundColor = System.Drawing.Color.Salmon;
+            this.dataGridView8.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(39)))));
             this.dataGridView8.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView8.Location = new System.Drawing.Point(561, 14);
             this.dataGridView8.Name = "dataGridView8";
-            this.dataGridView8.Size = new System.Drawing.Size(352, 73);
+            this.dataGridView8.Size = new System.Drawing.Size(352, 94);
             this.dataGridView8.TabIndex = 21;
             this.dataGridView8.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView8_CellContentClick);
             // 
@@ -240,9 +239,9 @@
             // 
             this.dataGridView9.BackgroundColor = System.Drawing.Color.DarkCyan;
             this.dataGridView9.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView9.Location = new System.Drawing.Point(561, 14);
+            this.dataGridView9.Location = new System.Drawing.Point(632, 17);
             this.dataGridView9.Name = "dataGridView9";
-            this.dataGridView9.Size = new System.Drawing.Size(352, 73);
+            this.dataGridView9.Size = new System.Drawing.Size(352, 92);
             this.dataGridView9.TabIndex = 22;
             this.dataGridView9.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView9_CellContentClick);
             // 
@@ -296,19 +295,6 @@
             this.label13.TabIndex = 26;
             this.label13.Text = "view system reports (sales,\r\nmost-booked slots,peak hours)\r\n";
             // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.BackColor = System.Drawing.Color.Salmon;
-            this.label14.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label14.Location = new System.Drawing.Point(582, 49);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(221, 32);
-            this.label14.TabIndex = 27;
-            this.label14.Text = "Global settings \r\n(payment methods,maintenance days)\r\n";
-            this.label14.Click += new System.EventHandler(this.label14_Click);
-            // 
             // label15
             // 
             this.label15.AutoSize = true;
@@ -326,14 +312,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(39)))));
             this.ClientSize = new System.Drawing.Size(800, 456);
+            this.Controls.Add(this.dataGridView8);
             this.Controls.Add(this.label15);
-            this.Controls.Add(this.label14);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.dataGridView9);
-            this.Controls.Add(this.dataGridView8);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label12);
@@ -383,7 +368,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
     }
 }
