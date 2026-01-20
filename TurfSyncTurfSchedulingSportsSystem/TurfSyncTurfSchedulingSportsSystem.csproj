@@ -51,6 +51,12 @@
     <Compile Include="DataDLL\DatabaseHelper.cs" />
     <Compile Include="DataDLL\PendingRequestRepository.cs" />
     <Compile Include="DataDLL\UserRepository.cs" />
+    <Compile Include="Forms\PlayerDashboardForms\RateTurfService.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PlayerDashboardForms\RateTurfService.Designer.cs">
+      <DependentUpon>RateTurfService.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\AdminDashboardForms\Adminpricing.cs" />
     <Compile Include="Forms\AdminDashboardForms\adminStaff.cs" />
     <Compile Include="Forms\AdminDashboardForms\AdminTurfBookings.cs" />
@@ -238,6 +244,7 @@
     <Compile Include="Interfaces\IAuthenticator.cs" />
     <Compile Include="Interfaces\IUserRepository.cs" />
     <Compile Include="Models\PendingRequest.cs" />
+    <Compile Include="Models\Turf.cs" />
     <Compile Include="Models\TurfSchedule.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Program.cs" />
@@ -280,6 +287,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Dashboard%24Users.resx">
       <DependentUpon>Dashboard%24Users.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PlayerDashboardForms\RateTurfService.resx">
+      <DependentUpon>RateTurfService.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\TurfManagerDashboardForms\AddingMenuTurfManager.resx">
       <DependentUpon>AddingMenuTurfManager.cs</DependentUpon>
@@ -522,6 +532,9 @@
     <None Include="Resources\login1.png" />
     <None Include="Resources\user - Copy.png" />
     <Content Include="SQL Query\LoginQuery.txt" />
+    <Content Include="SQL Query\RatingService.txt" />
+    <Content Include="SQL Query\StaffManagement.txt" />
+    <Content Include="SQL Query\TurfSchedule.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

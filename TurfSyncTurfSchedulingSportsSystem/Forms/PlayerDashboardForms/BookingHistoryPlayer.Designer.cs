@@ -36,18 +36,11 @@
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.TurfName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Date = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PaymentMethod = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TimeSlot = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.BookingID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.AmountPaid = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.BookingType = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // button5
@@ -72,6 +65,7 @@
             this.button4.TabIndex = 45;
             this.button4.Text = "Log out";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -83,6 +77,7 @@
             this.button3.TabIndex = 44;
             this.button3.Text = "Change Profile";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // label2
             // 
@@ -137,59 +132,6 @@
             this.label3.TabIndex = 47;
             this.label3.Text = "Booking History";
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Window;
-            this.dataGridView1.ColumnHeadersHeight = 60;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.TurfName,
-            this.Date,
-            this.PaymentMethod,
-            this.TimeSlot,
-            this.BookingID,
-            this.AmountPaid,
-            this.BookingType});
-            this.dataGridView1.Location = new System.Drawing.Point(338, 101);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1043, 616);
-            this.dataGridView1.TabIndex = 51;
-            // 
-            // TurfName
-            // 
-            this.TurfName.HeaderText = "Turf Name";
-            this.TurfName.Name = "TurfName";
-            // 
-            // Date
-            // 
-            this.Date.HeaderText = "Date";
-            this.Date.Name = "Date";
-            // 
-            // PaymentMethod
-            // 
-            this.PaymentMethod.HeaderText = "Payment Method";
-            this.PaymentMethod.Name = "PaymentMethod";
-            // 
-            // TimeSlot
-            // 
-            this.TimeSlot.HeaderText = "Time Slot";
-            this.TimeSlot.Name = "TimeSlot";
-            // 
-            // BookingID
-            // 
-            this.BookingID.HeaderText = "Booking ID";
-            this.BookingID.Name = "BookingID";
-            // 
-            // AmountPaid
-            // 
-            this.AmountPaid.HeaderText = "Amount Paid";
-            this.AmountPaid.Name = "AmountPaid";
-            // 
-            // BookingType
-            // 
-            this.BookingType.HeaderText = "Booking Type (Hourly / Tournament)";
-            this.BookingType.Name = "BookingType";
-            // 
             // pictureBox8
             // 
             this.pictureBox8.Image = global::TurfSyncTurfSchedulingSportsSystem.Properties.Resources.close;
@@ -201,14 +143,24 @@
             this.pictureBox8.TabStop = false;
             this.pictureBox8.Click += new System.EventHandler(this.pictureBox8_Click);
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(338, 94);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(1063, 646);
+            this.dataGridView1.TabIndex = 53;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
             // BookingHistoryPlayer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(1413, 752);
-            this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
@@ -219,10 +171,11 @@
             this.Controls.Add(this.button1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "BookingHistoryPlayer";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BookingHistoryPlayer";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -238,14 +191,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TurfName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Date;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PaymentMethod;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TimeSlot;
-        private System.Windows.Forms.DataGridViewTextBoxColumn BookingID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn AmountPaid;
-        private System.Windows.Forms.DataGridViewTextBoxColumn BookingType;
         private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

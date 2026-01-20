@@ -1,0 +1,29 @@
+﻿USE TurfSyncDB;
+GO
+
+
+CREATE TABLE Packages
+(
+    Id              INT IDENTITY(1,1) PRIMARY KEY,
+    PackageName     NVARCHAR(100) NOT NULL,
+    Price           INT NOT NULL,
+    Duration        INT NOT NULL,
+    IsAvailable     BIT NOT NULL DEFAULT 1
+);
+GO
+CREATE TABLE turfLocation
+(
+    Id          INT IDENTITY(1,1) PRIMARY KEY,
+    Turf        NVARCHAR(100) NOT NULL,
+    Location    NVARCHAR(150) NOT NULL
+);
+CREATE TABLE turfBookings
+(
+    Id              INT IDENTITY(1,1) PRIMARY KEY,     -- recommended auto-increment ID
+
+    Turf            NVARCHAR(100) NOT NULL,           -- 1. turf name/location
+    CustomerName    NVARCHAR(100) NOT NULL,           -- 2. customer name
+    BookingDate     NVARCHAR(20)  NOT NULL,           -- 3. date (as string)
+    BookingTime     NVARCHAR(20)  NOT NULL            -- 4. time (as string)
+);
+GO

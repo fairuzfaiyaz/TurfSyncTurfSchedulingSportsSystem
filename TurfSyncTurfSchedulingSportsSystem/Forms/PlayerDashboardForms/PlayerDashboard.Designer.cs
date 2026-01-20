@@ -140,6 +140,7 @@
             this.button10.TabIndex = 14;
             this.button10.Text = "Rate the turf service";
             this.button10.UseVisualStyleBackColor = false;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // button11
             // 
@@ -149,7 +150,7 @@
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(209, 89);
             this.button11.TabIndex = 15;
-            this.button11.Text = " View booking history";
+            this.button11.Text = " View Played Match History";
             this.button11.UseVisualStyleBackColor = false;
             this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
@@ -268,6 +269,7 @@
             this.Controls.Add(this.pictureBox2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "PlayerDashboard";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PlayerDashboard";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

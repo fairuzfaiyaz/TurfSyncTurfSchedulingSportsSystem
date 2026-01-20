@@ -1,0 +1,25 @@
+﻿CREATE TABLE StaffManagement
+(
+    StaffManagementId INT IDENTITY(1,1) PRIMARY KEY,
+
+    TurfId INT NOT NULL,
+    ScheduleDate DATE NOT NULL,
+    ScheduleTime TIME NOT NULL,
+    TurfLocation VARCHAR(100) NOT NULL,
+    Duration INT NOT NULL,   -- in minutes or hours (your choice)
+
+    -- Lights check
+    LightsStatus VARCHAR(10) CHECK (LightsStatus IN ('On', 'Off')) NOT NULL,
+
+    -- Equipment status (string like Issued, Returned, Damaged)
+    FootballStatus VARCHAR(20),
+    BibsStatus VARCHAR(20),
+    ConesStatus VARCHAR(20),
+
+    -- Cleaning checks (Yes / No)
+    TrashCleaned VARCHAR(3) CHECK (TrashCleaned IN ('Yes', 'No')),
+    TurfBrushed VARCHAR(3) CHECK (TurfBrushed IN ('Yes', 'No')),
+    WaterBottleRemoved VARCHAR(3) CHECK (WaterBottleRemoved IN ('Yes', 'No')),
+
+    CreatedAt DATETIME DEFAULT GETDATE()
+);

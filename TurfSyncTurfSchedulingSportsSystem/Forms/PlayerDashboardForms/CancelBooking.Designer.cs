@@ -37,21 +37,21 @@
             this.button1 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.TurnNameTextBox = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
+            this.timeslotTB = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
+            this.dateTB = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
+            this.amountPaidTB = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
+            this.refundTB = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.remaingtimeLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -67,6 +67,7 @@
             this.button4.TabIndex = 18;
             this.button4.Text = "Log out";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -78,6 +79,7 @@
             this.button3.TabIndex = 17;
             this.button3.Text = "Change Profile";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // label2
             // 
@@ -109,6 +111,7 @@
             this.button2.TabIndex = 13;
             this.button2.Text = "My Profile";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // dataGridView1
             // 
@@ -117,6 +120,8 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(969, 374);
             this.dataGridView1.TabIndex = 19;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // button1
             // 
@@ -128,6 +133,7 @@
             this.button1.TabIndex = 20;
             this.button1.Text = "Cancel Book";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // label3
             // 
@@ -149,15 +155,15 @@
             this.label4.TabIndex = 22;
             this.label4.Text = "Turf Name: ";
             // 
-            // label5
+            // TurnNameTextBox
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(503, 501);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(37, 22);
-            this.label5.TabIndex = 23;
-            this.label5.Text = "xxx";
+            this.TurnNameTextBox.AutoSize = true;
+            this.TurnNameTextBox.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TurnNameTextBox.Location = new System.Drawing.Point(503, 501);
+            this.TurnNameTextBox.Name = "TurnNameTextBox";
+            this.TurnNameTextBox.Size = new System.Drawing.Size(37, 22);
+            this.TurnNameTextBox.TabIndex = 23;
+            this.TurnNameTextBox.Text = "xxx";
             // 
             // label9
             // 
@@ -165,19 +171,19 @@
             this.label9.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(600, 501);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(210, 22);
+            this.label9.Size = new System.Drawing.Size(157, 22);
             this.label9.TabIndex = 26;
-            this.label9.Text = "Cancellation Reason: ";
+            this.label9.Text = "Remaining Time:";
             // 
-            // label10
+            // timeslotTB
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(503, 562);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(37, 22);
-            this.label10.TabIndex = 29;
-            this.label10.Text = "xxx";
+            this.timeslotTB.AutoSize = true;
+            this.timeslotTB.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.timeslotTB.Location = new System.Drawing.Point(503, 562);
+            this.timeslotTB.Name = "timeslotTB";
+            this.timeslotTB.Size = new System.Drawing.Size(37, 22);
+            this.timeslotTB.TabIndex = 29;
+            this.timeslotTB.Text = "xxx";
             // 
             // label11
             // 
@@ -189,16 +195,16 @@
             this.label11.TabIndex = 28;
             this.label11.Text = "Time Slot:";
             // 
-            // label12
+            // dateTB
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(503, 532);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(37, 22);
-            this.label12.TabIndex = 31;
-            this.label12.Text = "xxx";
-            this.label12.Click += new System.EventHandler(this.label12_Click);
+            this.dateTB.AutoSize = true;
+            this.dateTB.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTB.Location = new System.Drawing.Point(503, 532);
+            this.dateTB.Name = "dateTB";
+            this.dateTB.Size = new System.Drawing.Size(37, 22);
+            this.dateTB.TabIndex = 31;
+            this.dateTB.Text = "xxx";
+            this.dateTB.Click += new System.EventHandler(this.label12_Click);
             // 
             // label13
             // 
@@ -211,15 +217,15 @@
             this.label13.Text = "Date: ";
             this.label13.Click += new System.EventHandler(this.label13_Click);
             // 
-            // label14
+            // amountPaidTB
             // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(503, 594);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(37, 22);
-            this.label14.TabIndex = 33;
-            this.label14.Text = "xxx";
+            this.amountPaidTB.AutoSize = true;
+            this.amountPaidTB.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.amountPaidTB.Location = new System.Drawing.Point(503, 594);
+            this.amountPaidTB.Name = "amountPaidTB";
+            this.amountPaidTB.Size = new System.Drawing.Size(37, 22);
+            this.amountPaidTB.TabIndex = 33;
+            this.amountPaidTB.Text = "xxx";
             // 
             // label15
             // 
@@ -230,20 +236,6 @@
             this.label15.Size = new System.Drawing.Size(140, 22);
             this.label15.TabIndex = 32;
             this.label15.Text = "Amount Paid: ";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Change of plan",
-            "Weather issue",
-            "Emergency",
-            "Other"});
-            this.comboBox1.Location = new System.Drawing.Point(817, 501);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(200, 32);
-            this.comboBox1.TabIndex = 34;
             // 
             // label6
             // 
@@ -263,19 +255,20 @@
             this.label7.Location = new System.Drawing.Point(600, 562);
             this.label7.Name = "label7";
             this.label7.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label7.Size = new System.Drawing.Size(197, 22);
+            this.label7.Size = new System.Drawing.Size(162, 22);
             this.label7.TabIndex = 36;
-            this.label7.Text = "Refund Information: ";
+            this.label7.Text = "Refund Amount:";
             // 
-            // label8
+            // refundTB
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(813, 562);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(37, 22);
-            this.label8.TabIndex = 37;
-            this.label8.Text = "xxx";
+            this.refundTB.AutoSize = true;
+            this.refundTB.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.refundTB.Location = new System.Drawing.Point(773, 562);
+            this.refundTB.Name = "refundTB";
+            this.refundTB.Size = new System.Drawing.Size(37, 22);
+            this.refundTB.TabIndex = 37;
+            this.refundTB.Text = "xxx";
+            this.refundTB.Click += new System.EventHandler(this.label8_Click);
             // 
             // button5
             // 
@@ -311,26 +304,36 @@
             this.pictureBox8.TabStop = false;
             this.pictureBox8.Click += new System.EventHandler(this.pictureBox8_Click);
             // 
+            // remaingtimeLabel
+            // 
+            this.remaingtimeLabel.AutoSize = true;
+            this.remaingtimeLabel.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.remaingtimeLabel.Location = new System.Drawing.Point(763, 501);
+            this.remaingtimeLabel.Name = "remaingtimeLabel";
+            this.remaingtimeLabel.Size = new System.Drawing.Size(37, 22);
+            this.remaingtimeLabel.TabIndex = 40;
+            this.remaingtimeLabel.Text = "xxx";
+            // 
             // CancelBooking
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(1387, 738);
+            this.Controls.Add(this.remaingtimeLabel);
             this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.button5);
-            this.Controls.Add(this.label8);
+            this.Controls.Add(this.refundTB);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.label14);
+            this.Controls.Add(this.amountPaidTB);
             this.Controls.Add(this.label15);
-            this.Controls.Add(this.label12);
+            this.Controls.Add(this.dateTB);
             this.Controls.Add(this.label13);
-            this.Controls.Add(this.label10);
+            this.Controls.Add(this.timeslotTB);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.TurnNameTextBox);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.button1);
@@ -343,6 +346,7 @@
             this.Controls.Add(this.button2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "CancelBooking";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CancelBooking";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -364,19 +368,19 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label TurnNameTextBox;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label timeslotTB;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label dateTB;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label amountPaidTB;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label refundTB;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.Label remaingtimeLabel;
     }
 }

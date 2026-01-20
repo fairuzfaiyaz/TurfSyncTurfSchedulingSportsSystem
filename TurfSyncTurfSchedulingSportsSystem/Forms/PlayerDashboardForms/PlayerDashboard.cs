@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using TurfSyncTurfSchedulingSportsSystem.Forms;
+using TurfSyncTurfSchedulingSportsSystem.Forms.PlayerDashboardForms;
 using TurfSyncTurfSchedulingSportsSystem.Models;
 
 namespace TurfSyncTurfSchedulingSportsSystem.Forms
@@ -30,7 +31,7 @@ namespace TurfSyncTurfSchedulingSportsSystem.Forms
         private void button8_Click(object sender, EventArgs e)
         {
             this.Hide();
-            BookTurfSchedule bookTurfSchedule = new BookTurfSchedule();
+            BookTurfSchedule bookTurfSchedule = new BookTurfSchedule(currentUser);
             bookTurfSchedule.Show();
         }
 
@@ -54,14 +55,14 @@ namespace TurfSyncTurfSchedulingSportsSystem.Forms
         private void button7_Click(object sender, EventArgs e)
         {
             this.Hide();
-            CancelBooking cancelBooking = new CancelBooking();
+            CancelBooking cancelBooking = new CancelBooking(currentUser);
             cancelBooking.Show();
         }
 
         private void button12_Click(object sender, EventArgs e)
         {
             this.Hide();
-            TrackStatus trackStatus = new TrackStatus();
+            TrackStatus trackStatus = new TrackStatus(currentUser);
             trackStatus.Show();
         }
 
@@ -92,15 +93,22 @@ namespace TurfSyncTurfSchedulingSportsSystem.Forms
         private void button13_Click(object sender, EventArgs e)
         {
             this.Hide();
-            RescheduleBooking rescheduleBooking = new RescheduleBooking();
+            RescheduleBooking rescheduleBooking = new RescheduleBooking(currentUser);
             rescheduleBooking.Show();
         }
 
         private void button11_Click(object sender, EventArgs e)
         {
             this.Hide();
-            BookingHistoryPlayer x = new BookingHistoryPlayer();
+            BookingHistoryPlayer x = new BookingHistoryPlayer(currentUser);
             x.Show();
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            RateTurfService rateTurfService = new RateTurfService(currentUser);
+            rateTurfService.Show();
         }
     }
 }

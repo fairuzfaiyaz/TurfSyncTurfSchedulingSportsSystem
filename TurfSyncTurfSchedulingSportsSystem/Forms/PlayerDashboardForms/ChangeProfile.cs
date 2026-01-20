@@ -72,57 +72,49 @@ namespace TurfSyncTurfSchedulingSportsSystem.Forms
 
         }
 
-        
+
         private void button1_Click(object sender, EventArgs e)
         {
-            //string currentPassword = currentPasswordTextBox.Text.Trim();
-            //string newPassword = newPasswordTextBox.Text.Trim();
-            //string repeatPassword = repeatPasswordTextBox.Text.Trim();
+            string current_Password = currentPassword.Text.Trim();
+            string new_Password = newPassword.Text.Trim();
+            string repeat_Password = RptNewPassword.Text.Trim();
 
-            //// Validation
-            //if (string.IsNullOrEmpty(currentPassword) ||
-            //    string.IsNullOrEmpty(newPassword) ||
-            //    string.IsNullOrEmpty(repeatPassword))
-            //{
-            //    MessageBox.Show("Please fill all password fields.");
-            //    return;
-            //}
+            if (string.IsNullOrEmpty(current_Password) ||
+                string.IsNullOrEmpty(new_Password) ||
+                string.IsNullOrEmpty(repeat_Password))
+            {
+                MessageBox.Show("Please fill all password fields.");
+                return;
+            }
 
-            //// 1️⃣ Verify current password using Authenticator
-            //if (!authenticator.Login(currentUser.Username, currentPassword, out _))
-            //{
-            //    MessageBox.Show("Current password is incorrect.");
-            //    return;
-            //}
+            if (new_Password != repeat_Password)
+            {
+                MessageBox.Show("New passwords do not match.");
+                return;
+            }
 
-            //// 2️⃣ Check new password match
-            //if (newPassword != repeatPassword)
-            //{
-            //    MessageBox.Show("New passwords do not match.");
-            //    return;
-            //}
+            bool success = authenticator.ChangePassword(
+                currentUser,
+                current_Password,
+                new_Password
+            );
 
-            //// 3️⃣ Hash new password (reuse Authenticator logic indirectly)
-            //string newHash = authenticator.HashPassword(newPassword);
+            if (success)
+            {
+                MessageBox.Show("Password updated successfully!");
 
-            //// 4️⃣ Update database
-            //bool success = userRepository.UpdatePassword(currentUser.UserId, newHash);
-
-            //if (success)
-            //{
-            //    currentUser.PasswordHash = newHash;
-
-            //    MessageBox.Show("Password Updated Successfully!");
-
-            //    currentPasswordTextBox.Clear();
-            //    newPasswordTextBox.Clear();
-            //    repeatPasswordTextBox.Clear();
-            //}
-            //else
-            //{
-            //    MessageBox.Show("Failed to update password.");
-            //}
+                currentPassword.Clear();
+                newPassword.Clear();
+                RptNewPassword.Clear();
+                this.Dispose();
+                new LoginPage().Show();
+            }
+            else
+            {
+                MessageBox.Show("Current password is incorrect.");
+            }
         }
+
 
         //profile update button
         private void button2_Click(object sender, EventArgs e)

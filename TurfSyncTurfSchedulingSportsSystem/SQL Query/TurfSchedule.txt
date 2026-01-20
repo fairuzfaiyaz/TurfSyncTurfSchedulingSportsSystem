@@ -1,0 +1,80 @@
+﻿CREATE TABLE [dbo].[TurfSchedule] (
+    TurfId INT NOT NULL PRIMARY KEY,
+
+    ScheduleDate DATE NOT NULL,
+    ScheduleTime TIME NOT NULL,
+
+    TurfLocation NVARCHAR(100) NOT NULL,
+
+    Duration INT NOT NULL,          -- duration in minutes
+    Price DECIMAL(10,2) NOT NULL,
+
+    Status NVARCHAR(20) NOT NULL,   -- Pending, Approved, Booked, Cancelled
+
+    CreatedAt DATETIME DEFAULT GETDATE()
+);
+
+
+
+CREATE TABLE [dbo].[PendingRequests] (
+    RequestId INT IDENTITY(1,1) PRIMARY KEY,
+
+    TurfId INT NOT NULL,
+
+    ScheduleDate DATE NOT NULL,
+    ScheduleTime TIME NOT NULL,
+
+    Duration INT NOT NULL,          -- minutes
+    Price DECIMAL(10,2) NOT NULL,
+
+    RequestedBy NVARCHAR(100) NOT NULL,   -- Username or FullName from Users
+
+    RequestStatus NVARCHAR(20) NOT NULL DEFAULT 'Pending',
+
+    RequestedAt DATETIME DEFAULT GETDATE()
+);
+
+
+
+
+
+
+
+
+
+INSERT INTO dbo.TurfSchedule (TurfId, ScheduleDate, ScheduleTime, TurfLocation, Duration, Price, Status)
+VALUES
+-- Green Field
+(1, '2026-01-20', '08:00:00', 'Green Field', 60, 500.00, 'Available'),
+(2, '2026-01-20', '09:30:00', 'Green Field', 60, 500.00, 'Booked'),
+(3, '2026-01-20', '11:00:00', 'Green Field', 90, 750.00, 'Arrived'),
+(4, '2026-01-20', '13:00:00', 'Green Field', 60, 500.00, 'Available'),
+(5, '2026-01-20', '14:30:00', 'Green Field', 60, 500.00, 'Booked'),
+
+-- Blue Arena
+(6, '2026-01-20', '08:00:00', 'Blue Arena', 60, 600.00, 'Arrived'),
+(7, '2026-01-20', '09:30:00', 'Blue Arena', 60, 600.00, 'Available'),
+(8, '2026-01-20', '11:00:00', 'Blue Arena', 90, 900.00, 'Booked'),
+(9, '2026-01-20', '13:00:00', 'Blue Arena', 60, 600.00, 'Available'),
+(10, '2026-01-20', '14:30:00', 'Blue Arena', 60, 600.00, 'Arrived'),
+
+-- Red Turf
+(11, '2026-01-21', '08:00:00', 'Red Turf', 60, 550.00, 'Available'),
+(12, '2026-01-21', '09:30:00', 'Red Turf', 60, 550.00, 'Booked'),
+(13, '2026-01-21', '11:00:00', 'Red Turf', 90, 825.00, 'Arrived'),
+(14, '2026-01-21', '13:00:00', 'Red Turf', 60, 550.00, 'Available'),
+(15, '2026-01-21', '14:30:00', 'Red Turf', 60, 550.00, 'Booked'),
+
+-- Yellow Field
+(16, '2026-01-21', '08:00:00', 'Yellow Field', 60, 500.00, 'Arrived'),
+(17, '2026-01-21', '09:30:00', 'Yellow Field', 60, 500.00, 'Available'),
+(18, '2026-01-21', '11:00:00', 'Yellow Field', 90, 750.00, 'Booked'),
+(19, '2026-01-21', '13:00:00', 'Yellow Field', 60, 500.00, 'Available'),
+(20, '2026-01-21', '14:30:00', 'Yellow Field', 60, 500.00, 'Arrived'),
+
+-- Green Field next day
+(21, '2026-01-22', '08:00:00', 'Green Field', 60, 500.00, 'Booked'),
+(22, '2026-01-22', '09:30:00', 'Green Field', 60, 500.00, 'Available'),
+(23, '2026-01-22', '11:00:00', 'Blue Arena', 90, 900.00, 'Arrived'),
+(24, '2026-01-22', '13:00:00', 'Red Turf', 60, 550.00, 'Available'),
+(25, '2026-01-22', '14:30:00', 'Yellow Field', 60, 500.00, 'Booked');
