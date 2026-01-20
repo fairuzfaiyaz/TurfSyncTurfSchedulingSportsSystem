@@ -36,6 +36,7 @@ namespace TurfSyncTurfSchedulingSportsSystem.Forms
 
         private void LoadGrid()
         {
+            dataGridView1.AutoGenerateColumns = true;
             dataGridView1.DataSource = null;
             dataGridView1.DataSource = service.GetAllSchedules();
         }

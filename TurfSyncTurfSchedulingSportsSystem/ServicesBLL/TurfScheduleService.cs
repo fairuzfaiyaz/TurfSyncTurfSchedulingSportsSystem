@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 using System.Data.SqlClient;
 using TurfSyncTurfSchedulingSportsSystem.Models;
+using TurfSyncTurfSchedulingSportsSystem.DataDLL;
 
 namespace TurfSyncTurfSchedulingSportsSystem.ServicesBLL
 {
@@ -18,7 +19,8 @@ namespace TurfSyncTurfSchedulingSportsSystem.ServicesBLL
         // Add new schedule
         public void AddSchedule(TurfSchedule schedule)
         {
-            using (SqlConnection con = new SqlConnection(connectionString))
+            //using (SqlConnection con = new SqlConnection(connectionString))
+            using (SqlConnection con = DatabaseHelper.GetConnection())
             {
                 string query = @"INSERT INTO TurfSchedule
                                 (TurfId, ScheduleDate, ScheduleTime, TurfLocation, Duration, Price, Status)
@@ -70,7 +72,7 @@ namespace TurfSyncTurfSchedulingSportsSystem.ServicesBLL
         public List<TurfSchedule> GetAllSchedules()
         {
             List<TurfSchedule> list = new List<TurfSchedule>();
-            using (SqlConnection con = new SqlConnection(connectionString))
+            using (SqlConnection con = DatabaseHelper.GetConnection())
             {
                 string query = "SELECT * FROM TurfSchedule";
                 SqlCommand cmd = new SqlCommand(query, con);

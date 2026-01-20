@@ -23,7 +23,8 @@ namespace TurfSyncTurfSchedulingSportsSystem.DataDLL
             string query = "SELECT * FROM PendingRequests";
 
 
-            using (SqlConnection con = new SqlConnection(connectionString))
+            //using (SqlConnection con = new SqlConnection(connectionString))
+            using (SqlConnection con = DatabaseHelper.GetConnection())
             {
                 SqlCommand cmd = new SqlCommand(query, con);
                 con.Open();
