@@ -56,7 +56,7 @@ namespace TurfSyncTurfSchedulingSportsSystem.DataDLL
             string query =
                 "UPDATE PendingRequests SET RequestStatus=@status WHERE RequestId=@id";
 
-            using (SqlConnection con = new SqlConnection(connectionString))
+            using (SqlConnection con = DatabaseHelper.GetConnection())
             {
                 SqlCommand cmd = new SqlCommand(query, con);
                 cmd.Parameters.AddWithValue("@status", status);
