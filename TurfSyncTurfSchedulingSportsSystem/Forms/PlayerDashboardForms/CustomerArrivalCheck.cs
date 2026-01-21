@@ -87,7 +87,7 @@ namespace TurfSyncTurfSchedulingSportsSystem.Forms
             [RequestStatus],
             [RequestedAt]
         FROM [dbo].[PendingRequests]
-        WHERE RequestStatus IN ('Booked', 'Arrived')";
+        WHERE RequestStatus IN ('Booked', 'Arrived','Approved')";
 
             try
             {
