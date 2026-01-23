@@ -1,114 +1,105 @@
-# 🏟️ Turf Management System
+# ⚽ TurfSync – Turf Schedule Management System
 
-![Turf Management Banner](https://5.imimg.com/data5/SELLER/Default/2025/1/478645771/CA/NP/GI/25194007/turfsync-turf-booking-management-system-software.jpg)  
-_A complete solution to manage turf bookings, sports e-commerce, and on-ground operations efficiently._
+![TurfSync Banner](https://5.imimg.com/data5/SELLER/Default/2025/1/478645771/CA/NP/GI/25194007/turfsync-turf-booking-management-system-software.jpg)
+
+> **Course:** CSC 2210: Object Oriented Programming 2 (Fall 2025-2026)  
+> **Institution:** American International University–Bangladesh (AIUB)
+
+**TurfSync** is a desktop-based application developed using **C# Graphical User Interface (GUI)** with SQL Server database integration. It is designed to digitize and automate the manual process of turf scheduling, booking, maintenance, and service evaluation.
 
 ---
 
 ## 📌 Project Overview
 
-The **Turf Management System** is a comprehensive platform designed to manage sports turfs, bookings, store inventory, and field operations seamlessly. The system supports multiple user roles with specific permissions for a smooth workflow.
+Traditional turf management relies on phone calls and handwritten registers, leading to double bookings and poor tracking. **TurfSync** solves this by simulating a real-life management environment using **Object-Oriented Programming (OOP)** concepts such as encapsulation, modularity, and role-based access control.
 
-**Key Features:**
-- Turf booking management with dynamic pricing
-- E-commerce store for sports items
-- Real-time customer and field management
-- Analytics and reporting for better decision-making
-- Role-based access: Admin, Turf Manager, Store Staff, Customer
+**Key Highlights:**
+* **Role-Based Access:** Secure login for Admin, Manager, Staff, and Players.
+* **Real-Time Scheduling:** Dynamic status updates (Available, Booked, Maintenance).
+* **Database Normalization:** Database structured up to **2NF** to ensure data integrity.
+* **Feedback System:** Players can rate service quality, lighting, and turf condition.
 
 ---
 
-## 👤 User Roles & Features
+## 👥 User Roles & Features
 
-### 1️⃣ Admin (System Owner / Super Admin)
-- Manage all users (add/remove customers, staff, managers)
-- Create & manage multiple turf locations
-- Set pricing and special packages
-- Full access to bookings and e-commerce
-- View revenue, reports, and analytics
-- Configure global system settings
+### 1️⃣ Admin (System Administrator)
+* **User Management:** Add/Edit/Manage Staff and Managers with assigned roles.
+* **Location Management:** Configure multiple turf locations, operating hours, and rules.
+* **Package Configuration:** Create turf packages and pricing slots.
+* **Manual Booking:** Record bookings on behalf of walk-in customers.
 
 ### 2️⃣ Turf Manager
-- Approve/deny customer bookings
-- Create daily/weekly/monthly slot schedules
-- Mark turf as "Under Maintenance"
-- Check-in customers on arrival
-- Track turf usage statistics
-- Temporary pricing changes (night/weekend)
+* **Dashboard:** View revenue, total bookings, and pending requests.
+* **Schedule Control:** Update slot status (Available/Maintenance) and approve/reject booking requests.
+* **Dynamic Pricing:**
+    * *Night Pricing:* Auto-charge for slots after 6 PM.
+    * *Weekend Pricing:* Auto-charge for Fridays/Saturdays.
+* **Maintenance Mode:** Mark specific slots as "Under Maintenance" to prevent bookings.
 
-### 3️⃣ Store Staff / Sales Manager
-- Manage product inventory
-- Process customer orders & returns
-- Apply discounts/coupons
-- Track stock levels & sales summary
+### 3️⃣ Player (Customer)
+* **Booking System:** Search slots by date/location and book available times.
+* **Cancellation Rules:**
+    * Cannot cancel if less than **2 hours** remain before the match.
+    * **80% Refund** calculated automatically for valid cancellations.
+* **Rescheduling:** Move bookings to new slots (allowed if >2 hours remain).
+* **Rating & History:** View played matches and rate specific aspects (Light, Equipment, Cleanliness).
 
-### 4️⃣ Customer / Player
-- Book turf time slots
-- Make payments online or on arrival
-- Buy sports items from the store
-- Track orders and view history
-- Rate services and manage wishlist/cart
-
----
-
-## 🏟️ Turf Staff / Field Assistant Duties
-
-- ✅ Confirm customer arrival  
-- ✅ Start & end match timers  
-- ✅ Prepare ground and check lights/nets  
-- ✅ Issue and return equipment  
-- ✅ Confirm post-match clean-up  
-- ✅ Report field problems with notes/photos  
-
-**Button-friendly UI actions:**  
-`Customer Arrival | Start Match | End Match | Equipment Issue/Return | Ground Ready | Report Problem`
+### 4️⃣ Staff (On-Ground Operations)
+* **Ground Preparation:** Track tasks like "Turf Brushed," "Trash Cleaned," and "Bottles Removed."
+* **Facility Status:** Update status for Lights (On/Off), Bibs, Cones, and Footballs.
+* **Attendance Tracking:** Confirm player arrival (Required for players to leave ratings later).
 
 ---
 
-## 🗂️ System Modules
+## 🛠️ Tech Stack
 
-### A. Turf Booking Module
-- Slot calendar & availability
-- Real-time booking & payments
-- SMS/email confirmation
-- Dynamic pricing & schedule generation
-
-### B. E-Commerce Module
-- Product catalog & shopping cart
-- Checkout & order tracking
-- Inventory & stock management
-- Discount/coupon support
-
-### C. User Management Module
-- Registration/login & role assignment
-- Password reset & profile management
-- Ban or deactivate accounts
-
-### D. Reporting & Analytics Module
-- Total revenue tracking
-- Booking statistics & peak hours
-- Best-selling products
-- Cancelled booking and customer feedback summary
+* **Language:** C#
+* **Framework:** .NET Desktop Application (GUI)
+* **Database:** SQL Server
+* **Design Pattern:** Layered Architecture with OOP Principles
+* **Database Design:** Normalized to Second Normal Form (2NF)
 
 ---
 
-## 🖥️ Tech Stack
+## 🗂️ Database Schema
 
-- **Frontend:** HTML, CSS, JavaScript, Bootstrap (or your choice)  
-- **Backend:** C#, ASP.NET (or your choice)  
-- **Database:** SQL Server / MySQL  
-- **Other Tools:** Email/SMS API for notifications  
-
----
-
-## 📸 Demo / Screenshots
-
-_Add screenshots or a GIF of your system here to make the repo visually appealing._
+The system utilizes a structured relational database with the following key entities:
+* **Users:** Stores Admin, Manager, Staff, and Player credentials.
+* **TurfSchedule:** Manages slots, prices, and status.
+* **PendingRequest & BookingHistory:** Tracks active, completed, and cancelled bookings.
+* **StaffManagement:** Logs maintenance tasks and equipment status.
+* **ServiceRating:** Stores detailed user feedback.
 
 ---
 
 ## 🚀 Installation & Setup
 
-1. Clone the repository:
-```bash
-git clone https://github.com/yourusername/turf-management-system.git
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/fairuzfaiyaz/TurfSyncTurfSchedulingSportsSystem.git](https://github.com/fairuzfaiyaz/TurfSyncTurfSchedulingSportsSystem.git)
+    ```
+2.  **Database Setup:**
+    * Open **SQL Server Management Studio (SSMS)**.
+    * Run the provided `TurfSyncDB.sql` script to generate tables and relationships.
+    * Update the **Connection String** in the C# project configuration.
+3.  **Run Application:**
+    * Open the solution file (`.sln`) in **Visual Studio**.
+    * Build and Run the project.
+
+---
+
+## 👨‍💻 Team Members
+
+| Name | ID | Role |
+| :--- | :--- | :--- |
+| **Fairuz Faiyaz** | 23-54707-3 | Developer |
+| **Nourin Khan Zerin** | 23-54668-3 | Developer |
+| **Junaida Sultana Jemi** | 23-55249-3 | Developer |
+| **Abdul Aziz** | 24-56494-1 | Developer |
+
+**Supervised By:** Sadman Rafi.
+
+---
+
+_This project was submitted as part of the CSC 2210 course requirements._
